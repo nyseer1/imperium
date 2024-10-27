@@ -1,8 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
 import { Breadcrumbs,Grid2, Paper, Toolbar, Container, Button, Link, Typography, ButtonGroup, Box, ListItem } from '@mui/material';
 
-function App() {
+function Main() {
   return (
     //container for every component in website
     <Container sx={{ color: 'black',
@@ -37,7 +36,7 @@ function App() {
           <Link
               underline="hover"
               color="inherit"
-              href="/material-ui/getting-started/installation/"
+              href="/About"
           >
               ABOUT US
           </Link>
@@ -110,4 +109,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;

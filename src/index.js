@@ -1,11 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Main from './Main';
+import About from './About';
+import Error from './Error';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@emotion/react';
+// ability to access mui components
 import { createTheme, Typography } from '@mui/material';
+// adds ability to link pages
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
+// creates custom theme using mui
 const theme = createTheme({
   pallete:{
     primary:{
@@ -16,11 +25,28 @@ const theme = createTheme({
     color: "#28b54d"
   }
 })
+
+// assigns page links using react router
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main />,
+    // if page does not match any path, goes to error page
+    errorElement: <Error />, 
+    
+  },
+  {
+    path: "/about",
+    element: <About />,
+    
+  },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <RouterProvider router={router} />
     </ThemeProvider>
     
   </React.StrictMode>
