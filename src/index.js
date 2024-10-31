@@ -7,6 +7,7 @@ import Error from './Error';
 import reportWebVitals from './reportWebVitals';
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { green } from '@mui/material/node/colors';
 import { Button } from '@mui/material';
 // adds ability to link pages
 import {
@@ -16,6 +17,10 @@ import {
 
 // creates custom theme using mui
 const theme = createTheme({
+  palette: {
+    primary: green,
+    secondary: green,
+  },
   components: {
     // Name of the component ⚛️
     MuiButtonBase: {
@@ -24,6 +29,14 @@ const theme = createTheme({
         disableRipple: true, // No more ripple, on the whole application 💣!
       },
     },
+    MuiAppBar:{
+      defaultProps:{
+        color: 'primary' //in appbar need to use a color from the pallete
+      }
+    },
+    MuiTypography:{
+      color:'green'
+    }
   },
 });
 

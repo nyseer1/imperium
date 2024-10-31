@@ -9,18 +9,6 @@ import { blue } from '@mui/material/node/colors';
 // to use themes
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-const theme2 = createTheme({
-  components: {
-    // Name of the component ⚛️
-    MuiButtonBase: {
-      defaultProps: {
-        // The default props to change
-        disableRipple: true, // No more ripple, on the whole application 💣!
-      },
-    },
-  },
-});
-
 function Main(){
   // default theme to get breakpoint values, bool check if at size small or below
   const theme = createTheme();
@@ -31,14 +19,12 @@ function Main(){
     return config;
   }
 
-  
-
   return (
   <div>
     <AppBar position="static">bruh</AppBar>
-    <ThemeProvider theme={theme2}>
+
       <Button>This button has disabled ripples.</Button>
-   </ThemeProvider>
+
     <ScreenSmallOrLower />
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <Typography>bruh</Typography>
