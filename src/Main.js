@@ -36,7 +36,9 @@ function Main(){
   return (
   <div>
     <AppBar position="static">bruh</AppBar>
-    
+    <ThemeProvider theme={theme2}>
+      <Button>This button has disabled ripples.</Button>
+   </ThemeProvider>
     <ScreenSmallOrLower />
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <Typography>bruh</Typography>
