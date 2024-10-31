@@ -5,9 +5,9 @@ import Main from './Main';
 import About from './About';
 import Error from './Error';
 import reportWebVitals from './reportWebVitals';
-import { ThemeProvider } from '@emotion/react';
 // ability to access mui components
-import { createTheme, Typography } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Button } from '@mui/material';
 // adds ability to link pages
 import {
   createBrowserRouter,
@@ -16,21 +16,22 @@ import {
 
 // creates custom theme using mui
 const theme = createTheme({
-  pallete:{
-    primary:{
-      main: "#28b54d",
+  components: {
+    // Name of the component ⚛️
+    MuiButtonBase: {
+      defaultProps: {
+        // The default props to change
+        disableRipple: true, // No more ripple, on the whole application 💣!
+      },
     },
   },
-  button:{
-    color: "#28b54d"
-  }
-})
+});
 
 // assigns page links using react router
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: <Main theme={theme}/>,
     // if page does not match any path, goes to error page
     errorElement: <Error />, 
     
