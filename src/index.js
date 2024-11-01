@@ -7,36 +7,42 @@ import Error from './Error';
 import reportWebVitals from './reportWebVitals';
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { green } from '@mui/material/node/colors';
+import { green, deepPurple,  } from '@mui/material/node/colors';
 import { Button } from '@mui/material';
 // adds ability to link pages
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { alignProperty } from '@mui/material/styles/cssUtils';
 
 // creates custom theme using mui
 const theme = createTheme({
   palette: {
     primary: green,
-    secondary: green,
+    secondary: deepPurple,
   },
   components: {
     // Name of the component ⚛️
-    MuiButtonBase: {
-      defaultProps: {
-        // The default props to change
-        disableRipple: true, // No more ripple, on the whole application 💣!
-      },
-    },
     MuiAppBar:{
       defaultProps:{
-        color: 'primary' //in appbar need to use a color from the pallete
+        color: 'primary', //in appbar need to use a color from the pallete
+        sx: {
+          height: 150,
+          padding: 0,
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'flex-end'
+          }
       }
     },
     MuiTypography:{
-      color:'green'
-    }
+      color:'green',
+      sx:{fontSize:200}
+    },
+    MuiButtonBase:{
+      sx:{fontSize: 32, textTransform:'capitalize', color:'#000000', flexGrow:1, p:1, }
+    },
   },
 });
 
