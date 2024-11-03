@@ -1,15 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+//various components
 import { Breadcrumbs,Grid2, Paper, Toolbar, Container, Button, Link, Typography, ButtonGroup, Box, ListItem, AppBar, ImageListItemBar, useMediaQuery, ButtonBase } from '@mui/material';
-import { green } from '@mui/material/node/colors';
+
 import ImageList from '@mui/material/node/ImageList';
 import ImageListItem from '@mui/material/node/ImageListItem';
 
-import { red } from '@mui/material/node/colors';
-import { blue } from '@mui/material/node/colors';
+//for menu button
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import MenuIcon from '@mui/icons-material/Menu'; //for menu icon
+
 // to use themes
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function Main(){
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+
+  
   // default theme to get breakpoint values
   const theme = createTheme();
   // bool to check if the screen is breakpoint (size, ex: small sm medium md) or lower
@@ -20,7 +37,8 @@ function Main(){
     return config;
   }
   function ListOrMenu(){
-    const config = isMatch  ? <ButtonGroup>
+    const config = isMatch ?
+                            <ButtonGroup>
                               <ButtonBase >About</ButtonBase>
                               <ButtonBase >What We Treat</ButtonBase>
                               <ButtonBase >Our Team</ButtonBase>
@@ -28,8 +46,17 @@ function Main(){
                               <ButtonBase >Blog</ButtonBase>
                               <ButtonBase >Contact Us</ButtonBase>
                             </ButtonGroup>
-                            : 
-                            <h1>false</h1>
+                            :
+                            <ButtonGroup>
+                              <ButtonBase id="basic-button"
+                              aria-controls={open ? 'basic-menu' : undefined}
+                              aria-haspopup="true"
+                              aria-expanded={open ? 'true' : undefined}
+                              onClick={handleClick}>
+                                <MenuIcon fontSize='large'/>
+                              </ButtonBase>
+                            </ButtonGroup>
+                            
     return config;
   }
 
@@ -43,6 +70,19 @@ function Main(){
 
       {/* set of buttons to goto different pages*/}
       <ListOrMenu />
+      <Menu
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
+        }}
+      >
+        <MenuItem onClick={handleClose}>Profile</MenuItem>
+        <MenuItem onClick={handleClose}>My account</MenuItem>
+        <MenuItem onClick={handleClose}>Logout</MenuItem>
+      </Menu> 
       {/* TODO: 
       try using divs or boxes to create a margin after the logo, or just make the buttons shift to the right
       add menu button
@@ -51,7 +91,11 @@ function Main(){
       add links to rest of buttons
       add more content below, maybe in page components  
       */}
+      
     </AppBar>
+    <Container><Paper>wosdsdsdsdsdrds</Paper> <Paper>woffefefefrds</Paper></Container>
+    
+      
 
     <TestScreenSmallOrLower />
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

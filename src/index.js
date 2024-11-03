@@ -22,6 +22,8 @@ const theme = createTheme({
     primary: green,
     secondary: deepPurple,
   },
+
+  // default properties of components
   components: {
     // Name of the component ⚛️
     MuiAppBar:{
@@ -52,7 +54,15 @@ const theme = createTheme({
           flexGrow:1,
           }
       }
-    }
+    },
+    MuiContainer:{
+      sx: {
+          p:2,
+          display: 'flex', //creates flexbox to arrange content
+          flexDirection: 'row', //each new content is added in a row
+          justifyContent: 'space-around', //content starts at the end of the line (right)
+       } //padding
+    },
   },
 });
 
