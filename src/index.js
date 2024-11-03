@@ -29,10 +29,8 @@ const theme = createTheme({
         color: 'primary', //in appbar need to use a color from the pallete
         sx: {
           height: 150,
-          padding: 0,
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'flex-end'
+          display: 'flex', //creates flexbox to arrange content
+          flexDirection: 'row', //each new content is added in a row
           }
       }
     },
@@ -41,8 +39,20 @@ const theme = createTheme({
       sx:{fontSize:200}
     },
     MuiButtonBase:{
-      sx:{fontSize: 32, textTransform:'capitalize', color:'#000000', flexGrow:1, p:1, }
+      sx:{fontSize: 18, textTransform:'capitalize', color:'#000000', p:3, }
     },
+    MuiButtonGroup:{
+      defaultProps:{
+        color: 'primary', //in appbar need to use a color from the pallete
+        sx: {
+          height: 150,
+          display: 'flex', //creates flexbox to arrange content
+          flexDirection: 'row', //each new content is added in a row
+          justifyContent: 'flex-end', //content starts at the end of the line (right)
+          flexGrow:1,
+          }
+      }
+    }
   },
 });
 

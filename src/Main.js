@@ -14,9 +14,22 @@ function Main(){
   const theme = createTheme();
   // bool to check if the screen is breakpoint (size, ex: small sm medium md) or lower
   const isMatch = useMediaQuery(theme.breakpoints.up('md'));
-  // tertiary function, if small or lower, render this, else render this
-  function ScreenSmallOrLower(){
+  //(test) tertiary function, if small or lower, render this, else render this
+  function TestScreenSmallOrLower(){
     const config = isMatch ? <h1>true</h1> : <h1>false</h1>
+    return config;
+  }
+  function ListOrMenu(){
+    const config = isMatch  ? <ButtonGroup>
+                              <ButtonBase >About</ButtonBase>
+                              <ButtonBase >What We Treat</ButtonBase>
+                              <ButtonBase >Our Team</ButtonBase>
+                              <ButtonBase >Performance Training</ButtonBase>
+                              <ButtonBase >Blog</ButtonBase>
+                              <ButtonBase >Contact Us</ButtonBase>
+                            </ButtonGroup>
+                            : 
+                            <h1>false</h1>
     return config;
   }
 
@@ -29,12 +42,7 @@ function Main(){
       <Box sx={{background: '#000000', color:'#ffffff'}}><ButtonBase href="/"><img src="logo.png" alt="logo" justifyContent='center'/></ButtonBase></Box>
 
       {/* set of buttons to goto different pages*/}
-      <ButtonBase >About</ButtonBase>
-      <ButtonBase >What We Treat</ButtonBase>
-      <ButtonBase >Our Team</ButtonBase>
-      <ButtonBase >Performance Training</ButtonBase>
-      <ButtonBase >Blog</ButtonBase>
-      <ButtonBase >Contact Us</ButtonBase>
+      <ListOrMenu />
       {/* TODO: 
       try using divs or boxes to create a margin after the logo, or just make the buttons shift to the right
       add menu button
@@ -45,7 +53,7 @@ function Main(){
       */}
     </AppBar>
 
-    <ScreenSmallOrLower />
+    <TestScreenSmallOrLower />
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <Typography>bruh</Typography>
   </Box>
