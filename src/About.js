@@ -1,10 +1,6 @@
 import React from "react"; import ReactDOM from "react-dom/client";
 //various components
-<<<<<<< HEAD
-import { Breadcrumbs, Grid2, Paper, Toolbar, Container, Button, Link, Typography, ButtonGroup, Box, ListItem, AppBar, ImageListItemBar, useMediaQuery, ButtonBase, } from "@mui/material";
-=======
 import { Breadcrumbs,Grid2, Paper, Toolbar, Container, Button, Link, Typography, ButtonGroup, Box, ListItem, AppBar, ImageListItemBar, useMediaQuery, ButtonBase, BottomNavigation } from '@mui/material';
->>>>>>> fddf97499af3d401c75bcc92b697992ef3c8e766
 
 import ImageList from "@mui/material/node/ImageList";
 import ImageListItem from "@mui/material/node/ImageListItem";
@@ -36,32 +32,6 @@ function About() {
     const config = isMatch ? <h1>true</h1> : <h1>false</h1>;
     return config;
   }
-<<<<<<< HEAD
-  function ListOrMenu() {
-    const config = isMatch ? (
-      <ButtonGroup>
-        <ButtonBase href="/">Home</ButtonBase>
-        <ButtonBase>What We Treat</ButtonBase>
-        <ButtonBase>Our Team</ButtonBase>
-        <ButtonBase>Performance Training</ButtonBase>
-        <ButtonBase>Blog</ButtonBase>
-        <ButtonBase>Contact Us</ButtonBase>
-      </ButtonGroup>
-    ) : (
-      <ButtonGroup>
-        <ButtonBase
-          id="basic-button"
-          aria-controls={open ? "basic-menu" : undefined}
-          aria-haspopup="true"
-          aria-expanded={open ? "true" : undefined}
-          onClick={handleClick}
-        >
-          <MenuIcon fontSize="large" />
-        </ButtonBase>
-      </ButtonGroup>
-    );
-
-=======
   function ListOrMenu(){
     const config = isMatch ?
                             <ButtonGroup>
@@ -88,7 +58,6 @@ function About() {
                               </ButtonBase>
                             </ButtonGroup>
                             
->>>>>>> fddf97499af3d401c75bcc92b697992ef3c8e766
     return config;
   }
 
@@ -110,25 +79,6 @@ function About() {
           </ButtonBase>
         </Box>
 
-<<<<<<< HEAD
-        {/* set of buttons to goto different pages*/}
-        <ListOrMenu />
-        <Menu
-          id="basic-menu"
-          anchorEl={anchorEl}
-          open={open}
-          onClose={handleClose}
-          MenuListProps={{
-            "aria-labelledby": "basic-button",
-          }}
-        >
-          <ButtonBase onClick={handleClose}>About</ButtonBase>
-          <ButtonBase onClick={handleClose}>About</ButtonBase>
-          <ButtonBase onClick={handleClose}>About</ButtonBase>
-          <ButtonBase onClick={handleClose}>About</ButtonBase>
-        </Menu>
-        {/* TODO: 
-=======
       {/* set of buttons to goto different pages*/}
       <ListOrMenu />
       <Menu
@@ -148,7 +98,6 @@ function About() {
         <Button sx={{fontSize:[5]}}href='/about'onClick={handleClose}>Contact Us</Button>
       </Menu> 
       {/* TODO: 
->>>>>>> fddf97499af3d401c75bcc92b697992ef3c8e766
       try using divs or boxes to create a margin after the logo, or just make the buttons shift to the right
       add menu button
       use conditional function to render menu if screen small, list all buttons if screen large
@@ -156,36 +105,6 @@ function About() {
       add links to rest of buttons
       add more content below, maybe in page components  
       */}
-<<<<<<< HEAD
-      </AppBar>
-      <Container>
-        <Paper>test paragraph</Paper> <Paper>test</Paper>
-      </Container>
-
-      {/* <TestScreenSmallOrLower /> */}
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Typography>bruh</Typography>
-    </Box>
-=======
       
     </AppBar>
     <Container><Paper>About Page</Paper> <Paper></Paper></Container>
@@ -195,7 +114,6 @@ function About() {
      {/* footer */}
      <BottomNavigation sx={{bgcolor:'#50ac54', position:'static', width:'100%', bottom: '0%', height: '1%'}}><Typography sx={{fontSize:20,}}>Imperium</Typography></BottomNavigation>
   </Box>
->>>>>>> fddf97499af3d401c75bcc92b697992ef3c8e766
   );
 }
 
