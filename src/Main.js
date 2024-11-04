@@ -47,7 +47,7 @@ function Main(){
                 <ButtonGroup>
                   <ButtonBase href='/about' >About</ButtonBase>
                   <ButtonBase >What We Treat</ButtonBase>
-                  <ButtonBase >Our Team</ButtonBase>
+                  <ButtonBase href='/ourteam'>Our Team</ButtonBase>
                   <ButtonBase >Performance Training</ButtonBase>
                   <ButtonBase >Blog</ButtonBase>
                   <ButtonBase >
@@ -94,7 +94,7 @@ function Main(){
           We are a team of licensed and experienced physical therapists dedicated 
           to providing quality healthcare and individualized treatment plans to
            reduce pain, restore mobility and range of motion and to optimize
-            functional potential.</Paper><Button>Learn More</Button></Typography>
+            functional potential.</Paper><Button href="/ourteam">Learn More</Button></Typography>
     </Box>
     
       

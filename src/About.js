@@ -101,7 +101,7 @@ function About(){
       */}
       
     </AppBar>
-    <Container><Paper>test paragraph</Paper> <Paper>test</Paper></Container>
+    <Container><Paper>About Page</Paper> <Paper></Paper></Container>
 
     {/* <TestScreenSmallOrLower /> */}
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

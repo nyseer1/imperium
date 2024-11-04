@@ -4,6 +4,8 @@ import './index.css';
 import Main from './Main';
 import About from './About';
 import Error from './Error';
+import OurTeam from './OurTeam';
+
 import reportWebVitals from './reportWebVitals';
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -106,6 +108,11 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+    
+  },
+  {
+    path: "/ourteam",
+    element: <OurTeam />,
     
   },
 ]);

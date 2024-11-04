@@ -14,7 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu'; //for menu icon
 // to use themes
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-function Error(){
+function OurTeam(){
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -84,7 +84,7 @@ function Error(){
           flexGrow:1, //stretch size of elements to fill unused space on line
           alignItems:'center', //centers items inside box horizontally (for when column)
           }}>
-        <Typography sx={{fontSize:30, textAlign:'center'}}>PAGE NOT FOUND<br/>
+        <Typography sx={{fontSize:30, textAlign:'center'}}>Our Team<br/>
           <Button href="/">Back To Home</Button></Typography>
     </Box>
     
@@ -117,4 +117,4 @@ function Error(){
   );
 }
 
-export default Error;
+export default OurTeam;
