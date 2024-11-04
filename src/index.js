@@ -4,6 +4,8 @@ import './index.css';
 import Main from './Main';
 import About from './About';
 import Error from './Error';
+import OurTeam from './OurTeam';
+
 import reportWebVitals from './reportWebVitals';
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -33,7 +35,16 @@ const theme = createTheme({
           height: 100,
           display: 'flex', //creates flexbox to arrange content
           flexDirection: 'row', //each new content is added in a row
+          border:1,borderColor:'#50ac54', borderTopLeftRadius:8, borderBottomLeftRadius:8,
           }
+      }
+    },
+    MuiBottomNavigation:{
+      defaultProps:{
+        sx:{
+          color: 'green',
+          height: 200,
+        }
       }
     },
     MuiTypography:{
@@ -70,14 +81,17 @@ const theme = createTheme({
     },
     MuiMenu:{
       sx: {
-        height: 400,
+        height: '160%',
         display: 'flex', //creates flexbox to arrange content
         flexDirection: 'column', //each new content is added in a row
         justifyContent: 'space-evenly', //content starts at the end of the line (right)
         flexGrow:1,
+        fontSize:1,
         }
+    },
+    MuiPaper:{
+      align:'left',
       
-
     }
   },
 });
@@ -94,6 +108,11 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+    
+  },
+  {
+    path: "/ourteam",
+    element: <OurTeam />,
     
   },
 ]);
