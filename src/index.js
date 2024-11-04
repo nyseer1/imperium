@@ -36,6 +36,14 @@ const theme = createTheme({
           }
       }
     },
+    MuiBottomNavigation:{
+      defaultProps:{
+        sx:{
+          color: 'green',
+          height: 200,
+        }
+      }
+    },
     MuiTypography:{
       color:'green',
       sx:{fontSize:200}
@@ -76,9 +84,7 @@ const theme = createTheme({
         justifyContent: 'space-evenly', //content starts at the end of the line (right)
         flexGrow:1,
         }
-      
-
-    }
+    },
   },
 });
 

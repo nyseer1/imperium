@@ -79,10 +79,12 @@ function About(){
           'aria-labelledby': 'basic-button',
         }}
       >
-        <ButtonBase onClick={handleClose}>About</ButtonBase>
-        <ButtonBase onClick={handleClose}>About</ButtonBase>
-        <ButtonBase onClick={handleClose}>About</ButtonBase>
-        <ButtonBase onClick={handleClose}>About</ButtonBase>
+        <Button href='/'onClick={handleClose}>Home</Button>
+        <Button href='/about'onClick={handleClose}>What We Treat</Button>
+        <Button href='/about'onClick={handleClose}>Our Team</Button>
+        <Button href='/about'onClick={handleClose}>Performance Training</Button>
+        <Button href='/about'onClick={handleClose}>Blog</Button>
+        <Button href='/about'onClick={handleClose}>Contact Us</Button>
       </Menu> 
       {/* TODO: 
       try using divs or boxes to create a margin after the logo, or just make the buttons shift to the right
@@ -99,7 +101,6 @@ function About(){
 
     {/* <TestScreenSmallOrLower /> */}
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <Typography>bruh</Typography>
   </Box>
   );
 }
