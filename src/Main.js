@@ -99,7 +99,7 @@ function Main(){
 
     {/* <TestScreenSmallOrLower /> */}
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <Typography>bruh</Typography>
+    <Typography>MAIN BRUH</Typography>
   </Box>
   );
 }
