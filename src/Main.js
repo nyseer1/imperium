@@ -39,7 +39,7 @@ function Main(){
   function ListOrMenu(){
     const config = isMatch ?
                             <ButtonGroup>
-                              <ButtonBase >About</ButtonBase>
+                              <ButtonBase href='/about' >About</ButtonBase>
                               <ButtonBase >What We Treat</ButtonBase>
                               <ButtonBase >Our Team</ButtonBase>
                               <ButtonBase >Performance Training</ButtonBase>
@@ -66,7 +66,7 @@ function Main(){
     {/* static means the appbar will hide itself when scrolling down */}
     <AppBar position="static"> 
       {/* black box with the logo and it works as a button to goto the homepage */}
-      <Box sx={{background: '#000000', color:'#ffffff'}}><ButtonBase href="/"><img src="logo.png" alt="logo" justifyContent='center'/></ButtonBase></Box>
+      <Box sx={{background: '#000000', color:'#ffffff'}}><ButtonBase sx={{width:140}}href="/"><img src="logo.png" alt="logo" justifyContent='center' width='100' height='90'/></ButtonBase></Box>
 
       {/* set of buttons to goto different pages*/}
       <ListOrMenu />
@@ -79,9 +79,10 @@ function Main(){
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <ButtonBase onClick={handleClose}>About</ButtonBase>
+        <ButtonBase onClick={handleClose}>About</ButtonBase>
+        <ButtonBase onClick={handleClose}>About</ButtonBase>
+        <ButtonBase onClick={handleClose}>About</ButtonBase>
       </Menu> 
       {/* TODO: 
       try using divs or boxes to create a margin after the logo, or just make the buttons shift to the right
@@ -93,11 +94,10 @@ function Main(){
       */}
       
     </AppBar>
-    <Container><Paper>wosdsdsdsdsdrds</Paper> <Paper>woffefefefrds</Paper></Container>
-    
+    <Container><Paper>test paragraph</Paper> <Paper>test</Paper></Container>
       
 
-    <TestScreenSmallOrLower />
+    {/* <TestScreenSmallOrLower /> */}
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <Typography>bruh</Typography>
   </Box>
