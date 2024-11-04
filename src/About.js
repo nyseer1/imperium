@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 //various components
-import { Breadcrumbs,Grid2, Paper, Toolbar, Container, Button, Link, Typography, ButtonGroup, Box, ListItem, AppBar, ImageListItemBar, useMediaQuery, ButtonBase } from '@mui/material';
+import { Breadcrumbs,Grid2, Paper, Toolbar, Container, Button, Link, Typography, ButtonGroup, Box, ListItem, AppBar, ImageListItemBar, useMediaQuery, ButtonBase, BottomNavigation } from '@mui/material';
 
 import ImageList from '@mui/material/node/ImageList';
 import ImageListItem from '@mui/material/node/ImageListItem';
@@ -44,7 +44,12 @@ function About(){
                               <ButtonBase >Our Team</ButtonBase>
                               <ButtonBase >Performance Training</ButtonBase>
                               <ButtonBase >Blog</ButtonBase>
-                              <ButtonBase >Contact Us</ButtonBase>
+                              <ButtonBase >
+                    <Box sx={{background: '#', color:'#ffffff',
+                    border:2,borderColor:'#000000', borderRadius:1,p:1, color:'#000000'}}>
+                      Contact Us
+                    </Box>
+                  </ButtonBase>
                             </ButtonGroup>
                             :
                             <ButtonGroup>
@@ -79,12 +84,12 @@ function About(){
           'aria-labelledby': 'basic-button',
         }}
       >
-        <Button href='/'onClick={handleClose}>Home</Button>
-        <Button href='/about'onClick={handleClose}>What We Treat</Button>
-        <Button href='/about'onClick={handleClose}>Our Team</Button>
-        <Button href='/about'onClick={handleClose}>Performance Training</Button>
-        <Button href='/about'onClick={handleClose}>Blog</Button>
-        <Button href='/about'onClick={handleClose}>Contact Us</Button>
+        <Button sx={{fontSize:[5]}} href='/about'onClick={handleClose}>About</Button>
+        <Button sx={{fontSize:[5]}}href='/about'onClick={handleClose}>What We Treat</Button>
+        <Button sx={{fontSize:[5]}}href='/about'onClick={handleClose}>Our Team</Button>
+        <Button sx={{fontSize:[5]}}href='/about'onClick={handleClose}>Performance Training</Button>
+        <Button sx={{fontSize:[5]}}href='/about'onClick={handleClose}>Blog</Button>
+        <Button sx={{fontSize:[5]}}href='/about'onClick={handleClose}>Contact Us</Button>
       </Menu> 
       {/* TODO: 
       try using divs or boxes to create a margin after the logo, or just make the buttons shift to the right
@@ -97,10 +102,11 @@ function About(){
       
     </AppBar>
     <Container><Paper>test paragraph</Paper> <Paper>test</Paper></Container>
-      
 
     {/* <TestScreenSmallOrLower /> */}
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+     {/* footer */}
+     <BottomNavigation sx={{bgcolor:'#50ac54', position:'static', width:'100%', bottom: '0%', height: '1%'}}><Typography sx={{fontSize:20,}}>Imperium</Typography></BottomNavigation>
   </Box>
   );
 }

@@ -38,7 +38,9 @@ function Main(){
     {/* static means the appbar will hide itself when scrolling down */}
     <AppBar position="static"> 
       {/* black box with the logo and it works as a button to goto the homepage */}
-      <Box sx={{background: '#000000', color:'#ffffff'}}><ButtonBase sx={{width:140}}href="/"><img src="logo.png" alt="logo" justifyContent='center' width='100' height='90'/></ButtonBase></Box>
+      <Box sx={{background: '#000000', color:'#ffffff',
+      border:1,borderColor:'#000000', borderRadius:2,
+      }}><ButtonBase sx={{width:140}}href="/"><img src="logo.png" alt="logo" justifyContent='center' width='100' height='90'/></ButtonBase></Box>
 
       {/*conditional rendering, if screen > md render , if <= md render this*/}
       {isMatch ? 
@@ -48,7 +50,12 @@ function Main(){
                   <ButtonBase >Our Team</ButtonBase>
                   <ButtonBase >Performance Training</ButtonBase>
                   <ButtonBase >Blog</ButtonBase>
-                  <ButtonBase >Contact Us</ButtonBase>
+                  <ButtonBase >
+                    <Box sx={{background: '#', color:'#ffffff',
+                    border:2,borderColor:'#000000', borderRadius:1,p:1, color:'#000000'}}>
+                      Contact Us
+                    </Box>
+                  </ButtonBase>
                 </ButtonGroup>
                : 
                 <ButtonGroup>
@@ -77,10 +84,19 @@ function Main(){
           flexGrow:1, //stretch size of elements to fill unused space on line
           alignItems:'center', //centers items inside box horizontally (for when column)
           }}>
-        <Typography sx={{fontSize:20}}>words</Typography><Box>words</Box>
+        <Box sx={{backgroundImage: 'url("pt1.jpg")',backgroundSize:'cover',
+          backgroundRepeat:'no-repeat', width:[250,250,500], height:[170,170,350]}}></Box><Typography sx={{fontSize:30, textAlign:'center'}}>Giving You the Power to<br/>Improve Your Life
+          <Paper sx={{
+            fontSize:15,
+            width:300,
+            p:2,
+          }} >
+          We are a team of licensed and experienced physical therapists dedicated 
+          to providing quality healthcare and individualized treatment plans to
+           reduce pain, restore mobility and range of motion and to optimize
+            functional potential.</Paper><Button>Learn More</Button></Typography>
     </Box>
     
-    <Container><Paper>test paragraph</Paper> <Paper>test</Paper></Container>
       
     {/* test tertiary function, if small or lower, render this, else render this */}
     {/* {isMatch ? <h1>true</h1> : <h1>false</h1>} */}
@@ -96,14 +112,15 @@ function Main(){
           'aria-labelledby': 'basic-button',
         }}
       >
-        <Button href='/about'onClick={handleClose}>About</Button>
-        <Button href='/about'onClick={handleClose}>What We Treat</Button>
-        <Button href='/about'onClick={handleClose}>Our Team</Button>
-        <Button href='/about'onClick={handleClose}>Performance Training</Button>
-        <Button href='/about'onClick={handleClose}>Blog</Button>
-        <Button href='/about'onClick={handleClose}>Contact Us</Button>
+        <Button sx={{fontSize:[5,10]}} href='/about'onClick={handleClose}>About</Button>
+        <Button sx={{fontSize:[5,10]}}href='/about'onClick={handleClose}>What We Treat</Button>
+        <Button sx={{fontSize:[5,10]}}href='/about'onClick={handleClose}>Our Team</Button>
+        <Button sx={{fontSize:[5,10]}}href='/about'onClick={handleClose}>Performance Training</Button>
+        <Button sx={{fontSize:[5,10]}}href='/about'onClick={handleClose}>Blog</Button>
+        <Button sx={{fontSize:[5,10]}}href='/about'onClick={handleClose}>Contact Us</Button>
       </Menu>
-
+      
+      {/* footer */}
       <BottomNavigation sx={{bgcolor:'#50ac54', position:'static', width:'100%', bottom: '0%', height: '1%'}}><Typography sx={{fontSize:20,}}>Imperium</Typography></BottomNavigation>
   </Box>
   );
