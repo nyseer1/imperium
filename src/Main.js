@@ -71,7 +71,7 @@ function Main() {
               <Box
                 sx={{
                   background: "#",
-                  color: "#ffffff",
+                  color: "#000000",
                   border: 2,
                   borderColor: "#000000",
                   borderRadius: 1,
