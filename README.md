@@ -16,9 +16,7 @@ Imperium Physical Therapy & Performance is a team of licensed and experienced ph
 
 ## Demo
 
-<video width="320" height="240" controls>
-  <source src="https://youtu.be/cnOIXswfK_k" type="video/mp4">
-</video>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/cnOIXswfK_k)](https://youtu.be/cnOIXswfK_k)
 
 Press play to see a short demo showcasing the website!
 
