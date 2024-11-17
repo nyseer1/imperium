@@ -112,7 +112,8 @@ function Blog() {
       <Typography sx={{
         fontSize: 30,
         fontWeight: 900,
-        textAlign: 'center'
+        textAlign: 'center',
+        p:2,
       }} >imperium blog</Typography>
       {/* blog heading box (description and image) */}
       <Box
@@ -206,12 +207,45 @@ function Blog() {
         fontSize:1,
         width: ['100%','100%','80%']}}>
             <Typography sx={{fontSize:20, textAlign:'center'}}>Previous Blog Posts</Typography>
-            <Button href="/blog/2">Post Name</Button>
+            <Button  sx={{display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
+                <Box sx={{
+                backgroundImage: 'url("pt1.jpg")',
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                width: [50, 50, 60],
+                height: [20, 20, 30],
+                }}></Box>
+                Post Name
+            </Button>
             <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-            <Button href="/blog/3">Post Name</Button>
+            <Button  sx={{display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
+                <Box sx={{
+                backgroundImage: 'url("pt1.jpg")',
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                width: [50, 50, 60],
+                height: [20, 20, 30],
+                }}></Box>
+                Post Name
+            </Button>
             <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-            <Button href="/blog/4">Post Name</Button>
+            <Button  sx={{display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
+                <Box sx={{
+                backgroundImage: 'url("pt1.jpg")',
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                width: [50, 50, 60],
+                height: [20, 20, 30],
+                }}></Box>
+                Post Name
+            </Button>
             <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
+            <ButtonGroup>
+                <ButtonBase>nov2024</ButtonBase>
+                <ButtonBase>oct2024</ButtonBase>
+                <ButtonBase>sep2024</ButtonBase>
+                <ButtonBase>...</ButtonBase>
+            </ButtonGroup>
 
 
 
