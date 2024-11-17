@@ -37,18 +37,14 @@ Install the dependencies and start the server.
 
 ```sh
 cd imperium
-npm install mui @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/lab
 npm install react@latest react-dom@latest react-router-dom@latest
+npm install mui @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/lab
 npm install @fontsource/roboto
 npm start
 ```
 ## License
 
 MIT
-
-Contributers
-**Nyseer Couse**
-**Mario Guerrero**
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
