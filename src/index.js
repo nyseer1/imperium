@@ -1,22 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
 import './index.css';
+//imports pages so we can link to them
 import Main from './Main';
 import About from './About';
 import Error from './Error';
 import OurTeam from './OurTeam';
-
-import reportWebVitals from './reportWebVitals';
+import Blog from './Blog';
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { green, deepPurple,  } from '@mui/material/node/colors';
 import { Button } from '@mui/material';
 // adds ability to link pages
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import { alignProperty } from '@mui/material/styles/cssUtils';
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
 
 // creates custom theme using mui
 const theme = createTheme({
@@ -113,6 +110,11 @@ const router = createBrowserRouter([
   {
     path: "/ourteam",
     element: <OurTeam />,
+    
+  },
+  {
+    path: "/blog1",
+    element: <Blog />,  
     
   },
 ]);

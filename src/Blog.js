@@ -10,6 +10,7 @@ import {
   useMediaQuery,
   ButtonBase,
   BottomNavigation,
+  Container,
 } from "@mui/material";
 //for menu button
 import Menu from "@mui/material/Menu";
@@ -18,7 +19,10 @@ import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
 // to use themes
 import { createTheme } from "@mui/material/styles";
 
-function Main() {
+//to use divider
+import Divider from '@mui/material/Divider';
+
+function Blog() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -66,7 +70,7 @@ function Main() {
             <ButtonBase>What We Treat</ButtonBase>
             <ButtonBase href="/ourteam">Our Team</ButtonBase>
             <ButtonBase>Performance Training</ButtonBase>
-            <ButtonBase href='/blog1'>Blog</ButtonBase>
+            <ButtonBase>Blog</ButtonBase>
             <ButtonBase>
               <Box
                 sx={{
@@ -105,6 +109,12 @@ function Main() {
       </AppBar>
 
       {/* content */}
+      <Typography sx={{
+        fontSize: 30,
+        fontWeight: 900,
+        textAlign: 'center'
+      }} >imperium blog</Typography>
+      {/* blog heading box (description and image) */}
       <Box
         sx={{
           p: 2,
@@ -115,34 +125,101 @@ function Main() {
           alignItems: "center", //centers items inside box horizontally (for when column)
         }}
       >
+        {/* blog post descriprion */}
+        <Typography sx={{ fontSize: 30, textAlign: "center", p:2 }}>
+          <Paper
+            sx={{
+              fontSize: 15,
+              width: [300,300,450],
+              height: ['100%'],
+              p: 2,
+              bgcolor: '#eeeeee',
+            }}
+          >
+            <Typography sx={{fontSize:30, fontWeight: '900', color:'#000000'}}>New blog post</Typography>
+            This is the first blog post ever made! wow!
+            Here is a sentence to make sure that paragraphs are working
+          </Paper>
+        </Typography>
+        {/* blog post image */}
         <Box
           sx={{
             backgroundImage: 'url("pt1.jpg")',
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            width: [250, 250, 500],
-            height: [170, 170, 350],
+            width: [320, 320, 400],
+            height: [210, 210, 240],
           }}
         ></Box>
-        <Typography sx={{ fontSize: 30, textAlign: "center" }}>
-          Giving You the Power to
-          <br />
-          Improve Your Life
+      </Box>
+      {/* container to center divider */}
+      <Container>
+        <Divider orientation="horizontal" variant="middle" flexItem sx={{width: [300,300,1000]}}/>
+      </Container>
+
+      {/* blog content box (blog content and other blog links) */}
+      <Box
+        sx={{
+          p: 2,
+          display: "flex", //creates flexbox to arrange content
+          flexDirection: ["column", "column", "row", "row", "row"], //each new content is added in a row if screen > md, columb if <= md
+          justifyContent: "space-evenly", //content starts at the end of the line (right)
+          flexGrow: 1, //stretch size of elements to fill unused space on line
+          alignItems: "center", //centers items inside box horizontally (for when column)
+        }}
+      >
+        {/* blog post*/}
+        <Typography sx={{ fontSize: 30, textAlign: "center", p:2 }}>
           <Paper
             sx={{
               fontSize: 15,
-              width: 300,
+              width: ['90%','80%','80%'],
               p: 2,
             }}
           >
-            We are a team of licensed and experienced physical therapists
-            dedicated to providing quality healthcare and individualized
-            treatment plans to reduce pain, restore mobility and range of motion
-            and to optimize functional potential.
+            {/* section 1 */}
+            <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>Subtitle</Typography>
+            This is the first blog post ever made! wow!
+            Here is a sentence to make sure that paragraphs are working
+            Physical therapy, also known as physiotherapy, may include exercises,
+             massages and various treatments based on physical stimuli (e.g. heat, 
+             cold, electrical currents or ultrasound). The aim of physical therapy 
+             is to relieve pain, help you move better or strengthen weakened muscles.
+            <Divider orientation="horizontal" variant="middle" flexItem sx={{p:1,width: ['90%']}}/>
+            {/* section 2 */}
+            <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>Subtitle</Typography>
+            This is the first blog post ever made! wow!
+            Here is a sentence to make sure that paragraphs are working
+            Physical therapy, also known as physiotherapy, may include exercises,
+             massages and various treatments based on physical stimuli (e.g. heat, 
+             cold, electrical currents or ultrasound). The aim of physical therapy 
+             is to relieve pain, help you move better or strengthen weakened muscles.
+            <Divider orientation="horizontal" variant="middle" flexItem sx={{p:1,width: ['90%']}}/>
           </Paper>
-          <Button href="/ourteam">Learn More</Button>
-        </Typography>
+
+       {/* blog links */}
+       </Typography>
+       <Box sx={{        display: 'flex', //creates flexbox to arrange content
+        flexDirection: 'column', //each new content is added in a row
+        justifyContent: 'space-evenly', //content starts at the end of the line (right)
+        flexGrow:1,
+        fontSize:1,
+        width: ['100%','100%','80%']}}>
+            <Typography sx={{fontSize:20, textAlign:'center'}}>Previous Blog Posts</Typography>
+            <Button href="/blog/2">Post Name</Button>
+            <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
+            <Button href="/blog/3">Post Name</Button>
+            <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
+            <Button href="/blog/4">Post Name</Button>
+            <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
+
+
+
+            
+        </Box>
       </Box>
+      
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
       {/* test tertiary function, if small or lower, render this, else render this */}
       {/* {isMatch ? <h1>true</h1> : <h1>false</h1>} */}
@@ -169,7 +246,7 @@ function Main() {
         <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
           Performance Training
         </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/blog1" onClick={handleClose}>
+        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
           Blog
         </Button>
         <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
@@ -193,4 +270,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Blog;
