@@ -186,14 +186,14 @@ function About() {
             including restoration of mobility, range of motion and strength.
           </Typography>
           <Typography variant="body1" gutterBottom sx={{ font: [2], color: '#000000' }}>
-            {" "}
+           
             Our mission is to improve the health and wellness of our clients by
             empowering them with the knowledge and skills to optimize their
             physical potential. Our vision is to develop championship athletes
             and to revitalize active lifestyles.
           </Typography>
           <p></p>
-        </Paper>{" "}
+        </Paper>
         <Masonry
           justifyContent="center"
           sx={{
