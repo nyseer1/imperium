@@ -8,6 +8,7 @@ import About from './About';
 import Error from './Error';
 import OurTeam from './OurTeam';
 import Blog from './Blog';
+import Footer from './Footer';
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { green, deepPurple,  } from '@mui/material/node/colors';
@@ -126,7 +127,8 @@ root.render(
       <RouterProvider router={router} />
     </ThemeProvider>
     
-  </React.StrictMode>
+    <Footer/>
+  </React.StrictMode> 
 );
 
 // If you want to start measuring performance in your app, pass a function
