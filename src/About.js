@@ -80,7 +80,7 @@ function About() {
       <ButtonGroup>
         <ButtonBase href="/">Home</ButtonBase>
         <ButtonBase>What We Treat</ButtonBase>
-        <ButtonBase>Our Team</ButtonBase>
+        <ButtonBase href="/OurTeam">Our Team</ButtonBase>
         <ButtonBase>Performance Training</ButtonBase>
         <ButtonBase>Blog</ButtonBase>
         <ButtonBase>
@@ -151,7 +151,7 @@ function About() {
           <Button sx={{ fontSize: [5] }} href="/about" onClick={handleClose}>
             What We Treat
           </Button>
-          <Button sx={{ fontSize: [5] }} href="/about" onClick={handleClose}>
+          <Button sx={{ fontSize: [5] }} href="/OurTeam" onClick={handleClose}>
             Our Team
           </Button>
           <Button sx={{ fontSize: [5] }} href="/about" onClick={handleClose}>
