@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu'; //for menu icon
 // to use themes
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+
 function Error(){
 
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -112,7 +113,9 @@ function Error(){
       </Menu>
       
       {/* footer */}
+   
       <BottomNavigation sx={{bgcolor:'#50ac54', position:'static', width:'100%', bottom: '0%', height: '1%'}}><Typography sx={{fontSize:20,}}>Imperium</Typography></BottomNavigation>
+ 
   </Box>
   );
 }

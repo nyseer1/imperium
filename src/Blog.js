@@ -299,7 +299,7 @@ function Blog() {
         }}
       >
         <Typography sx={{ fontSize: 20 }}>Imperium</Typography>
-      </BottomNavigation>
+      </BottomNavigation> 
     </Box>
   );
 }
