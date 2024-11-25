@@ -19,6 +19,7 @@ import {
   ListItemText,
   BottomNavigationAction,
   BottomNavigation,
+  Typography,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 export function Footer() {
@@ -26,6 +27,17 @@ export function Footer() {
 
   return (
     <Box>
+      <BottomNavigation
+        sx={{
+          bgcolor: "#50ac54",
+          position: "static",
+          width: "100%",
+          bottom: "0%",
+          height: "1%",
+        }}
+      >
+        <Typography sx={{ fontSize: 20, color: 'green'}}>Imperium</Typography>
+      </BottomNavigation> 
       <Grid
         sx={{ p: 2, background: "#2BC942", flexGrow: 1 }}
         container

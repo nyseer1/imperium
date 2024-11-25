@@ -15,6 +15,9 @@ import { green, deepPurple,  } from '@mui/material/node/colors';
 import { Button } from '@mui/material';
 // adds ability to link pages
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import Bloglist from './Bloglist.js';
+import ResponsiveMenu from './ResponsiveMenu.js';
+
 
 // creates custom theme using mui
 const theme = createTheme({
@@ -47,7 +50,7 @@ const theme = createTheme({
     },
     MuiTypography:{
       color:'green',
-      sx:{fontSize:200}
+      sx:{fontSize:30}
     },
     MuiButtonBase:{
       sx:{fontSize: 18, textTransform:'capitalize', color:'#000000', p:3,
@@ -89,6 +92,9 @@ const theme = createTheme({
     },
     MuiPaper:{
       align:'left',
+      sx:{
+        fontSize:20,
+      }
       
     }
   },
@@ -118,12 +124,17 @@ const router = createBrowserRouter([
     element: <Blog />,  
     
   },
+  {
+    path: "/bloglist",
+    element: <Bloglist />, 
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
+      <ResponsiveMenu/>
       <RouterProvider router={router} />
     </ThemeProvider>
     

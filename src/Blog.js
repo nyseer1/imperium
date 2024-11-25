@@ -1,16 +1,6 @@
 import React from "react";
 //various components
-import {
-  Paper,
-  Button,
-  Typography,
-  ButtonGroup,
-  Box,
-  AppBar,
-  useMediaQuery,
-  ButtonBase,
-  BottomNavigation,
-  Container,
+import {Paper,Button,Typography,ButtonGroup,Box,AppBar,useMediaQuery,ButtonBase,BottomNavigation,Container,
 } from "@mui/material";
 //for menu button
 import Menu from "@mui/material/Menu";
@@ -22,91 +12,18 @@ import { createTheme } from "@mui/material/styles";
 //to use divider
 import Divider from '@mui/material/Divider';
 
-function Blog() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+//blog pages
+import Bloglist from "./Bloglist";
 
-  // default theme to get breakpoint values
-  const theme = createTheme();
-  // bool to check if the screen is breakpoint (size, ex: small sm medium md) or lower
-  const isMatch = useMediaQuery(theme.breakpoints.up("md"));
+// for arrow icon
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
+function Blog() {
+
 
   return (
     // basic div tag that uses css
     <Box>
-      {/* static means the appbar will hide itself when scrolling down */}
-      <AppBar position="static">
-        {/* black box with the logo and it works as a button to goto the homepage */}
-        <Box
-          sx={{
-            background: "#000000",
-            color: "#ffffff",
-            border: 1,
-            borderColor: "#000000",
-            borderRadius: 2,
-          }}
-        >
-          <ButtonBase sx={{ width: 140 }} href="/">
-            <img
-              src="logo.png"
-              alt="logo"
-              justifyContent="center"
-              width="100"
-              height="90"
-            />
-          </ButtonBase>
-        </Box>
-
-        {/*conditional rendering, if screen > md render , if <= md render this*/}
-        {isMatch ? (
-          <ButtonGroup>
-            <ButtonBase href="/about">About</ButtonBase>
-            <ButtonBase>What We Treat</ButtonBase>
-            <ButtonBase href="/ourteam">Our Team</ButtonBase>
-            <ButtonBase>Performance Training</ButtonBase>
-            <ButtonBase>Blog</ButtonBase>
-            <ButtonBase>
-              <Box
-                sx={{
-                  background: "#",
-                  color: "#000000",
-                  border: 2,
-                  borderColor: "#000000",
-                  borderRadius: 1,
-                  p: 1,
-                  display: "inline",
-                }}
-              >
-                Contact Us
-              </Box>
-            </ButtonBase>
-          </ButtonGroup>
-        ) : (
-          <ButtonGroup>
-            <ButtonBase
-              id="basic-button"
-              aria-controls={open ? "basic-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-              onClick={handleClick}
-            >
-              <MenuIcon fontSize="large" />
-            </ButtonBase>
-          </ButtonGroup>
-        )}
-
-        {/* TODO: 
-      outline contact button
-      add links to rest of buttons
-      add more content below, maybe in page components  
-      */}
-      </AppBar>
 
       {/* content */}
       <Typography sx={{
@@ -114,11 +31,11 @@ function Blog() {
         fontWeight: 900,
         textAlign: 'center',
         p:2,
-      }} >imperium blog</Typography>
-      {/* blog heading box (description and image) */}
+      }} >Misconceptions of Low Back Pain</Typography>
+
+      {/* blog content (description and image) */}
       <Box
-        sx={{
-          p: 2,
+        sx={{p: 2,
           display: "flex", //creates flexbox to arrange content
           flexDirection: ["column", "column", "row", "row", "row"], //each new content is added in a row if screen > md, columb if <= md
           justifyContent: "space-evenly", //content starts at the end of the line (right)
@@ -128,35 +45,19 @@ function Blog() {
       >
         {/* blog post descriprion */}
         <Typography sx={{ fontSize: 30, textAlign: "center", p:2 }}>
-          <Paper
-            sx={{
-              fontSize: 15,
-              width: [300,300,450],
-              height: ['100%'],
-              p: 2,
-              bgcolor: '#eeeeee',
-            }}
-          >
-            <Typography sx={{fontSize:30, fontWeight: '900', color:'#000000'}}>New blog post</Typography>
-            This is the first blog post ever made! wow!
-            Here is a sentence to make sure that paragraphs are working
+          <Paper sx={{fontSize: 20,width: ['100%', '100%', 500, 700],height: ['100%'],p: 2,bgcolor: '#eeeeee',}}>
+            <Typography sx={{fontSize:30, fontWeight: '900', color:'#000000'}}>Debunking Common Misconceptions About Low Back Pain(LBP): Insights from Physical Therapy and Current Research</Typography>
+            Low back pain is a prevalent condition that affects millions of people worldwide. Unfortunately, misconceptions about its causes and treatments persist, leading to ineffective management and prolonged suffering. In this article, we'll explore some common misconceptions surrounding low back pain from a physical therapy standpoint, backed by insights from current research.
           </Paper>
         </Typography>
+
         {/* blog post image */}
-        <Box
-          sx={{
-            backgroundImage: 'url("pt1.jpg")',
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            width: [320, 320, 400],
-            height: [210, 210, 240],
-          }}
-        ></Box>
+        <Box sx={{backgroundImage: 'url("Low_back_pain.jpg")', backgroundSize: "cover",backgroundRepeat: "no-repeat",width: [320, 320, 400],height: [210, 210, 240],}}/>
+
       </Box>
+
       {/* container to center divider */}
-      <Container>
-        <Divider orientation="horizontal" variant="middle" flexItem sx={{width: [300,300,1000]}}/>
-      </Container>
+      <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: [300,300,1000]}}/></Container>
 
       {/* blog content box (blog content and other blog links) */}
       <Box
@@ -164,142 +65,73 @@ function Blog() {
           p: 2,
           display: "flex", //creates flexbox to arrange content
           flexDirection: ["column", "column", "row", "row", "row"], //each new content is added in a row if screen > md, columb if <= md
-          justifyContent: "space-evenly", //content starts at the end of the line (right)
+          justifyContent: "center", //content starts at the end of the line (right)
           flexGrow: 1, //stretch size of elements to fill unused space on line
-          alignItems: "center", //centers items inside box horizontally (for when column)
+          alignItems: "flex-start", //centers items inside box horizontally (for when column)
         }}
       >
         {/* blog post*/}
         <Typography sx={{ fontSize: 30, textAlign: "center", p:2 }}>
-          <Paper
-            sx={{
-              fontSize: 15,
-              width: ['90%','80%','80%'],
-              p: 2,
-            }}
-          >
+          <Paper sx={{fontSize: 15, width: ['100%','98%','80%'], p: 2,}}>
             {/* section 1 */}
-            <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>Subtitle</Typography>
-            This is the first blog post ever made! wow!
-            Here is a sentence to make sure that paragraphs are working
-            Physical therapy, also known as physiotherapy, may include exercises,
-             massages and various treatments based on physical stimuli (e.g. heat, 
-             cold, electrical currents or ultrasound). The aim of physical therapy 
-             is to relieve pain, help you move better or strengthen weakened muscles.
-            <Divider orientation="horizontal" variant="middle" flexItem sx={{p:1,width: ['90%']}}/>
+            <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>1. Misconception: Rest is the Best Treatment for Low Back Pain.</Typography>
+            Contrary to the belief that prolonged rest is the solution, current research highlights the importance of early and gradual movement for low back pain. Physical therapists advocate for active approaches, such as specific exercises and movement therapies, to improve flexibility and strengthen the muscles supporting the spine.
+            <br/><br/>
             {/* section 2 */}
-            <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>Subtitle</Typography>
-            This is the first blog post ever made! wow!
-            Here is a sentence to make sure that paragraphs are working
-            Physical therapy, also known as physiotherapy, may include exercises,
-             massages and various treatments based on physical stimuli (e.g. heat, 
-             cold, electrical currents or ultrasound). The aim of physical therapy 
-             is to relieve pain, help you move better or strengthen weakened muscles.
+            <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>2. Misconception: Imaging Always Reveals the Underlying Cause.</Typography>
+            Many individuals assume that diagnostic imaging, such as X-rays or MRIs, will always pinpoint the cause of low back pain. However, research indicates that structural abnormalities are often present in individuals without any pain symptoms. Physical therapists emphasize the need for a comprehensive assessment that considers functional limitations and movement patterns rather than relying solely on imaging results.
+            <br/><br/>
+             {/* section 3 */}
+             <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>3. Misconception: Surgery Is the Only Effective Solution.</Typography>
+             While surgery may be necessary in some cases, it's not the only solution for low back pain. Current research supports the efficacy of conservative treatments, including physical therapy, for managing and alleviating symptoms. Non-invasive approaches often yield positive outcomes, emphasizing the importance of exploring these options before considering surgery.
+             <br/><br/>
+             {/* section 4 */}
+             <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>4. Misconception: Pain Equals Damage.</Typography>
+             It's a common misconception that the severity of pain directly correlates with the extent of tissue damage. Research suggests that pain is a complex and subjective experience influenced by various factors, including psychological and social aspects. Physical therapists focus on addressing pain through a biopsychosocial model, considering both physical and psychosocial factors influencing the individual's experience.
+             <br/><br/>
+             {/* section 5 */}
+             <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>5. Misconception: Core Strengthening Is Always the Answer.</Typography>
+             While core strengthening exercises play a crucial role in low back pain management, assuming that every case requires the same approach is a misconception. Physical therapists conduct thorough assessments to identify specific muscle imbalances and tailor exercise programs accordingly. A personalized approach is essential for addressing the unique needs of each individual.
+             <br/><br/>
+             {/* section 6 */}
+             <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>6. Misconception: Bed Rest Accelerates Recovery.</Typography>
+             Bed rest was once commonly prescribed for low back pain, but research now emphasizes the detrimental effects of prolonged inactivity. Physical therapists advocate for an active approach that includes targeted exercises, mobilization, and posture education to promote recovery and prevent recurrence.
+             <br/><br/>
+             {/* section 7 */}
+             <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>2. Misconception: Imaging Always Reveals the Underlying Cause.</Typography>
+            Many individuals assume that diagnostic imaging, such as X-rays or MRIs, will always pinpoint the cause of low back pain. However, research indicates that structural abnormalities are often present in individuals without any pain symptoms. Physical therapists emphasize the need for a comprehensive assessment that considers functional limitations and movement patterns rather than relying solely on imaging results.
             <Divider orientation="horizontal" variant="middle" flexItem sx={{p:1,width: ['90%']}}/>
+            
           </Paper>
 
-       {/* blog links */}
+       
        </Typography>
+       
+       {/* blog links */}
        <Box sx={{        display: 'flex', //creates flexbox to arrange content
         flexDirection: 'column', //each new content is added in a row
-        justifyContent: 'space-evenly', //content starts at the end of the line (right)
-        flexGrow:1,
-        fontSize:1,
-        width: ['100%','100%','80%']}}>
-            <Typography sx={{fontSize:20, textAlign:'center'}}>Previous Blog Posts</Typography>
-            <Button  sx={{display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
-                <Box sx={{
-                backgroundImage: 'url("pt1.jpg")',
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: [50, 50, 60],
-                height: [20, 20, 30],
-                }}></Box>
+        justifyContent: 'flex-end', //content starts at the end of the line (right)
+        flexGrow:1,fontSize:1, width: ['100%','100%','80%']}}>
+
+            <Typography sx={{fontSize:20, textAlign:'center'}}>Recent Blog Posts</Typography>
+            <Button  sx={{display:'flex', flexDirection:['column','column','row']}} href="/blog2">
+                <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
+                  alt="The house from the offer."
+                  src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"/>
                 Post Name
             </Button>
             <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-            <Button  sx={{display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
-                <Box sx={{
-                backgroundImage: 'url("pt1.jpg")',
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: [50, 50, 60],
-                height: [20, 20, 30],
-                }}></Box>
-                Post Name
-            </Button>
-            <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-            <Button  sx={{display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
-                <Box sx={{
-                backgroundImage: 'url("pt1.jpg")',
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: [50, 50, 60],
-                height: [20, 20, 30],
-                }}></Box>
-                Post Name
-            </Button>
-            <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-            <ButtonGroup>
-                <ButtonBase>nov2024</ButtonBase>
-                <ButtonBase>oct2024</ButtonBase>
-                <ButtonBase>sep2024</ButtonBase>
-                <ButtonBase>...</ButtonBase>
-            </ButtonGroup>
+            
+            <Button href="bloglist" sx={{fontSize:20}}>More Posts <ArrowForwardIosIcon/> </Button>
 
 
 
             
         </Box>
       </Box>
-      
       <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-      {/* test tertiary function, if small or lower, render this, else render this */}
-      {/* {isMatch ? <h1>true</h1> : <h1>false</h1>} */}
-
-      {/* menu popup window, only rendered on menu button click, any click away removes it*/}
-      <Menu
-        id="basic-menu"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        MenuListProps={{
-          "aria-labelledby": "basic-button",
-        }}
-      >
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
-          About
-        </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
-          What We Treat
-        </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
-          Our Team
-        </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
-          Performance Training
-        </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
-          Blog
-        </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
-          Contact Us
-        </Button>
-      </Menu>
-
-      {/* footer */}
-      <BottomNavigation
-        sx={{
-          bgcolor: "#50ac54",
-          position: "static",
-          width: "100%",
-          bottom: "0%",
-          height: "1%",
-        }}
-      >
-        <Typography sx={{ fontSize: 20 }}>Imperium</Typography>
-      </BottomNavigation> 
+      
     </Box>
   );
 }

@@ -21,6 +21,7 @@ import {
   ButtonBase,
   BottomNavigation,
   styled,
+  Divider,
 } from "@mui/material";
 
 import ImageList from "@mui/material/node/ImageList";
@@ -57,128 +58,26 @@ function About() {
       title: "Pic 2",
     },
   ];
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  // default theme to get breakpoint values
-  const theme = createTheme();
-  // bool to check if the screen is breakpoint (size, ex: small sm medium md) or lower
-  const isMatch = useMediaQuery(theme.breakpoints.up("md"));
-  //(test) tertiary function, if small or lower, render this, else render this
-  function TestScreenSmallOrLower() {
-    const config = isMatch ? <h1>true</h1> : <h1>false</h1>;
-    return config;
-  }
-  function ListOrMenu() {
-    const config = isMatch ? (
-      <ButtonGroup>
-        <ButtonBase href="/">Home</ButtonBase>
-        <ButtonBase>What We Treat</ButtonBase>
-        <ButtonBase href="/OurTeam">Our Team</ButtonBase>
-        <ButtonBase>Performance Training</ButtonBase>
-        <ButtonBase>Blog</ButtonBase>
-        <ButtonBase>
-          <Box
-            sx={{
-              background: "#",
-              color: "#ffffff",
-              border: 2,
-              borderColor: "#000000",
-              borderRadius: 1,
-              p: 1,
-              color: "#000000",
-            }}
-          >
-            Contact Us
-          </Box>
-        </ButtonBase>
-      </ButtonGroup>
-    ) : (
-      <ButtonGroup>
-        <ButtonBase
-          id="basic-button"
-          aria-controls={open ? "basic-menu" : undefined}
-          aria-haspopup="true"
-          aria-expanded={open ? "true" : undefined}
-          onClick={handleClick}
-        >
-          <MenuIcon fontSize="large" />
-        </ButtonBase>
-      </ButtonGroup>
-    );
-
-    return config;
-  }
 
   return (
     // basic div tag that uses css
     <Box>
-      {/* static means the appbar will hide itself when scrolling down */}
-      <AppBar position="static">
-        {/* black box with the logo and it works as a button to goto the homepage */}
-        <Box sx={{ background: "#000000", color: "#ffffff" }}>
-          <ButtonBase sx={{ width: 140 }} href="/">
-            <img
-              src="logo.png"
-              alt="logo"
-              justifyContent="center"
-              width="100"
-              height="90"
-            />
-          </ButtonBase>
-        </Box>
-
-        {/* set of buttons to goto different pages*/}
-        <ListOrMenu />
-        <Menu
-          id="basic-menu"
-          anchorEl={anchorEl}
-          open={open}
-          onClose={handleClose}
-          MenuListProps={{
-            "aria-labelledby": "basic-button",
-          }}
-        >
-          <Button sx={{ fontSize: [5] }} href="/about" onClick={handleClose}>
-            About
-          </Button>
-          <Button sx={{ fontSize: [5] }} href="/about" onClick={handleClose}>
-            What We Treat
-          </Button>
-          <Button sx={{ fontSize: [5] }} href="/OurTeam" onClick={handleClose}>
-            Our Team
-          </Button>
-          <Button sx={{ fontSize: [5] }} href="/about" onClick={handleClose}>
-            Performance Training
-          </Button>
-          <Button sx={{ fontSize: [5] }} href="/about" onClick={handleClose}>
-            Blog
-          </Button>
-          <Button sx={{ fontSize: [5] }} href="/about" onClick={handleClose}>
-            Contact Us
-          </Button>
-        </Menu>
-        {/* TODO: 
-      try using divs or boxes to create a margin after the logo, or just make the buttons shift to the right
-      add menu button
-      use conditional function to render menu if screen small, list all buttons if screen large
-      outline contact button
-      add links to rest of buttons
-      add more content below, maybe in page components  
-      */}
-      </AppBar>
-      <Container sx={{ width: "100%", maxWidth: 500 }}>
+      <Box sx={{ width: "100%" }}>
         {" "}
-        <Typography sx={{ width: "100%", maxWidth: 500 }} variant="h1">
+        <Typography sx={{ textAlign:'center' }} variant="h1">
           About Us
         </Typography>
-        <Paper centered variant="outlined" elevation="24" sx={{ p: 1 }}>
+        <Box
+        sx={{
+          p: 2,
+          display: "flex", //creates flexbox to arrange content
+          flexDirection: ["column", "column", "row", "row", "row"], //each new content is added in a row if screen > md, columb if <= md
+          justifyContent: "center", //content starts at the end of the line (right)
+          flexGrow: 1, //stretch size of elements to fill unused space on line
+          alignItems: "flex-start", //centers items inside box horizontally (for when column)
+        }}
+      >
+        <Paper sx={{fontSize: 15, p: 2,}}>
           <Typography
             variant="body1"
             gutterBottom
@@ -198,6 +97,31 @@ function About() {
             empowering them with the knowledge and skills to optimize their
             physical potential. Our vision is to develop championship athletes
             and to revitalize active lifestyles.
+
+            <br/><br/><Divider/><br/><br/>
+            <Typography sx={{color:'#000000', fontSize:20, fontWeight:'bold'}}>Dr. Frank Prochilo</Typography>is the owner and physical therapist at Imperium Physical Therapy, a premier
+            clinic specializing in orthopedics and sports rehabilitation. With a deep passion for helping
+            patients optimize their physical performance and recover from injuries, Frank combines
+            advanced clinical expertise with a personalized approach to care.
+            <br/>
+            Frank holds a Doctorate in Physical Therapy (DPT) from SUNY Downstate Medical Center and
+            is board-certified in orthopedic physical therapy (OCS) through the American Board of Physical
+            Therapy Specialties (ABPTS). With years of experience working with athletes of all levels—from
+            weekend warriors to Division I competitors, Frank is dedicated to helping each patient achieve
+            their individual goals, whether it&#39;s returning to sport, overcoming chronic pain, or improving
+            overall function.
+            <br/>
+            Imperium Physical Therapy utilizes the latest evidence-based techniques, including manual
+            therapy, therapeutic exercise, and cutting-edge rehabilitation technology. Frank believes in
+            empowering patients through education and tailored treatment plans, ensuring that each
+            individual receives the care and support they need to recover fully and prevent future injuries.
+            <br/>
+            In addition to clinical practice, Frank is an adjunct professor at Brooklyn College and is actively
+            involved in the local sports community, offering injury prevention workshops, collaborating with
+            coaches and trainers, and has provided on-site care at sporting events. Frank’s commitment to
+            excellence and patient-centered care has earned Imperium Physical Therapy a reputation as a
+            trusted destination for orthopedic and sports rehabilitation in the area.
+
           </Typography>
           <p></p>
         </Paper>
@@ -209,6 +133,7 @@ function About() {
             border: 5,
             borderColor: "green",
             borderRadius: "6px",
+            width:['100%','100%',2000,]
           }}
           columns={2}
           spacing={2}
@@ -224,14 +149,17 @@ function About() {
                   borderBottomLeftRadius: 4,
                   borderBottomRightRadius: 4,
                   display: "block",
-                  width: "70%",
+                  width: "100%",
+                  height:'100%',
                   borderColor: "green",
                 }}
               />
             </div>
           ))}
         </Masonry>
-      </Container>
+      </Box>
+        
+      </Box>
 
       {/* <TestScreenSmallOrLower /> */}
       <br />
@@ -254,18 +182,6 @@ function About() {
       <br />
       <br />
       <br />
-      {/* footer */}
-      <BottomNavigation
-        sx={{
-          bgcolor: "#50ac54",
-          position: "static",
-          width: "100%",
-          bottom: "0%",
-          height: "1%",
-        }}
-      >
-        <Typography sx={{ fontSize: 20 }}>Imperium</Typography>
-      </BottomNavigation>
     </Box>
   );
 }
