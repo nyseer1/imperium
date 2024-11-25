@@ -10,6 +10,7 @@ import {
   useMediaQuery,
   ButtonBase,
   BottomNavigation,
+  Divider,
 } from "@mui/material";
 
 // for arrow icon
@@ -17,6 +18,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // to use themes
 import { createTheme } from "@mui/material/styles";
+import { Circle } from "@mui/icons-material";
 
 function Main() {
   return (
@@ -100,6 +102,20 @@ function Main() {
             All of the specialized clinicians at Imperium Physical Therapy and Performance are dedicated to provide you with the highest quality of care. 
           </Paper>
           <Button href="/ourteam" sx={{display:'flex', flexDirection:'row',justifyContent:'center',fontSizze:20, p:3}}>Learn More <ArrowForwardIosIcon/> </Button>
+          <Divider sx={{p:1}}/>
+          <br/>
+         <Paper sx={{p:2}}>
+          <Typography sx={{fontSize:20,color:'#000000'}}>
+            -See us without a prescription
+            <br/>
+            -Individualized Physical Therapy experience
+            <br/>
+            -Accepts most Insurances
+            <br/>
+            -Appointment Available within 24 hours 
+          </Typography>
+          
+         </Paper>
         </Typography>
         
         <Box component="img" sx={{width: '25%' , height: '25%'}}

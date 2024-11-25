@@ -49,11 +49,11 @@ function ResponsiveMenu() {
         >
           <ButtonBase sx={{ width: 140 }} href="/">
             <img
-              src="logo.png"
-              alt="logo"
+              src="imperium_logo.jpg"
+              alt="imperium physical therapy and performance PTP logo"
               justifyContent="center"
-              width="100"
-              height="90"
+              width="80%"
+              height="96"
             />
           </ButtonBase>
         </Box>

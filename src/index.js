@@ -7,11 +7,15 @@ import Main from './Main';
 import About from './About';
 import Error from './Error';
 import OurTeam from './OurTeam';
-import Blog1 from './Blog1';
 import Footer from './Footer';
 import Bloglist from './Bloglist.js';
 import ResponsiveMenu from './ResponsiveMenu.js';
 import Contact from './Contact.js';
+
+//import blog pages to link to
+import Blog1 from './Blog1.js';
+import Blog2 from './Blog2.js';
+
 
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -19,6 +23,7 @@ import { green, deepPurple,  } from '@mui/material/node/colors';
 import { Button } from '@mui/material';
 // adds ability to link pages
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
+
 
 
 
@@ -123,17 +128,25 @@ const router = createBrowserRouter([
     
   },
   {
-    path: "/blog1",
-    element: <Blog1 />,  
-    
-  },
-  {
     path: "/bloglist",
     element: <Bloglist />, 
   },
   {
     path: "/contact",
     element: <Contact />, 
+  },
+
+  //blogs
+
+  {
+    path: "/blog1",
+    element: <Blog1 />,  
+    
+  },
+  {
+    path: "/blog2",
+    element: <Blog2 />,  
+    
   },
   
 ]);
