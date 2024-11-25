@@ -21,7 +21,7 @@ export const postData = [
 
   },
   {
-    img: "https://imperiumptp.com/wp-content/uploads/2023/04/thumbnail_IMG_2514-square.jpg",
+    img: "ACL_INJURY.jpg",
     alt: "BFR_for_ACLr",
     title: "Blood Flow Restriction Training in Post-Operative ACL Reconstruction Surgery",
     href: "blog2",
@@ -56,7 +56,7 @@ function Bloglist() {
         {postData.map((post, index) => (
             <div key={index}>
               <Button  sx={{display:'flex', flexDirection:['column','column','row']}} href={post.href}>
-                <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
+                <Box component="img" sx={{ width: ['20%', '20%', '10%'], height: ['20%', '20%', '10%'],}}
                   alt={post.alt}
                   src={post.img}/>
                   <Typography sx={{textAlign:'center', p:1}}>{post.title}</Typography>

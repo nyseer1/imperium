@@ -58,8 +58,9 @@ function Blog2() {
         </Typography>
 
         {/* blog post image */}
-        <Box sx={{backgroundImage: 'url("Low_back_pain.jpg")', backgroundSize: "cover",backgroundRepeat: "no-repeat",width: [320, 320, 400],height: [210, 210, 240],}}/>
-
+        <Box component="img" sx={{width: '25%' , height: '25%', p:2}}
+                  alt={"ACL_Anatomy"}
+                  src={"ACL_UPCLOSE.jpg"}/>
       </Box>
 
       {/* container to center divider */}

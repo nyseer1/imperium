@@ -41,7 +41,7 @@ function Blog1() {
         sx={{p: 2,
           display: "flex", //creates flexbox to arrange content
           flexDirection: ["column", "column", "row", "row", "row"], //each new content is added in a row if screen > md, columb if <= md
-          justifyContent: "space-evenly", //content starts at the end of the line (right)
+          justifyContent: "center", //content starts at the end of the line (right)
           flexGrow: 1, //stretch size of elements to fill unused space on line
           alignItems: "center", //centers items inside box horizontally (for when column)
         }}
@@ -55,8 +55,9 @@ function Blog1() {
         </Typography>
 
         {/* blog post image */}
-        <Box sx={{backgroundImage: 'url("Low_back_pain.jpg")', backgroundSize: "cover",backgroundRepeat: "no-repeat",width: [320, 320, 400],height: [210, 210, 240],}}/>
-
+        <Box component="img" sx={{width: '25%' , height: '25%', p:2}}
+                  alt={"Lower Back Pain(LBP)"}
+                  src={"LBP.jpeg"}/>
       </Box>
 
       {/* container to center divider */}
@@ -70,7 +71,7 @@ function Blog1() {
           flexDirection: ["column", "column", "row", "row", "row"], //each new content is added in a row if screen > md, columb if <= md
           justifyContent: "center", //content starts at the end of the line (right)
           flexGrow: 1, //stretch size of elements to fill unused space on line
-          alignItems: "flex-start", //centers items inside box horizontally (for when column)
+          alignItems: ['center', 'center', "flex-start"], //centers items inside box horizontally (for when column)
         }}
       >
         {/* blog post*/}
@@ -114,13 +115,13 @@ function Blog1() {
        <Box sx={{        display: 'flex', //creates flexbox to arrange content
         flexDirection: 'column', //each new content is added in a row
         justifyContent: 'flex-end', //content starts at the end of the line (right)
-        flexGrow:1,fontSize:1, width: ['100%','20%','40%']}}>
+        flexGrow:1,fontSize:1, width: ['100%','80%','40%']}}>
 
             <Typography sx={{fontSize:25, textAlign:'center'}}>Recent Blog Posts</Typography>
 
             {postData.map((post, index) => (
             <div key={index}>
-              <Button  sx={{display:'flex', flexDirection:['column','column','row']}} href={post.href}>
+              <Button  sx={{display:'flex', flexDirection:'row'}} href={post.href}>
                 <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
                   alt={post.alt}
                   src={post.img}/>

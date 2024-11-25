@@ -40,16 +40,6 @@ function Main() {
         <Box component="img" sx={{width: '25%' , height: '25%'}}
                   alt={"Physical Therapy Example"}
                   src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}/>
-        <Box
-          sx={{
-            backgroundImage: 'url("pt1.jpg")',
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            
-            
-          }}
-        ></Box>
-        
         <Typography sx={{ fontSize: 20, textAlign: "center", p:1 , color:'#000000',width: [400,400,800],}}>
           Welcome to
           <Typography sx={{ fontSize: 50, textAlign: "center", p:1 }}>
