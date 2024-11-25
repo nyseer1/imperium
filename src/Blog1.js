@@ -116,7 +116,7 @@ function Blog1() {
         justifyContent: 'flex-end', //content starts at the end of the line (right)
         flexGrow:1,fontSize:1, width: ['100%','20%','40%']}}>
 
-            <Typography sx={{fontSize:20, textAlign:'center'}}>Recent Blog Posts</Typography>
+            <Typography sx={{fontSize:25, textAlign:'center'}}>Recent Blog Posts</Typography>
 
             {postData.map((post, index) => (
             <div key={index}>
@@ -131,7 +131,7 @@ function Blog1() {
           ))}
             <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
             
-            <Button href="bloglist" sx={{display:'flex', flexDirection:'row',justifyContent:'space-between',fontSize:20}}>More Posts<ArrowForwardIosIcon/> </Button>
+            <Button href="bloglist" sx={{display:'flex', flexDirection:'row',justifyContent:'center',fontSize:23}}><Typography sx={{fontsize:25, p:1}}>More Posts</Typography><ArrowForwardIosIcon/> </Button>
 
 
 

@@ -66,7 +66,7 @@ function ResponsiveMenu() {
             <ButtonBase href="/ourteam">Our Team</ButtonBase>
             <ButtonBase>Performance Training</ButtonBase>
             <ButtonBase href='/blog1'>Blog</ButtonBase>
-            <ButtonBase>
+            <ButtonBase href='/contact'>
               <Box
                 sx={{
                   background: "#",
@@ -131,7 +131,7 @@ function ResponsiveMenu() {
         <Button sx={{ fontSize: [5, 10] }} href="/blog1" onClick={handleClose}>
           Blog
         </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
+        <Button sx={{ fontSize: [5, 10] }} href="/contact" onClick={handleClose}>
           Contact Us
         </Button>
       </Menu>

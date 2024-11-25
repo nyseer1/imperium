@@ -9,14 +9,17 @@ import Error from './Error';
 import OurTeam from './OurTeam';
 import Blog1 from './Blog1';
 import Footer from './Footer';
+import Bloglist from './Bloglist.js';
+import ResponsiveMenu from './ResponsiveMenu.js';
+import Contact from './Contact.js';
+
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { green, deepPurple,  } from '@mui/material/node/colors';
 import { Button } from '@mui/material';
 // adds ability to link pages
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
-import Bloglist from './Bloglist.js';
-import ResponsiveMenu from './ResponsiveMenu.js';
+
 
 
 // creates custom theme using mui
@@ -53,7 +56,7 @@ const theme = createTheme({
       sx:{fontSize:30}
     },
     MuiButtonBase:{
-      sx:{fontSize: 18, textTransform:'capitalize', color:'#000000', p:3,
+      sx:{fontSize: [10,10,14,18], textTransform:'capitalize', color:'#000000', p:3,
         display: 'flex', //creates flexbox to arrange content
         flexDirection: 'column', //each new content is added in a row
         justifyContent: 'space-evenly', //content starts at the end of the line(right)
@@ -128,6 +131,11 @@ const router = createBrowserRouter([
     path: "/bloglist",
     element: <Bloglist />, 
   },
+  {
+    path: "/contact",
+    element: <Contact />, 
+  },
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

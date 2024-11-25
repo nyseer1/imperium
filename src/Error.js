@@ -30,7 +30,7 @@ function Error(){
           alignItems:'center', //centers items inside box horizontally (for when column)
           }}>
         <Typography sx={{fontSize:50, textAlign:'center'}}>PAGE NOT FOUND<br/>
-          <Button href="/" sx={{display:'flex', flexDirection:'row'}}>Back To Home<UndoIcon/></Button>
+          <Button href="/" sx={{display:'flex', flexDirection:'row', justifyContent:'center'}}><Typography sx={{p:1, fontSize:25}}>Back To Home</Typography><UndoIcon/></Button>
         </Typography>
           
     </Box>
