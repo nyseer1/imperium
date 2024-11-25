@@ -11,6 +11,23 @@ import Divider from '@mui/material/Divider';
 
 //blog pages
 
+export const postData = [
+  {
+    img: "https://painhealth.csse.uwa.edu.au/wp-content/uploads/2016/04/painhealth-low-back-pain.jpg",
+    alt: "Low_Back_Pain_(LBP)",
+    title: "Misconceptions of LBP",
+    href: "blog1",
+
+
+  },
+  {
+    img: "https://imperiumptp.com/wp-content/uploads/2023/04/thumbnail_IMG_2514-square.jpg",
+    alt: "BFR_for_ACLr",
+    title: "Blood Flow Restriction Training in Post-Operative ACL Reconstruction Surgery",
+    href: "blog2",
+  },
+];
+
 function Bloglist() {
 
   return (
@@ -36,76 +53,18 @@ function Bloglist() {
         }}
       >
         <Box sx={{width:900}}>
-          <Button  sx={{fontSize: 30, display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
-                <Box sx={{
-                backgroundImage: 'url("pt1.jpg")',
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: [200, 200, 240],
-                height: [80, 80, 120],
-                }}></Box>
-                Post Name
-          </Button>
-          <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-              <Button  sx={{fontSize: 30, display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
-                  <Box sx={{
-                  backgroundImage: 'url("pt1.jpg")',
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  width: [200, 200, 240],
-                  height: [80, 80, 120],
-                  }}></Box>
-                  Post Name
+        {postData.map((post, index) => (
+            <div key={index}>
+              <Button  sx={{display:'flex', flexDirection:['column','column','row']}} href={post.href}>
+                <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
+                  alt={post.alt}
+                  src={post.img}/>
+                  <Typography sx={{textAlign:'center', p:1}}>{post.title}</Typography>
               </Button>
-              <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-              <Button  sx={{fontSize: 30, display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
-                  <Box sx={{
-                  backgroundImage: 'url("pt1.jpg")',
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  width: [200, 200, 240],
-                  height: [80, 80, 120],
-                  }}></Box>
-                  Post Name
-              </Button>
-              <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-              <Button  sx={{fontSize: 30, display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
-                  <Box sx={{
-                  backgroundImage: 'url("pt1.jpg")',
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  width: [200, 200, 240],
-                  height: [80, 80, 120],
-                  }}></Box>
-                  Post Name
-              </Button>
-              <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-              <Button  sx={{fontSize: 30, display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
-                  <Box sx={{
-                  backgroundImage: 'url("pt1.jpg")',
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  width: [200, 200, 240],
-                  height: [80, 80, 120],
-                  }}></Box>
-                  Post Name
-              </Button>
-              <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-              <Button  sx={{fontSize: 30, display:'flex', flexDirection:['column','column','row',]}} href="/blog/2">
-                  <Box sx={{
-                  backgroundImage: 'url("pt1.jpg")',
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  width: [200, 200, 240],
-                  height: [80, 80, 120],
-                  }}></Box>
-                  Post Name
-              </Button>
-              <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
+              
+            </div>
+          ))}
           </Box>
-          <ButtonGroup sx={{width: '1%'}}>
-                <ButtonBase href="/bloglinkspage">...</ButtonBase>
-            </ButtonGroup>
 
 
         

@@ -13,7 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu'; //for menu icon
 
 // to use themes
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import UndoIcon from '@mui/icons-material/Undo';
 
 function Error(){
 
@@ -29,8 +29,10 @@ function Error(){
           flexGrow:1, //stretch size of elements to fill unused space on line
           alignItems:'center', //centers items inside box horizontally (for when column)
           }}>
-        <Typography sx={{fontSize:30, textAlign:'center'}}>PAGE NOT FOUND<br/>
-          <Button href="/">Back To Home</Button></Typography>
+        <Typography sx={{fontSize:50, textAlign:'center'}}>PAGE NOT FOUND<br/>
+          <Button href="/" sx={{display:'flex', flexDirection:'row'}}>Back To Home<UndoIcon/></Button>
+        </Typography>
+          
     </Box>
     
       

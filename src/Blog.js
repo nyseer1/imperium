@@ -18,24 +18,11 @@ import Bloglist from "./Bloglist";
 // for arrow icon
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
+import { postData } from "./Bloglist";
+
 function Blog() {
 
-  const postData = [
-    {
-      img: "https://painhealth.csse.uwa.edu.au/wp-content/uploads/2016/04/painhealth-low-back-pain.jpg",
-      alt: "Low_Back_Pain_(LBP)",
-      title: "Misconceptions of LBP",
-      href: "blog1",
-
-
-    },
-    {
-      img: "https://imperiumptp.com/wp-content/uploads/2023/04/thumbnail_IMG_2514-square.jpg",
-      alt: "BFR_for_ACLr",
-      title: "Blood Flow Restriction Training inPost-Operative ACL Reconstruction Surgery",
-      href: "blog2",
-    },
-  ];
+  
 
   return (
     // basic div tag that uses css
@@ -112,12 +99,12 @@ function Blog() {
              {/* section 6 */}
              <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>6. Misconception: Bed Rest Accelerates Recovery.</Typography>
              Bed rest was once commonly prescribed for low back pain, but research now emphasizes the detrimental effects of prolonged inactivity. Physical therapists advocate for an active approach that includes targeted exercises, mobilization, and posture education to promote recovery and prevent recurrence.
-             <br/><br/>
+             
              {/* section 7 */}
-             <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>2. Misconception: Imaging Always Reveals the Underlying Cause.</Typography>
-            Many individuals assume that diagnostic imaging, such as X-rays or MRIs, will always pinpoint the cause of low back pain. However, research indicates that structural abnormalities are often present in individuals without any pain symptoms. Physical therapists emphasize the need for a comprehensive assessment that considers functional limitations and movement patterns rather than relying solely on imaging results.
-            <Divider orientation="horizontal" variant="middle" flexItem sx={{p:1,width: ['90%']}}/>
-            
+          </Paper>
+          <br/>
+          <Paper sx={{fontSize: 20,width: ['100%', '100%', 500, 700],height: ['100%'],p: 2,bgcolor: '#eeeeee',}}>
+            Dispelling misconceptions about low back pain is crucial for effective management and improved outcomes. Current research aligns with the principles of physical therapy, emphasizing the importance of movement, personalized care, and a holistic approach to address low back pain. If you or someone you know is dealing with low back pain, consulting a physical therapist can provide valuable insights and evidence-based strategies for a comprehensive and effective recovery.
           </Paper>
 
        
@@ -137,20 +124,14 @@ function Blog() {
                 <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
                   alt={post.alt}
                   src={post.img}/>
-                  {post.title}
+                  <Typography sx={{textAlign:'center', p:1}}>{post.title}</Typography>
               </Button>
               
             </div>
           ))}
-            <Button  sx={{display:'flex', flexDirection:['column','column','row']}} href="/blog2">
-                <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
-                  alt="The house from the offer."
-                  src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"/>
-                Post Name
-            </Button>
             <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
             
-            <Button href="bloglist" sx={{fontSize:20}}>More Posts <ArrowForwardIosIcon/> </Button>
+            <Button href="bloglist" sx={{display:'flex', flexDirection:'row',justifyContent:'space-between',fontSize:20}}>More Posts<ArrowForwardIosIcon/> </Button>
 
 
 

@@ -98,31 +98,6 @@ function About() {
             empowering them with the knowledge and skills to optimize their
             physical potential. Our vision is to develop championship athletes
             and to revitalize active lifestyles.
-
-            <br/><br/><Divider/><br/><br/>
-            <Typography sx={{color:'#000000', fontSize:20, fontWeight:'bold'}}>Dr. Frank Prochilo</Typography>is the owner and physical therapist at Imperium Physical Therapy, a premier
-            clinic specializing in orthopedics and sports rehabilitation. With a deep passion for helping
-            patients optimize their physical performance and recover from injuries, Frank combines
-            advanced clinical expertise with a personalized approach to care.
-            <br/>
-            Frank holds a Doctorate in Physical Therapy (DPT) from SUNY Downstate Medical Center and
-            is board-certified in orthopedic physical therapy (OCS) through the American Board of Physical
-            Therapy Specialties (ABPTS). With years of experience working with athletes of all levels—from
-            weekend warriors to Division I competitors, Frank is dedicated to helping each patient achieve
-            their individual goals, whether it&#39;s returning to sport, overcoming chronic pain, or improving
-            overall function.
-            <br/>
-            Imperium Physical Therapy utilizes the latest evidence-based techniques, including manual
-            therapy, therapeutic exercise, and cutting-edge rehabilitation technology. Frank believes in
-            empowering patients through education and tailored treatment plans, ensuring that each
-            individual receives the care and support they need to recover fully and prevent future injuries.
-            <br/>
-            In addition to clinical practice, Frank is an adjunct professor at Brooklyn College and is actively
-            involved in the local sports community, offering injury prevention workshops, collaborating with
-            coaches and trainers, and has provided on-site care at sporting events. Frank’s commitment to
-            excellence and patient-centered care has earned Imperium Physical Therapy a reputation as a
-            trusted destination for orthopedic and sports rehabilitation in the area.
-
           </Typography>
           <p></p>
         </Paper>

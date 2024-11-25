@@ -11,33 +11,17 @@ import {
   ButtonBase,
   BottomNavigation,
 } from "@mui/material";
-//for menu button
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
+
+// for arrow icon
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // to use themes
 import { createTheme } from "@mui/material/styles";
 
 function Main() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  // default theme to get breakpoint values
-  const theme = createTheme();
-  // bool to check if the screen is breakpoint (size, ex: small sm medium md) or lower
-  const isMatch = useMediaQuery(theme.breakpoints.up("md"));
-
   return (
     // basic div tag that uses css
     <Box>
-      {/* static means the appbar will hide itself when scrolling down */}
-      
 
       {/* content */}
       <Box
@@ -75,7 +59,7 @@ function Main() {
             treatment plans to reduce pain, restore mobility and range of motion
             and to optimize functional potential.
           </Paper>
-          <Button href="/ourteam">Learn More</Button>
+          <Button href="/ourteam" sx={{display:'flex', flexDirection:'row',fontSizze:20}}>Learn More <ArrowForwardIosIcon/> </Button>
         </Typography>
       </Box>
       <br/><br/><br/><br/><br/><br/><br/><br/><br/>

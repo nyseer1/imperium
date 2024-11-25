@@ -20,8 +20,11 @@ import {
   BottomNavigationAction,
   BottomNavigation,
   Typography,
+  Button,
+  ButtonBase,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+
 export function Footer() {
   const [value, setValue] = React.useState(0);
 
@@ -47,12 +50,17 @@ export function Footer() {
         <Grid size={{ xs: 2, sm: 2, md: 2 }}>
           <Container sx={{ color: "black" }}>
             <b>CONTACT INFO</b>
-            <br></br>
-            <br></br>
+            <br/>
+            <br/>
+            <b>Address</b>
             <address style={{ textDecoration: "none" }}>
-              1897 Wantagh Ave<br></br>
-              Wantagh, NY 11793<br></br>
-              <br></br>
+              <ButtonBase href='https://g.co/kgs/oaHpMAF'>
+
+                1897 Wantagh Ave<br/>
+                Wantagh, NY 11793<br/>
+              </ButtonBase>
+              <br/>
+              <br/>
               <b>Phone:</b>{" "}
               <Link
                 sx={{ color: "black", fontSize: 16, textDecoration: "none" }}
@@ -61,7 +69,7 @@ export function Footer() {
                 {" "}
                 (516) 490-1480
               </Link>
-              <br></br>
+              <br/>
               <b>Fax:</b>{" "}
               <Link
                 sx={{ color: "black", fontSize: 16, textDecoration: "none" }}
@@ -70,7 +78,7 @@ export function Footer() {
                 {" "}
                 (516) 490-4009
               </Link>
-              <br></br>
+              <br/>
             </address>
           </Container>
         </Grid>
@@ -81,7 +89,7 @@ export function Footer() {
           >
             <b>WORKING HOURS</b>
 
-            <List sx={{ color: "black", fontSize: 16, textDecoration: "none" }}>
+            <List sx={{ color: "black", fontSize: 16, textDecoration: "none"}}>
               <ListItem
                 sx={{ color: "black", fontSize: 16, textDecoration: "none" }}
                 disablePadding
