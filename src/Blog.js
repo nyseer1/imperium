@@ -20,6 +20,22 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function Blog() {
 
+  const postData = [
+    {
+      img: "https://painhealth.csse.uwa.edu.au/wp-content/uploads/2016/04/painhealth-low-back-pain.jpg",
+      alt: "Low_Back_Pain_(LBP)",
+      title: "Misconceptions of LBP",
+      href: "blog1",
+
+
+    },
+    {
+      img: "https://imperiumptp.com/wp-content/uploads/2023/04/thumbnail_IMG_2514-square.jpg",
+      alt: "BFR_for_ACLr",
+      title: "Blood Flow Restriction Training inPost-Operative ACL Reconstruction Surgery",
+      href: "blog2",
+    },
+  ];
 
   return (
     // basic div tag that uses css
@@ -111,9 +127,21 @@ function Blog() {
        <Box sx={{        display: 'flex', //creates flexbox to arrange content
         flexDirection: 'column', //each new content is added in a row
         justifyContent: 'flex-end', //content starts at the end of the line (right)
-        flexGrow:1,fontSize:1, width: ['100%','100%','80%']}}>
+        flexGrow:1,fontSize:1, width: ['100%','20%','40%']}}>
 
             <Typography sx={{fontSize:20, textAlign:'center'}}>Recent Blog Posts</Typography>
+
+            {postData.map((post, index) => (
+            <div key={index}>
+              <Button  sx={{display:'flex', flexDirection:['column','column','row']}} href={post.href}>
+                <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
+                  alt={post.alt}
+                  src={post.img}/>
+                  {post.title}
+              </Button>
+              
+            </div>
+          ))}
             <Button  sx={{display:'flex', flexDirection:['column','column','row']}} href="/blog2">
                 <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
                   alt="The house from the offer."

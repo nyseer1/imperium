@@ -58,6 +58,7 @@ function About() {
       title: "Pic 2",
     },
   ];
+  
 
   return (
     // basic div tag that uses css
