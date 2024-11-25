@@ -20,7 +20,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import { postData } from "./Bloglist";
 
-function Blog() {
+function Blog1() {
 
   
 
@@ -103,7 +103,7 @@ function Blog() {
              {/* section 7 */}
           </Paper>
           <br/>
-          <Paper sx={{fontSize: 20,width: ['100%', '100%', 500, 700],height: ['100%'],p: 2,bgcolor: '#eeeeee',}}>
+          <Paper sx={{fontSize: 25,width: ['100%', '100%', 500, 700],height: ['100%'],p: 2,bgcolor: '#eeeeee',}}>
             Dispelling misconceptions about low back pain is crucial for effective management and improved outcomes. Current research aligns with the principles of physical therapy, emphasizing the importance of movement, personalized care, and a holistic approach to address low back pain. If you or someone you know is dealing with low back pain, consulting a physical therapist can provide valuable insights and evidence-based strategies for a comprehensive and effective recovery.
           </Paper>
 
@@ -145,4 +145,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Blog1;

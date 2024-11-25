@@ -7,7 +7,7 @@ import Main from './Main';
 import About from './About';
 import Error from './Error';
 import OurTeam from './OurTeam';
-import Blog from './Blog';
+import Blog1 from './Blog1';
 import Footer from './Footer';
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -121,7 +121,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/blog1",
-    element: <Blog />,  
+    element: <Blog1 />,  
     
   },
   {
