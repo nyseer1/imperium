@@ -4,28 +4,12 @@ import "@fontsource/roboto/300.css";
 import { Masonry } from "@mui/lab";
 //various components
 import {
-  Breadcrumbs,
-  Grid2,
-  Paper,
-  Toolbar,
-  Container,
-  Button,
-  Link,
-  Typography,
-  ButtonGroup,
   Box,
-  ListItem,
-  AppBar,
-  ImageListItemBar,
-  useMediaQuery,
-  ButtonBase,
-  BottomNavigation,
+  Paper,
   styled,
-  Divider,
+  Typography
 } from "@mui/material";
 
-import ImageList from "@mui/material/node/ImageList";
-import ImageListItem from "@mui/material/node/ImageListItem";
 
 //for menu button
 import Menu from "@mui/material/Menu";
@@ -50,15 +34,15 @@ const Label = styled(Paper)(({ theme }) => ({
 function About() {
   const itemData = [
     {
-      img: "https://imperiumptp.com/wp-content/uploads/2023/04/IMG_5143-scaled-square.jpg",
+      img: "Imperium_Physical_Therapy_and_Performance_Building.jpg",
       title: "Pic 1",
     },
     {
-      img: "https://imperiumptp.com/wp-content/uploads/2023/04/thumbnail_IMG_2514-square.jpg",
+      img: "Imperium_Physical_Therapy_and_Performance_Building_3.jpg",
       title: "Pic 2",
     },
   ];
-  
+
 
   return (
     // basic div tag that uses css
@@ -134,7 +118,7 @@ function About() {
           ))}
         </Masonry>
       </Box>
-        
+
       </Box>
 
       {/* <TestScreenSmallOrLower /> */}
