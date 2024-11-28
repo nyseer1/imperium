@@ -16,6 +16,8 @@ import Contact from './Contact.js';
 import Blog1 from './Blog1.js';
 import Blog2 from './Blog2.js';
 
+//debug page
+import Debug from './Debug.js';
 
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -150,6 +152,11 @@ const router = createBrowserRouter([
   {
     path: "/blog2",
     element: <Blog2 />,
+
+  },
+  {
+    path: "/debug",
+    element: <Debug />,
 
   },
 
