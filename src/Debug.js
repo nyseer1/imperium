@@ -20,6 +20,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { createTheme } from "@mui/material/styles";
 import { Circle } from "@mui/icons-material";
 
+import './index.css';
 function Debug() {
   return (
     // basic div tag that uses css
@@ -39,7 +40,8 @@ function Debug() {
         
         <Box component="img" sx={{width: '25%' , height: '25%'}}
                   alt={"Physical Therapy Example"}
-                  src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}/>
+                  src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}
+                  />
                   {/* default size if small or xsmall(so small phones will always see it at their full width), force 800 at medium or higher */}
         <Typography sx={{ fontSize: 20, textAlign: "center", p:1 , color:'#000000',width: ['100%','100%',800],}}> 
           Debug Page
