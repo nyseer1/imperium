@@ -1,4 +1,7 @@
-import React from "react";
+//for mobile zoom
+import React, { useState } from "react";
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
+
 //various components
 import {
   Paper,
@@ -20,10 +23,36 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { createTheme } from "@mui/material/styles";
 import { Circle } from "@mui/icons-material";
 
-import './index.css';
+
+
+
 function Debug() {
+
+  const [scale, setScale] = useState(1);
+
+  const handleZoomChange = (newScale) => {
+    setScale(newScale);
+  };
+
+
+
   return (
-    // basic div tag that uses css
+
+    <TransformWrapper 
+      initialScale={1}
+      minScale={0.5}
+      maxScale={3}
+      onZoomChange={handleZoomChange}
+    >
+      {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
+        <React.Fragment>
+          <div style={{ position: 'fixed', bottom: 20, right: 20 }}>
+            <button onClick={zoomIn}>Zoom In</button>
+            <button onClick={zoomOut}>Zoom Out</button>
+            <button onClick={resetTransform}>Reset</button>
+          </div>
+          <TransformComponent>
+            {/* Your content to be zoomed goes here */}
     <Box>
 
       {/* content */}
@@ -131,6 +160,11 @@ function Debug() {
       
       <br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </Box>
+          </TransformComponent>
+        </React.Fragment>
+      )}
+    </TransformWrapper>
+    
   );
 }
 
