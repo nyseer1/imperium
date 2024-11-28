@@ -19,10 +19,10 @@ import Blog2 from './Blog2.js';
 
 // ability to access mui components
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { green, deepPurple,  } from '@mui/material/node/colors';
+import { green, deepPurple } from '@mui/material/node/colors';
 import { Button } from '@mui/material';
 // adds ability to link pages
-import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
 
@@ -37,73 +37,77 @@ const theme = createTheme({
   // default properties of components
   components: {
     // Name of the component ⚛️
-    MuiAppBar:{
-      defaultProps:{
+    MuiAppBar: {
+      defaultProps: {
         color: 'primary', //in appbar need to use a color from the pallete
         sx: {
           height: 100,
           display: 'flex', //creates flexbox to arrange content
           flexDirection: 'row', //each new content is added in a row
-          border:1,borderColor:'#50ac54', borderTopLeftRadius:8, borderBottomLeftRadius:8,
-          }
+          border: 1, borderColor: '#50ac54', borderTopLeftRadius: 8, borderBottomLeftRadius: 8,
+        }
       }
     },
-    MuiBottomNavigation:{
-      defaultProps:{
-        sx:{
+    MuiBottomNavigation: {
+      defaultProps: {
+        sx: {
           color: 'green',
           height: 200,
         }
       }
     },
-    MuiTypography:{
-      color:'green',
-      sx:{fontSize:30}
+    MuiTypography: {
+      color: 'green',
+      sx: { fontSize: 30 }
     },
-    MuiButtonBase:{
-      sx:{fontSize: [10,10,14,18], textTransform:'capitalize', color:'#000000', p:3,
+    MuiButtonBase: {
+      sx: {
+        fontSize: [10, 10, 14, 18],
+        textTransform: 'capitalize',
+        color: '#000000',
+        p: 3,
         display: 'flex', //creates flexbox to arrange content
         flexDirection: 'column', //each new content is added in a row
         justifyContent: 'space-evenly', //content starts at the end of the line(right)
 
-       }
+      }
     },
-    MuiButtonGroup:{
-      defaultProps:{
+    MuiButtonGroup: {
+      defaultProps: {
         color: 'primary', //in appbar need to use a color from the pallete
         sx: {
           height: 100,
           display: 'flex', //creates flexbox to arrange content
           flexDirection: 'row', //each new content is added in a row
           justifyContent: 'flex-end', //content starts at the end of the line (right)
-          flexGrow:1,
-          }
+          flexGrow: 1,
+        }
       }
     },
-    MuiContainer:{
+    MuiContainer: {
       sx: {
-          p:2,
-          display: 'flex', //creates flexbox to arrange content
-          flexDirection: 'row', //each new content is added in a row
-          justifyContent: 'space-around', //content starts at the end of the line (right)
-       } //padding
+        p: 2,
+        display: 'flex', //creates flexbox to arrange content
+        flexDirection: 'row', //each new content is added in a row
+        justifyContent: 'space-around', //content starts at the end of the line (right)
+      } //padding
     },
-    MuiMenu:{
+    MuiMenu: {
       sx: {
         height: '160%',
         display: 'flex', //creates flexbox to arrange content
         flexDirection: 'column', //each new content is added in a row
         justifyContent: 'space-evenly', //content starts at the end of the line (right)
-        flexGrow:1,
-        fontSize:1,
-        }
-    },
-    MuiPaper:{
-      align:'left',
-      sx:{
-        fontSize:20,
+        flexGrow: 1,
+        fontSize: 1,
       }
-      
+    },
+    MuiPaper: {
+      align: 'left',
+      sx: {
+        fontSize: 20,
+      }
+
     }
   },
 });
@@ -112,55 +116,55 @@ const theme = createTheme({
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main theme={theme}/>,
+    element: <Main theme={theme} />,
     // if page does not match any path, goes to error page
-    errorElement: <Error />, 
-    
+    errorElement: <Error />,
+
   },
   {
     path: "/about",
     element: <About />,
-    
+
   },
   {
     path: "/ourteam",
     element: <OurTeam />,
-    
+
   },
   {
     path: "/bloglist",
-    element: <Bloglist />, 
+    element: <Bloglist />,
   },
   {
     path: "/contact",
-    element: <Contact />, 
+    element: <Contact />,
   },
 
   //blogs
 
   {
     path: "/blog1",
-    element: <Blog1 />,  
-    
+    element: <Blog1 />,
+
   },
   {
     path: "/blog2",
-    element: <Blog2 />,  
-    
+    element: <Blog2 />,
+
   },
-  
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <ResponsiveMenu/>
+      <ResponsiveMenu />
       <RouterProvider router={router} />
     </ThemeProvider>
-    
-    <Footer/>
-  </React.StrictMode> 
+
+    <Footer />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
