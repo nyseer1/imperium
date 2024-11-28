@@ -40,15 +40,17 @@ function Main() {
         <Box component="img" sx={{width: '25%' , height: '25%'}}
                   alt={"Physical Therapy Example"}
                   src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}/>
-        <Typography sx={{ fontSize: 20, textAlign: "center", p:1 , color:'#000000',width: [400,400,800],}}>
+                  {/* default size if small or xsmall(so small phones will always see it at their full width), force 800 at medium or higher */}
+        <Typography sx={{ fontSize: 20, textAlign: "center", p:1 , color:'#000000',width: ['100%','100%',800],}}> 
           Welcome to
-          <Typography sx={{ fontSize: 50, textAlign: "center", p:1 }}>
+          <Typography sx={{ fontSize: [20,20,50], textAlign: "center", p:1 }}>
             
             Imperium Physical Therapy<br/>& Performance
           </Typography>
+          {/* paper elements are always spaced out so it dosent sit directly on the box*/}
           <Paper
             sx={{
-              fontSize: 30,
+              fontSize: [16,16,30],
               
               p: 3,
             }}
@@ -58,7 +60,7 @@ function Main() {
             treatment plans to reduce pain, restore mobility and range of motion
             and to optimize functional potential.
           </Paper>
-          <Button href="/contact" sx={{display:'flex', flexDirection:'row',justifyContent:'center',fontSizze:20, p:3}}>Contact Us <ArrowForwardIosIcon/> </Button>
+          <Button href="/contact" sx={{display:'flex', flexDirection:'row',justifyContent:'center', p:3}}><Typography>Contact Us</Typography> <ArrowForwardIosIcon/> </Button>
         </Typography>
       </Box>
 
