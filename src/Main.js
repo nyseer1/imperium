@@ -32,6 +32,7 @@ function Main() {
         <title>Imperium Physical Therapy and Performance</title>
         <meta name="description" content="Professional Physical Therapy" />
         <meta name="keywords" content="ptp, pt, physical therapy, professional" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
       </Helmet>
       
 
