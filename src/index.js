@@ -26,6 +26,8 @@ import { Button } from '@mui/material';
 // adds ability to link pages
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+//for metadata on pages
+import { HelmetProvider } from 'react-helmet-async';
 
 
 
@@ -166,10 +168,13 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <ResponsiveMenu />
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider theme={theme}>
+        <ResponsiveMenu />
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </HelmetProvider>
+    
 
     <Footer />
   </React.StrictMode>

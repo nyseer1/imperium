@@ -36,6 +36,9 @@ import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { BorderColor } from "@mui/icons-material";
 
+//for metadata
+import { Helmet } from "react-helmet-async";
+
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",
   ...theme.typography.body2,
@@ -60,6 +63,11 @@ function OurTeam() {
   return (
     // basic div tag that uses css
     <Box>
+      <Helmet>
+        <title>Our Team | Imperium Physical Therapy and Performance</title>
+        <meta name="description" content="Meet the professional physical therapists behind imperium physical therapy and performance. Our talented team and achieve your fitness goals. Join us today for a healthier you" />
+        <meta name="keywords" content="ptp, pt, physical therapy, professional" />
+      </Helmet>
       <Box sx={{ width: "100%" }}>
         {" "}
         <Typography sx={{ textAlign:'center' }} variant="h1">

@@ -50,7 +50,10 @@ function About() {
     <Box>
       <Helmet>
         <title>Imperium Physical Therapy and Performance Team</title>
-        <meta name="description" content="The professional physical therapists behind imperium physical therapy and performance" />
+        <meta name="description" content="Our Mission at Imperium physical therapy and performance is to improve the health and wellness of our clients by
+            empowering them with the knowledge and skills to optimize their
+            physical potential. Our vision is to develop championship athletes
+            and to revitalize active lifestyles. " />
         <meta name="keywords" content="ptp, pt, physical therapy, professional" />
       </Helmet>
       <Box sx={{ width: "100%" }}>

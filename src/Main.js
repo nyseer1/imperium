@@ -18,10 +18,14 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // to use themes
 import { createTheme } from "@mui/material/styles";
+import { Helmet } from "react-helmet-async";
 
-// for metadata
-import { Helmet } from 'react-helmet-async';
-
+{/* <Helmet>
+        <title>Imperium Physical Therapy and Performance</title>
+        <meta name="description" content="Professional Physical Therapy" />
+        <meta name="keywords" content="ptp, pt, physical therapy, professional" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</Helmet> */}
 
 
 function Main() {
@@ -34,6 +38,8 @@ function Main() {
         <meta name="keywords" content="ptp, pt, physical therapy, professional" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
       </Helmet>
+      
+      
       
 
       {/* content */}
