@@ -37,7 +37,7 @@ Install the dependencies and start the server.
 
 ```sh
 cd imperium
-npm install react@latest react-dom@latest react-router-dom@latest
+npm install react@latest react-dom@latest react-router-dom@latest react-helmet-async
 npm install mui @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/lab
 npm install @fontsource/roboto
 npm start
