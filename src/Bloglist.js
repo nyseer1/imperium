@@ -56,7 +56,7 @@ function Bloglist() {
         {postData.map((post, index) => (
             <div key={index}>
               <Button  sx={{display:'flex', flexDirection:['column','column','row']}} href={post.href}>
-                <Box component="img" sx={{ width: ['20%', '20%', '10%'], height: ['20%', '20%', '10%'],}}
+                <Box component="img" sx={{ width: ['20%', '20%', '10%'], height: ['20%', '20%', '10%'],borderRadius:'2%'}}
                   alt={post.alt}
                   src={post.img}/>
                   <Typography sx={{textAlign:'center', p:1}}>{post.title}</Typography>

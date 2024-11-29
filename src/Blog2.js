@@ -19,6 +19,7 @@ import Bloglist from "./Bloglist";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import { postData } from "./Bloglist";
+import { Helmet } from "react-helmet-async";
 
 function Blog2() {
 
@@ -27,6 +28,11 @@ function Blog2() {
   return (
     // basic div tag that uses css
     <Box>
+      <Helmet>
+        <title>Imperium PTP Blog | Blood Flow Restriction Training in Post-Operative ACL Reconstruction Surgery</title>
+        <meta name="description" content="Accelerating Recovery: Blood Flow Restriction Training in Post-Operative ACL Reconstruction Surgery - A Physical Therapy Breakthrough" />
+        <meta name="keywords" content="ptp, pt, physical therapy, professional, ACL, reconstruction surgery, blood flow restriction training, post-op, misconceptions" />
+      </Helmet>
 
       {/* content */}
       <Typography sx={{
@@ -58,7 +64,7 @@ function Blog2() {
         </Typography>
 
         {/* blog post image */}
-        <Box component="img" sx={{width: '25%' , height: '25%', p:2}}
+        <Box component="img" sx={{width: '25%' , height: '25%', p:2,borderRadius:'2%'}}
                   alt={"ACL_Anatomy"}
                   src={"ACL_UPCLOSE.jpg"}/>
       </Box>
@@ -119,7 +125,7 @@ function Blog2() {
             {postData.map((post, index) => (
             <div key={index}>
               <Button  sx={{display:'flex', flexDirection:['column','column','row']}} href={post.href}>
-                <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
+                <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],borderRadius:'2%'}}
                   alt={post.alt}
                   src={post.img}/>
                   <Typography sx={{textAlign:'center', p:1}}>{post.title}</Typography>

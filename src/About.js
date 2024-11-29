@@ -18,6 +18,7 @@ import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
 
 // to use themes
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Helmet } from "react-helmet-async";
 
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",
@@ -47,6 +48,11 @@ function About() {
   return (
     // basic div tag that uses css
     <Box>
+      <Helmet>
+        <title>Imperium Physical Therapy and Performance Team</title>
+        <meta name="description" content="The professional physical therapists behind imperium physical therapy and performance" />
+        <meta name="keywords" content="ptp, pt, physical therapy, professional" />
+      </Helmet>
       <Box sx={{ width: "100%" }}>
         {" "}
         <Typography sx={{ textAlign:'center' }} variant="h1">
@@ -85,6 +91,7 @@ function About() {
           </Typography>
           <p></p>
         </Paper>
+        
         <Masonry
           justifyContent="center"
           sx={{
@@ -98,23 +105,18 @@ function About() {
           columns={2}
           spacing={2}
         >
+          
           {itemData.map((item, index) => (
-            <div key={index}>
-              <img
-                srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-                src={`${item.img}?w=162&auto=format`}
+            <Box key={index}>
+              
+              <Box component="img" sx={{borderBottomLeftRadius: 4, borderBottomRightRadius: 4,
+                display: "block",borderColor: "green",
+                width:'100%', height:'100%', borderRadius:'2%'}}
                 alt={item.title}
-                loading="lazy"
-                style={{
-                  borderBottomLeftRadius: 4,
-                  borderBottomRightRadius: 4,
-                  display: "block",
-                  width: "100%",
-                  height:'100%',
-                  borderColor: "green",
-                }}
-              />
-            </div>
+                src={`${item.img}?w=162&auto=format`}
+                loading="lazy"/>
+            </Box>
+              
           ))}
         </Masonry>
       </Box>

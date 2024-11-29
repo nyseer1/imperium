@@ -37,7 +37,7 @@ function Debug() {
         }}
       >
         
-        <Box component="img" sx={{width: '25%' , height: '25%'}}
+        <Box component="img" sx={{width: '25%' , height: '25%',borderRadius:'2%'}}
                   alt={"Physical Therapy Example"}
                   src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}
                   />
@@ -111,7 +111,7 @@ function Debug() {
          </Paper>
         </Typography>
         
-        <Box component="img" sx={{width: '25%' , height: '25%'}}
+        <Box component="img" sx={{width: '25%' , height: '25%',borderRadius:'2%'}}
                   alt={"Physical Therapy Example"}
                   src={"Physical_Therapy_Example1.JPG"}/>
         <Box

@@ -110,7 +110,8 @@ const theme = createTheme({
         fontSize: 20,
       }
 
-    }
+    },
+
   },
 });
 

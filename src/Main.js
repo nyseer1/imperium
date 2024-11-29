@@ -18,12 +18,22 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // to use themes
 import { createTheme } from "@mui/material/styles";
-import { Circle } from "@mui/icons-material";
+
+// for metadata
+import { Helmet } from 'react-helmet-async';
+
+
 
 function Main() {
   return (
     // basic div tag that uses css
     <Box>
+      <Helmet>
+        <title>Imperium Physical Therapy and Performance</title>
+        <meta name="description" content="Professional Physical Therapy" />
+        <meta name="keywords" content="ptp, pt, physical therapy, professional" />
+      </Helmet>
+      
 
       {/* content */}
       <Box
@@ -37,7 +47,7 @@ function Main() {
         }}
       >
         
-        <Box component="img" sx={{width: '25%' , height: '25%'}}
+        <Box component="img" sx={{width: '25%' , height: '25%', borderRadius:'2%'}}
                   alt={"Physical Therapy Example"}
                   src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}/>
                   {/* default size if small or xsmall(so small phones will always see it at their full width), force 800 at medium or higher */}
@@ -110,18 +120,9 @@ function Main() {
          </Paper>
         </Typography>
         
-        <Box component="img" sx={{width: '25%' , height: '25%'}}
+        <Box component="img" sx={{width: '25%' , height: '25%', borderRadius:'2%'}}
                   alt={"Physical Therapy Example"}
                   src={"Physical_Therapy_Example1.JPG"}/>
-        <Box
-          sx={{
-            backgroundImage: 'url("pt1.jpg")',
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            
-            
-          }}
-        ></Box>
         
       </Box>
 

@@ -19,6 +19,7 @@ import Bloglist from "./Bloglist";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import { postData } from "./Bloglist";
+import { Helmet } from "react-helmet-async";
 
 function Blog1() {
 
@@ -27,6 +28,11 @@ function Blog1() {
   return (
     // basic div tag that uses css
     <Box>
+      <Helmet>
+        <title>Imperium PTP Blog | Misconceptions of Low Back Pain</title>
+        <meta name="description" content="Debunking Common Misconceptions About Low Back Pain(LBP): Insights from Physical Therapy and Current Research" />
+        <meta name="keywords" content="ptp, pt, physical therapy, professional, low back pain, misconceptions" />
+      </Helmet>
 
       {/* content */}
       <Typography sx={{
@@ -55,7 +61,7 @@ function Blog1() {
         </Typography>
 
         {/* blog post image */}
-        <Box component="img" sx={{width: '25%' , height: '25%', p:2}}
+        <Box component="img" sx={{width: '25%' , height: '25%', p:2,borderRadius:'2%'}}
                   alt={"Lower Back Pain(LBP)"}
                   src={"LBP.jpeg"}/>
       </Box>
@@ -125,7 +131,7 @@ function Blog1() {
                 <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
                   alt={post.alt}
                   src={post.img}/>
-                  <Typography sx={{textAlign:'center', p:1}}>{post.title}</Typography>
+                  <Typography sx={{textAlign:'center', p:1,borderRadius:'2%'}}>{post.title}</Typography>
               </Button>
               
             </div>

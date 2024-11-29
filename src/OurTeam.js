@@ -128,7 +128,7 @@ function OurTeam() {
           spacing={2}
         >
           {itemData.map((item, index) => (
-            <ImageListItem key={index} sx={{border:6, borderRadius:2.5, borderColor:'#50ac54'}}>
+            <ImageListItem key={index} sx={{border:6, borderRadius:2, borderColor:'#50ac54'}}>
               <img
                 srcSet={item.img}
                 src={item.img}
@@ -137,6 +137,7 @@ function OurTeam() {
                 style={{
                   width: "100%",
                   height:'100%',
+                  borderRadius:2,
                   
                 }}
               />
