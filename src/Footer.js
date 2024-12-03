@@ -31,15 +31,12 @@ export function Footer() {
   return (
     <Box>
       <BottomNavigation
-        sx={{
-          bgcolor: "#50ac54",
-          position: "static",
+        sx={{color:"white", backgroundColor: "green", textAlign: "center", p: 1,position: "static",
           width: "100%",
           bottom: "0%",
-          height: "1%",
-        }}
+          height: "1%", }}
       >
-        <Typography sx={{ fontSize: 20, color: 'green'}}>Imperium</Typography>
+         <Box>Imperium</Box>
       </BottomNavigation> 
       <Grid
         sx={{ p: 2, background: "#2BC942", flexGrow: 1 }}
@@ -61,7 +58,7 @@ export function Footer() {
               </ButtonBase>
               <br/>
               <br/>
-              <b>Phone:</b>{" "}
+              <b>Phone: </b>{" "}
               <Link
                 sx={{ color: "black", fontSize: 16, textDecoration: "none" }}
                 href="tel:+5164901480"
@@ -90,23 +87,20 @@ export function Footer() {
             <b>WORKING HOURS</b>
 
             <List sx={{ color: "black", fontSize: 16, textDecoration: "none"}}>
-              <ListItem
-                sx={{ color: "black", fontSize: 16, textDecoration: "none" }}
-                disablePadding
-              >
-                <b>Monday & Wednesday:</b> 8:00am – 7:00pm
+              <ListItem disablePadding>
+                <b>Monday & Wednesday:</b><Typography sx={{paddingLeft:1, paddingTop:0.5}}>8:00am – 7:00pm</Typography>
               </ListItem>
               <ListItem disablePadding>
-                <b> Tuesday & Thursday:</b> 8:00am – 3:00pm
+                <b>Tuesday & Thursday:</b><Typography sx={{paddingLeft:1, paddingTop:0.5}}>8:00am – 3:00pm</Typography>
               </ListItem>
               <ListItem disablePadding>
-                <b>Friday:</b> 8:00am – 5:00pm
+                <b>Friday:</b><Typography sx={{paddingLeft:1, paddingTop:0.5}}>8:00am – 5:00pm</Typography>
               </ListItem>
               <ListItem disablePadding>
-                <b>Saturday:</b> 8:00am – 12:00pm
+                <b>Saturday:</b><Typography sx={{paddingLeft:1, paddingTop:0.5}}>8:00am – 12:00pm</Typography>
               </ListItem>
               <ListItem disablePadding>
-                <b>Sunday:</b> CLOSED
+                <b>Sunday:</b><Typography sx={{paddingLeft:1, paddingTop:0.5}}>Closed</Typography>
               </ListItem>
             </List>
           </Container>

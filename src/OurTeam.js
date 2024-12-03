@@ -70,7 +70,7 @@ function OurTeam() {
       </Helmet>
       <Box sx={{ width: "100%" }}>
         {" "}
-        <Typography sx={{ textAlign:'center' }} variant="h1">
+        <Typography sx={{ textAlign:'center', p:1, fontSize: [30,50,80]}} variant="h1">
           Our Team
         </Typography>
         <Box
