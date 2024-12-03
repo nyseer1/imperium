@@ -108,7 +108,7 @@ function Main() {
           >
             All of the <b>specialized clinicians</b> at Imperium Physical Therapy and Performance are dedicated to provide you with the highest quality of care. 
           </Paper>
-          <Button href="/ourteam" sx={{display:'flex', flexDirection:'row',justifyContent:'center', p:3}}><Typography sx={{fontSize:[15,20,25]}}>learn more</Typography> <ArrowForwardIosIcon/> </Button>
+          <Button href="/our-team" sx={{display:'flex', flexDirection:'row',justifyContent:'center', p:3}}><Typography sx={{fontSize:[15,20,25]}}>learn more</Typography> <ArrowForwardIosIcon/> </Button>
           <Divider sx={{p:1}}/>
           <br/>
          <Paper sx={{p:2}}>

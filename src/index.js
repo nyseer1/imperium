@@ -110,7 +110,7 @@ const theme = createTheme({
       align: 'left',
       sx: {
         fontSize: 20,
-      }
+      },
 
     },
 
@@ -132,7 +132,7 @@ const router = createBrowserRouter([
 
   },
   {
-    path: "/ourteam",
+    path: "/our-team",
     element: <OurTeam />,
 
   },

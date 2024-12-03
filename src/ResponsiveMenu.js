@@ -63,7 +63,7 @@ function ResponsiveMenu() {
           <ButtonGroup>
             <ButtonBase href="/about">About</ButtonBase>
             <ButtonBase>What We Treat</ButtonBase>
-            <ButtonBase href="/ourteam">Our Team</ButtonBase>
+            <ButtonBase href="/our-team">Our Team</ButtonBase>
             <ButtonBase>Performance Training</ButtonBase>
             <ButtonBase href='/blog1'>Blog</ButtonBase>
             <ButtonBase href='/contact'>
@@ -115,23 +115,24 @@ function ResponsiveMenu() {
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
+        sx={{height:['100%']}}
       >
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
+        <Button sx={{ fontSize: [15, 12] }} href="/about" onClick={handleClose}>
           About
         </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
+        <Button sx={{ fontSize: [15, 12] }} href="/what-we-treat" onClick={handleClose}>
           What We Treat
         </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
+        <Button sx={{ fontSize: [15, 12] }} href="/our-team" onClick={handleClose}>
           Our Team
         </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/about" onClick={handleClose}>
-          Performance Training
+        <Button sx={{ fontSize: [15, 12], textAlign:'center'}} href="/performancetraining" onClick={handleClose}>
+          Performance<br/>Training
         </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/blog1" onClick={handleClose}>
+        <Button sx={{ fontSize: [15, 12] }} href="/blog1" onClick={handleClose}>
           Blog
         </Button>
-        <Button sx={{ fontSize: [5, 10] }} href="/contact" onClick={handleClose}>
+        <Button sx={{ fontSize: [15, 12] }} href="/contact" onClick={handleClose}>
           Contact Us
         </Button>
       </Menu>
