@@ -16,7 +16,7 @@ import Contact from './Contact.js';
 import Blog1 from './Blog1-Low-back-pain-m.js';
 import Blog2 from './Blog-BFR-for-ACLr.js';
 import Blog3 from './Blog-Stretch.js';
-
+import Blog4 from './Blog-Rotator-Cuff.js';
 
 //debug page
 import Debug from './Debug.js';
@@ -164,6 +164,12 @@ const router = createBrowserRouter([
     element: <Blog3 />,
 
   },
+  {
+    path: "/blog4",
+    element: <Blog4 />,
+
+  },
+
 
   // debug
   {
