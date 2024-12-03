@@ -64,6 +64,7 @@ function Main() {
             
             Imperium Physical Therapy<br/>& Performance
           </Typography>
+
           {/* paper elements are always spaced out so it dosent sit directly on the box*/}
           <Paper
             sx={{
@@ -72,12 +73,12 @@ function Main() {
               p: 3,
             }}
           >
-            We are a team of <b>licensed and experienced physical therapists </b>
+            We are a team of licensed and experienced physical therapists
             dedicated to providing quality healthcare and individualized
             treatment plans to reduce pain, restore mobility and range of motion
             and to optimize functional potential.
           </Paper>
-          <Button href="/contact" sx={{display:'flex', flexDirection:'row',justifyContent:'center', p:3}}><Typography sx={{fontSize:[15,20,25]}}>Contact Us</Typography> <ArrowForwardIosIcon/> </Button>
+          <Button href="/contact" sx={{display:'flex', flexDirection:'row',justifyContent:'center', p:3}}><Typography >Contact Us</Typography> <ArrowForwardIosIcon/> </Button>
         </Typography>
       </Box>
 
@@ -106,20 +107,20 @@ function Main() {
               p: 3,
             }}
           >
-            All of the <b>specialized clinicians</b> at Imperium Physical Therapy and Performance are dedicated to provide you with the highest quality of care. 
+            All of the specialized clinicians at Imperium Physical Therapy and Performance are dedicated to provide you with the highest quality of care. 
           </Paper>
-          <Button href="/our-team" sx={{display:'flex', flexDirection:'row',justifyContent:'center', p:3}}><Typography sx={{fontSize:[15,20,25]}}>learn more</Typography> <ArrowForwardIosIcon/> </Button>
+          <Button href="/ourteam" sx={{display:'flex', flexDirection:'row',justifyContent:'center', p:3}}><Typography sx={{fontSize:[20,30,50]}}>learn more</Typography> <ArrowForwardIosIcon/> </Button>
           <Divider sx={{p:1}}/>
           <br/>
          <Paper sx={{p:2}}>
           <Typography sx={{fontSize:20,color:'#000000'}}>
-            - See us without a prescription
+            -See us without a prescription
             <br/>
-            - Individualized Physical Therapy experience
+            -Individualized Physical Therapy experience
             <br/>
-            - Accepts most Insurances
+            -Accepts most Insurances
             <br/>
-            - Appointment Available within 24 hours 
+            -Appointment Available within 24 hours 
           </Typography>
           
          </Paper>

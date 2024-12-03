@@ -61,6 +61,7 @@ function ResponsiveMenu() {
         {/*conditional rendering, if screen > md render , if <= md render this*/}
         {isMatch ? (
           <ButtonGroup>
+            <ButtonBase href="/">Home</ButtonBase>
             <ButtonBase href="/about">About</ButtonBase>
             <ButtonBase>What We Treat</ButtonBase>
             <ButtonBase href="/our-team">Our Team</ButtonBase>
@@ -117,6 +118,9 @@ function ResponsiveMenu() {
         }}
         sx={{height:['100%']}}
       >
+        <Button sx={{ fontSize: [15, 12] }} href="/" onClick={handleClose}>
+          Home
+        </Button>
         <Button sx={{ fontSize: [15, 12] }} href="/about" onClick={handleClose}>
           About
         </Button>
@@ -148,6 +152,7 @@ function ResponsiveMenu() {
         }}
       >
       </BottomNavigation>
+      <Typography sx={{color:'#aa0022', fontSize:30, textAlign:'center'}}>Website Under Construction</Typography>
     </Box>
   );
 }

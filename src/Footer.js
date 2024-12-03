@@ -107,7 +107,7 @@ export function Footer() {
         </Grid>
       </Grid>
 
-      <Box sx={{color:"white", backgroundColor: "green", textAlign: "center", p: 1 }}>
+      <Box sx={{color:"white", backgroundColor: "green", textAlign: "center", p:1,}}>
         © 2024 IMPERIUM PTP
         <BottomNavigation
           showLabels
