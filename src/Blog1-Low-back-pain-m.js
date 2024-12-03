@@ -36,11 +36,11 @@ function Blog1() {
 
       {/* content */}
       <Typography sx={{
-        fontSize: 30,
+        fontSize: [20,25,30],
         fontWeight: 900,
         textAlign: 'center',
         p:2,
-      }} >Misconceptions of Low Back Pain</Typography>
+      }} >Misconceptions<br/>of Low Back Pain</Typography>
 
       {/* blog content (description and image) */}
       <Box
@@ -53,11 +53,12 @@ function Blog1() {
         }}
       >
         {/* blog post descriprion */}
-        <Typography sx={{ fontSize: 30, textAlign: "center", p:2 }}>
-          <Paper sx={{fontSize: 20,width: ['100%', '100%', 500, 700],height: ['100%'],p: 2,bgcolor: '#eeeeee',}}>
-            <Typography sx={{fontSize:30, fontWeight: '900', color:'#000000'}}>Debunking Common Misconceptions About Low Back Pain(LBP): Insights from Physical Therapy and Current Research</Typography>
+        <Paper sx={{fontSize: [15,20,25],width: ['90%', '90%', 500, 700],height: ['100%'],p: 2,bgcolor: '#eeeeee',}}>
+            <Typography sx={{fontSize:[20,25,30], fontWeight: '900', color:'#000000'}}>Debunking Common Misconceptions About Low Back Pain(LBP): Insights from Physical Therapy and Current Research</Typography>
             Low back pain is a prevalent condition that affects millions of people worldwide. Unfortunately, misconceptions about its causes and treatments persist, leading to ineffective management and prolonged suffering. In this article, we'll explore some common misconceptions surrounding low back pain from a physical therapy standpoint, backed by insights from current research.
           </Paper>
+        <Typography sx={{ fontSize: 30, textAlign: "center", p:2 }}>
+          
         </Typography>
 
         {/* blog post image */}
@@ -80,9 +81,9 @@ function Blog1() {
           alignItems: ['center', 'center', "flex-start"], //centers items inside box horizontally (for when column)
         }}
       >
-        {/* blog post*/}
-        <Typography sx={{ fontSize: 30, textAlign: "center", p:2 }}>
-          <Paper sx={{fontSize: 15, width: ['100%','98%','80%'], p: 2,}}>
+      {/* blog post*/}
+      <Box>
+        <Paper sx={{fontSize: 15, width: ['90%','98%','80%'], p: 2,}}>
             {/* section 1 */}
             <Typography sx={{fontSize:20, fontWeight: '900', color:'#000000'}}>1. Misconception: Rest is the Best Treatment for Low Back Pain.</Typography>
             Contrary to the belief that prolonged rest is the solution, current research highlights the importance of early and gradual movement for low back pain. Physical therapists advocate for active approaches, such as specific exercises and movement therapies, to improve flexibility and strengthen the muscles supporting the spine.
@@ -113,9 +114,9 @@ function Blog1() {
           <Paper sx={{fontSize: 25,width: ['100%', '100%', 500, 700],height: ['100%'],p: 2,bgcolor: '#eeeeee',}}>
             Dispelling misconceptions about low back pain is crucial for effective management and improved outcomes. Current research aligns with the principles of physical therapy, emphasizing the importance of movement, personalized care, and a holistic approach to address low back pain. If you or someone you know is dealing with low back pain, consulting a physical therapist can provide valuable insights and evidence-based strategies for a comprehensive and effective recovery.
           </Paper>
+      </Box>
 
        
-       </Typography>
        
        {/* blog links */}
        <Box sx={{        display: 'flex', //creates flexbox to arrange content
@@ -127,7 +128,7 @@ function Blog1() {
 
             {postData.map((post, index) => (
             <div key={index}>
-              <Button  sx={{display:'flex', flexDirection:'row'}} href={post.href}>
+              <Button  sx={{display:'flex', flexDirection:'row', fontsize:[20,25,30]}} href={post.href}>
                 <Box component="img" sx={{ width: [50, 50, 60], height: [20, 20, 30],}}
                   alt={post.alt}
                   src={post.img}/>
