@@ -13,8 +13,8 @@ import ResponsiveMenu from './ResponsiveMenu.js';
 import Contact from './Contact.js';
 
 //import blog pages to link to
-import Blog1 from './Blog1.js';
-import Blog2 from './Blog2.js';
+import Blog1 from './Blog1-Low-back-pain-m.js';
+import Blog2 from './Blog-BFR-for-ACLr.js';
 
 //debug page
 import Debug from './Debug.js';
