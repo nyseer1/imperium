@@ -26,6 +26,24 @@ export const postData = [
     title: "Blood Flow Restriction Training in Post-Operative ACL Reconstruction Surgery",
     href: "blog2",
   },
+  {
+    img: "Stretching_service_example1.JPG",
+    alt: "Stretching_Services",
+    title: "Stretching services",
+    href: "blog3",
+  },
+  {
+    img: "Stretching_service_example1.JPG",
+    alt: "rotator_cuff",
+    title: "Understanding the Crucial Role of the Rotator Cuff",
+    href: "blog4",
+  },
+  {
+    img: "Stretching_service_example1.JPG",
+    alt: "injury_prevention_strategies",
+    title: "Role of the ACL in Knee Stability and Cutting-Edge Injury Prevention Strategies",
+    href: "blog5",
+  },
 ];
 
 function Bloglist() {
@@ -59,7 +77,7 @@ function Bloglist() {
                 <Box component="img" sx={{ width: ['20%', '20%', '10%'], height: ['20%', '20%', '10%'],borderRadius:'2%'}}
                   alt={post.alt}
                   src={post.img}/>
-                  <Typography sx={{textAlign:'center', p:1}}>{post.title}</Typography>
+                  <Typography sx={{textAlign:'center', p:1,}}>{post.title}</Typography>
               </Button>
               
             </div>

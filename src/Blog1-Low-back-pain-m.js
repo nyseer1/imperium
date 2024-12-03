@@ -122,7 +122,7 @@ function Blog1() {
        <Box sx={{        display: 'flex', //creates flexbox to arrange content
         flexDirection: 'column', //each new content is added in a row
         justifyContent: 'flex-end', //content starts at the end of the line (right)
-        flexGrow:1,fontSize:1, width: ['100%','80%','40%']}}>
+        flexGrow:1,fontSize:1, width: ['100%','80%','50%']}}>
 
             <Typography sx={{fontSize:25, textAlign:'center'}}>Recent Blog Posts</Typography>
 
