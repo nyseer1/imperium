@@ -58,7 +58,7 @@ function About() {
       </Helmet>
       <Box sx={{ width: "100%" }}>
         {" "}
-        <Typography sx={{ textAlign:'center' }} variant="h1">
+        <Typography sx={{ textAlign:'center', p:1, fontSize: [30,50,80]}} variant="h1">
           About Us
         </Typography>
         <Box
@@ -71,16 +71,16 @@ function About() {
           alignItems: "flex-start", //centers items inside box horizontally (for when column)
         }}
       >
-        <Paper sx={{fontSize: 15, p: 2,}}>
+        <Paper sx={{fontSize: [25,20,15], p: 2,}}>
           <Typography
             variant="body1"
             gutterBottom
             sx={{ font: [2], color: "#000000" }}
           >
-            We are a physical therapy practice that specializes in the diagnoses
+            We are a <b>physical therapy</b> practice that specializes in the diagnoses
             and rehabilitation of orthopedic related conditions, management of
-            post operative cases and overall optimization of functional ability
-            including restoration of mobility, range of motion and strength.
+            <b>post operative cases</b> and overall optimization of functional ability
+            including <b>restoration</b> of mobility, range of motion and strength.
           </Typography>
           <Typography
             variant="body1"
