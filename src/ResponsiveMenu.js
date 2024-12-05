@@ -34,9 +34,9 @@ function ResponsiveMenu() {
 
   return (
     // basic div tag that uses css
-    <Box>
+    <Box  >
       {/* static means the appbar will hide itself when scrolling down */}
-      <AppBar position="static">
+      <AppBar position="sticky">
         {/* black box with the logo and it works as a button to goto the homepage */}
         <Box
           sx={{
@@ -51,8 +51,7 @@ function ResponsiveMenu() {
             <img
               src="imperium_logo.jpg"
               alt="imperium physical therapy and performance PTP logo"
-              justifyContent="center"
-              width="80%"
+              width="96"
               height="96"
             />
           </ButtonBase>
@@ -97,10 +96,10 @@ function ResponsiveMenu() {
           </ButtonGroup>
         )}
 
-        {/* TODO: 
+        {/* TODO:
       outline contact button
       add links to rest of buttons
-      add more content below, maybe in page components  
+      add more content below, maybe in page components
       */}
       </AppBar>
 
@@ -152,8 +151,8 @@ function ResponsiveMenu() {
         }}
       >
       </BottomNavigation>
+      <Typography sx={{color:'#aa0022', fontSize:30, textAlign:'center'}}>Website Under Construction</Typography>
     </Box>
   );
 }
-
 export default ResponsiveMenu;

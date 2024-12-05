@@ -94,7 +94,7 @@ function About() {
           </Typography>
           <p></p>
         </Paper>
-        
+
         <Masonry
           justifyContent="center"
           sx={{
@@ -108,10 +108,10 @@ function About() {
           columns={2}
           spacing={2}
         >
-          
+
           {itemData.map((item, index) => (
             <Box key={index}>
-              
+
               <Box component="img" sx={{borderBottomLeftRadius: 4, borderBottomRightRadius: 4,
                 display: "block",borderColor: "green",
                 width:'100%', height:'100%', borderRadius:'2%'}}
@@ -119,7 +119,7 @@ function About() {
                 src={`${item.img}?w=162&auto=format`}
                 loading="lazy"/>
             </Box>
-              
+
           ))}
         </Masonry>
       </Box>

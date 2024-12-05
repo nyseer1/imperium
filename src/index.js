@@ -1,37 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import "./index.css";
 //imports pages so we can link to them
-import Main from './Main';
-import About from './About';
-import Error from './Error';
-import OurTeam from './OurTeam';
-import Footer from './Footer';
-import Bloglist from './Bloglist.js';
-import ResponsiveMenu from './ResponsiveMenu.js';
-import Contact from './Contact.js';
+import Main from "./Main";
+import About from "./About";
+import Error from "./Error";
+import OurTeam from "./OurTeam";
+import Footer from "./Footer";
+import Bloglist from "./Bloglist.js";
+import ResponsiveMenu from "./ResponsiveMenu.js";
+import Contact from "./Contact.js";
 
 //import blog pages to link to
-import Blog1 from './Blog1-Low-back-pain-m.js';
-import Blog2 from './Blog-BFR-for-ACLr.js';
-import Blog3 from './Blog-Stretch.js';
-import Blog4 from './Blog-Rotator-Cuff.js';
+import Blog1 from "./Blog1-Low-back-pain-m.js";
+import Blog2 from "./Blog-BFR-for-ACLr.js";
+import Blog3 from "./Blog-Stretch.js";
+import Blog4 from "./Blog-Rotator-Cuff.js";
 
 //debug page
-import Debug from './Debug.js';
+import Debug from "./Debug.js";
 
 // ability to access mui components
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { green, deepPurple } from '@mui/material/node/colors';
-import { Button } from '@mui/material';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { green, deepPurple } from "@mui/material/node/colors";
+import { AppBar, Button } from "@mui/material";
 // adds ability to link pages
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 //for metadata on pages
-import { HelmetProvider } from 'react-helmet-async';
-
-
+import { HelmetProvider } from "react-helmet-async";
 
 // creates custom theme using mui
 const theme = createTheme({
@@ -47,22 +45,24 @@ const theme = createTheme({
     // Name of the component ⚛️
     MuiAppBar: {
       defaultProps: {
-        color: 'primary', //in appbar need to use a color from the pallete
+        color: "primary", //in appbar need to use a color from the pallete
         sx: {
           height: 100,
-          display: 'flex', //creates flexbox to arrange content
-          flexDirection: 'row', //each new content is added in a row
-          border: 1, borderColor: '#50ac54', borderTopLeftRadius: 8, borderBottomLeftRadius: 8,
-        }
-      }
+          display: "flex", //creates flexbox to arrange content
+          flexDirection: "row", //each new content is added in a row
+          border: 1,
+          borderTopLeftRadius: 8,
+          borderBottomLeftRadius: 8,
+        },
+      },
     },
     MuiBottomNavigation: {
       defaultProps: {
         sx: {
-          color: 'green',
+          color: "green",
           height: 200,
-        }
-      }
+        },
+      },
     },
     MuiTypography: {
       color: 'green',
@@ -75,53 +75,50 @@ const theme = createTheme({
     MuiButtonBase: {
       sx: {
         fontSize: [10, 14],
-        textTransform: 'capitalize',
-        color: '#000000',
+        textTransform: "capitalize",
+        color: "#000000",
         p: 3,
-        display: 'flex', //creates flexbox to arrange content
-        flexDirection: 'column', //each new content is added in a row
-        justifyContent: 'space-evenly', //content starts at the end of the line(right)
-
-      }
+        display: "flex", //creates flexbox to arrange content
+        flexDirection: "column", //each new content is added in a row
+        justifyContent: "space-evenly", //content starts at the end of the line(right)
+      },
     },
     MuiButtonGroup: {
       defaultProps: {
-        color: 'primary', //in appbar need to use a color from the pallete
+        color: "primary", //in appbar need to use a color from the pallete
         sx: {
           height: 100,
-          display: 'flex', //creates flexbox to arrange content
-          flexDirection: 'row', //each new content is added in a row
-          justifyContent: 'flex-end', //content starts at the end of the line (right)
+          display: "flex", //creates flexbox to arrange content
+          flexDirection: "row", //each new content is added in a row
+          justifyContent: "flex-end", //content starts at the end of the line (right)
           flexGrow: 1,
-        }
-      }
+        },
+      },
     },
     MuiContainer: {
       sx: {
         p: 2,
-        display: 'flex', //creates flexbox to arrange content
-        flexDirection: 'row', //each new content is added in a row
-        justifyContent: 'space-around', //content starts at the end of the line (right)
-      } //padding
+        display: "flex", //creates flexbox to arrange content
+        flexDirection: "row", //each new content is added in a row
+        justifyContent: "space-around", //content starts at the end of the line (right)
+      }, //padding
     },
     MuiMenu: {
       sx: {
-        height: '160%',
-        display: 'flex', //creates flexbox to arrange content
-        flexDirection: 'column', //each new content is added in a row
-        justifyContent: 'space-evenly', //content starts at the end of the line (right)
+        height: "160%",
+        display: "flex", //creates flexbox to arrange content
+        flexDirection: "column", //each new content is added in a row
+        justifyContent: "space-evenly", //content starts at the end of the line (right)
         flexGrow: 1,
         fontSize: 1,
-      }
+      },
     },
     MuiPaper: {
-      align: 'left',
+      align: "left",
       sx: {
         fontSize: 20,
       },
-
     },
-
   },
 });
 
@@ -132,17 +129,14 @@ const router = createBrowserRouter([
     element: <Main theme={theme} />,
     // if page does not match any path, goes to error page
     errorElement: <Error />,
-
   },
   {
     path: "/about",
     element: <About />,
-
   },
   {
     path: "/our-team",
     element: <OurTeam />,
-
   },
   {
     path: "/bloglist",
@@ -158,36 +152,28 @@ const router = createBrowserRouter([
   {
     path: "/blog1",
     element: <Blog1 />,
-
   },
   {
     path: "/blog2",
     element: <Blog2 />,
-
   },
   {
     path: "/blog3",
     element: <Blog3 />,
-
   },
   {
     path: "/blog4",
     element: <Blog4 />,
-
   },
-
 
   // debug
   {
     path: "/debug",
     element: <Debug />,
-
   },
-  
-
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <HelmetProvider>
