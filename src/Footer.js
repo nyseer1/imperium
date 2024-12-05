@@ -41,8 +41,6 @@ export function Footer() {
           }}
 
         >
-          <BottomNavigationAction  href="https://www.instagram.com/imperiumptp/" label="Instagram" icon={<Instagram />} />
-          <BottomNavigationAction href="https://www.facebook.com/profile.php?id=100090229546724"label="Facebook" icon={<FacebookTwoTone />} />
         </BottomNavigation>
       </Box> 
       <Grid
