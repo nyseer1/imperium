@@ -42,20 +42,22 @@ function ResponsiveMenu() {
           sx={{
             background: "#000000",
             color: "#ffffff",
-            border: 1,
+            borderTopRightRadius: 8,
+            borderBottomRightRadius: 8,
+            
             borderColor: "#000000",
-            borderRadius: 2,
+            
           }}
         >
-          <ButtonBase sx={{ width: 140 }} href="/">
-            <img
-              src="imperium_logo.jpg"
-              alt="imperium physical therapy and performance PTP logo"
-              justifyContent="center"
-              width="80%"
-              height="96"
+          {/* logo image */}
+          <Button href='/'>
+            <Box component="img"
+                    sx={{width: 105 , height: 95, borderRadius:'2%', p:1}}
+                    alt={"imperium physical therapy and performance PTP logo"}
+                    src={"imperium_logo.jpg"}
             />
-          </ButtonBase>
+          </Button>
+          
         </Box>
 
         {/*conditional rendering, if screen > md render , if <= md render this*/}

@@ -56,8 +56,6 @@ const theme = createTheme({
           display: "flex", //creates flexbox to arrange content
           flexDirection: "row", //each new content is added in a row
           border: 1,
-          borderTopLeftRadius: 8,
-          borderBottomLeftRadius: 8,
         },
       },
     },
