@@ -63,9 +63,9 @@ function ResponsiveMenu() {
           <ButtonGroup>
             <ButtonBase href="/">Home</ButtonBase>
             <ButtonBase href="/about">About</ButtonBase>
-            <ButtonBase>What We Treat</ButtonBase>
+            <ButtonBase href="/what-we-treat">What We Treat</ButtonBase>
             <ButtonBase href="/our-team">Our Team</ButtonBase>
-            <ButtonBase>Performance Training</ButtonBase>
+            <ButtonBase href="/performance-training">Performance Training</ButtonBase>
             <ButtonBase href='/blog1'>Blog</ButtonBase>
             <ButtonBase href='/contact'>
               <Box
