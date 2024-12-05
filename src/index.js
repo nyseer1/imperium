@@ -36,7 +36,9 @@ import { HelmetProvider } from 'react-helmet-async';
 // creates custom theme using mui
 const theme = createTheme({
   palette: {
-    primary: green,
+    primary: {
+      main:green[500]
+    },
     secondary: deepPurple,
   },
 
@@ -64,11 +66,15 @@ const theme = createTheme({
     },
     MuiTypography: {
       color: 'green',
-      sx: { fontSize: 30 }
+      sx: {
+        fontSize: 20,
+        textAlign: "center",
+        p:1,
+        }
     },
     MuiButtonBase: {
       sx: {
-        fontSize: [10, 10, 14, 18],
+        fontSize: [10, 14],
         textTransform: 'capitalize',
         color: '#000000',
         p: 3,
@@ -188,11 +194,12 @@ root.render(
       <ThemeProvider theme={theme}>
         <ResponsiveMenu />
         <RouterProvider router={router} />
+        <Footer />
       </ThemeProvider>
     </HelmetProvider>
     
 
-    <Footer />
+    
   </React.StrictMode>
 );
 

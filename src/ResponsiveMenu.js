@@ -152,7 +152,6 @@ function ResponsiveMenu() {
         }}
       >
       </BottomNavigation>
-      <Typography sx={{color:'#aa0022', fontSize:30, textAlign:'center'}}>Website Under Construction</Typography>
     </Box>
   );
 }

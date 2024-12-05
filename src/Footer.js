@@ -30,14 +30,20 @@ export function Footer() {
 
   return (
     <Box>
-      <BottomNavigation
-        sx={{color:"white", backgroundColor: "green", textAlign: "center", p: 1,position: "static",
-          width: "100%",
-          bottom: "0%",
-          height: "1%", }}
-      >
-         <Box>Imperium</Box>
-      </BottomNavigation> 
+      <Box sx={{color:"white", backgroundColor: "green", textAlign: "center", p:1,}}>
+        Imperium
+        <BottomNavigation
+          showLabels
+     
+          onMouseOver={(event, newValue) => {
+            setValue(newValue);
+          }}
+
+        >
+          <BottomNavigationAction  href="https://www.instagram.com/imperiumptp/" label="Instagram" icon={<Instagram />} />
+          <BottomNavigationAction href="https://www.facebook.com/profile.php?id=100090229546724"label="Facebook" icon={<FacebookTwoTone />} />
+        </BottomNavigation>
+      </Box> 
       <Grid
         sx={{ p: 2, background: "#2BC942", flexGrow: 1 }}
         container

@@ -37,33 +37,31 @@ function Main() {
         <meta name="description" content="Professional Physical Therapy" />
         <meta name="keywords" content="ptp, pt, physical therapy, professional" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      </Helmet>
-      
-      
-      
+      </Helmet>     
 
       {/* content */}
       <Box
         sx={{
           p: 2,
           display: "flex", //creates flexbox to arrange content
-          flexDirection: ["column", "column", "row", "row", "row"], //each new content is added in a row if screen > md, columb if <= md
-          justifyContent: "space-evenly", //content starts at the end of the line (right)
+          flexDirection: ["column"], //each new content is added in a row if screen > md, columb if <= md
           flexGrow: 1, //stretch size of elements to fill unused space on line
           alignItems: "center", //centers items inside box horizontally (for when column)
         }}
       >
-        
+        <Typography variant="h1"> 
+          Welcome to
+        </Typography>
+        <Typography variant="h2">
+            
+            Imperium Physical Therapy<br/>& Performance
+        </Typography>
+      <Box>
+
+        {/* image */}
         <Box component="img" sx={{width: '25%' , height: '25%', borderRadius:'2%'}}
                   alt={"Physical Therapy Example"}
                   src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}/>
-                  {/* default size if small or xsmall(so small phones will always see it at their full width), force 800 at medium or higher */}
-        <Typography sx={{ fontSize: 20, textAlign: "center", p:1 , color:'#000000',width: ['100%','100%',800],}}> 
-          Welcome to
-          <Typography sx={{ fontSize: [20,20,50], textAlign: "center", p:1 }}>
-            
-            Imperium Physical Therapy<br/>& Performance
-          </Typography>
 
           {/* paper elements are always spaced out so it dosent sit directly on the box*/}
           <Paper
@@ -79,7 +77,7 @@ function Main() {
             and to optimize functional potential.
           </Paper>
           <Button href="/contact" sx={{display:'flex', flexDirection:'row',justifyContent:'center', p:3}}><Typography >Contact Us</Typography> <ArrowForwardIosIcon/> </Button>
-        </Typography>
+        </Box>
       </Box>
 
       {/* content */}
