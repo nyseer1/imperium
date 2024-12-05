@@ -64,13 +64,13 @@ const theme = createTheme({
     MuiBottomNavigation: {
       defaultProps: {
         sx: {
-          color: "green",
+          color: 'primary',
           height: 200,
         },
       },
     },
     MuiTypography: {
-      color: 'green',
+      color: 'primary',
       sx: {
         fontSize: 20,
         textAlign: "center",
@@ -81,7 +81,7 @@ const theme = createTheme({
       sx: {
         fontSize: [10, 14],
         textTransform: "capitalize",
-        color: "#000000",
+        color: 'primary',
         p: 3,
         display: "flex", //creates flexbox to arrange content
         flexDirection: "column", //each new content is added in a row
