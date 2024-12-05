@@ -11,7 +11,10 @@ import {
   ButtonBase,
   BottomNavigation,
   Divider,
+  Grid2,
 } from "@mui/material";
+
+import { green } from "@mui/material/node/colors";
 
 // for arrow icon
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -40,45 +43,77 @@ function Main() {
       </Helmet>     
 
       {/* content */}
-      <Box
-        sx={{
-          p: 2,
-          display: "flex", //creates flexbox to arrange content
-          flexDirection: ["column"], //each new content is added in a row if screen > md, columb if <= md
-          flexGrow: 1, //stretch size of elements to fill unused space on line
-          alignItems: "center", //centers items inside box horizontally (for when column)
-        }}
-      >
-        <Typography color="primary"> 
-          Welcome to
-        </Typography>
-        <Typography variant="h2">
-            
-            Imperium Physical Therapy<br/>& Performance
-        </Typography>
-      <Box>
+      <Grid2 size={6}>
+        <Grid2 item>
+          <Typography color="primary" variant="subtitle1" textAlign='center'> 
+            Welcome to
+          </Typography>
+          <Typography variant="h6" textAlign='center'>
+              Imperium Physical Therapy<br/>& Performance
+          </Typography>
+        </Grid2>
+      </Grid2>
+        
 
-        {/* image */}
-        <Box component="img" sx={{width: '25%' , height: '25%', borderRadius:'2%'}}
-                  alt={"Physical Therapy Example"}
-                  src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}/>
+        <Grid2 container spacing={3} columns={{xs:2,sm:4,md:12}}>
+          <Grid2 size={6}>
+            <Grid2 item>{/* image */}
+              <Box component="img" sx={{width: '20rem' , height: '20rem', borderRadius:'2%',border:1}}
+                        alt={"Imperium_PTP_Building"}
+                        src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}/>
+            </Grid2>
+          </Grid2>
+          <Grid2 size={6}>
+            <Grid2 item sx={{display:'flex',flexDirection:'column', justifyItems:'center',}}>
+            <Paper>
+              We are a team of licensed and experienced physical therapists
+              dedicated to providing quality healthcare and individualized
+              treatment plans to reduce pain, restore mobility and range of motion
+              and to optimize functional potential.
+            </Paper>
+                
+              <ButtonBase variant='greentext' href="/contact">
+                Contact Us
+              </ButtonBase>
+            </Grid2>
+          </Grid2>
+          <Grid2 size={6}>
+            <Grid2 item sx={{display:'flex',flexDirection:'column', justifyItems:'center',}}>
+              <Typography color="primary" variant="subtitle1" textAlign='center'> 
+                Expert Physical Therapy 
+              </Typography>
+              <Typography variant="h6" textAlign='center'>
+                Giving You the Power to<br/>Improve Your Life<br/><br/>
+              </Typography>
+                
+              <Paper>
+                All of the specialized clinicians at Imperium Physical Therapy and Performance 
+                are dedicated to provide you with the highest quality of care. 
+              </Paper>
+              <ButtonBase variant='greentext' href="/our-team">
+                Learn More
+              </ButtonBase>
 
-          {/* paper elements are always spaced out so it dosent sit directly on the box*/}
-          <Paper
-            sx={{
-              fontSize: [16,16,30],
-              
-              p: 3,
-            }}
-          >
-            We are a team of licensed and experienced physical therapists
-            dedicated to providing quality healthcare and individualized
-            treatment plans to reduce pain, restore mobility and range of motion
-            and to optimize functional potential.
-          </Paper>
-          <Button href="/contact" sx={{display:'flex', flexDirection:'row',justifyContent:'center', p:3}}><Typography >Contact Us</Typography> <ArrowForwardIosIcon/> </Button>
-        </Box>
-      </Box>
+            </Grid2>
+          </Grid2>
+          <Grid2 size={6}>
+            <Grid2 item>{/* image */}
+              <Box component="img" sx={{width: '20rem' , height: '30rem', borderRadius:'2%',border:1}}
+                        alt={"Physical Therapy Service"}
+                        src={"imperium_physical_therapy_services1.JPG"}/>
+            </Grid2>
+          </Grid2>
+          
+
+          <Grid2 size={3}>
+            <Grid2 item>{/* image */}
+              <Box component="img" sx={{width: '100%' , height: '100%', borderRadius:'2%',border:1}}
+                        alt={"Physical Therapy Example"}
+                        src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}/>
+            </Grid2>
+          </Grid2>
+
+        </Grid2>
 
       {/* content */}
       
@@ -125,8 +160,8 @@ function Main() {
         </Typography>
         
         <Box component="img" sx={{width: '25%' , height: '25%', borderRadius:'2%'}}
-                  alt={"Physical Therapy Example"}
-                  src={"Physical_Therapy_Example1.JPG"}/>
+                  alt={"Physical Therapy Service"}
+                  src={"imperium_physical_therapy_services1.JPG"}/>
         
       </Box>
 

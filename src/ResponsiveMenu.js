@@ -50,26 +50,26 @@ function ResponsiveMenu() {
           }}
         >
           {/* logo image */}
-          <Button href='/'>
+          <ButtonBase variant='none' href='/'>
             <Box component="img"
-                    sx={{width: 105 , height: 95, borderRadius:'2%', p:1}}
+                    sx={{width: 98 , height: 82, borderRadius:'2%', p:0}}
                     alt={"imperium physical therapy and performance PTP logo"}
                     src={"imperium_logo.jpg"}
             />
-          </Button>
+          </ButtonBase>
           
         </Box>
 
         {/*conditional rendering, if screen > md render , if <= md render this*/}
         {isMatch ? (
-          <ButtonGroup>
-            <ButtonBase href="/">Home</ButtonBase>
-            <ButtonBase href="/about">About</ButtonBase>
-            <ButtonBase href="/what-we-treat">What We Treat</ButtonBase>
-            <ButtonBase href="/our-team">Our Team</ButtonBase>
-            <ButtonBase href="/performance-training">Performance Training</ButtonBase>
-            <ButtonBase href='/blog1'>Blog</ButtonBase>
-            <ButtonBase href='/contact'>
+          <ButtonGroup variant="appbar">
+            <ButtonBase variant='default' href="/">Home</ButtonBase>
+            <ButtonBase variant='default' href="/about">About</ButtonBase>
+            <ButtonBase variant='default' href="/what-we-treat">What We Treat</ButtonBase>
+            <ButtonBase variant='default' href="/our-team">Our Team</ButtonBase>
+            <ButtonBase variant='default' href="/performance-training">Performance Training</ButtonBase>
+            <ButtonBase variant='default' href='/blog1'>Blog</ButtonBase>
+            <ButtonBase variant='default' href='/contact'>
               <Box
                 sx={{
                   background: "#",
@@ -86,8 +86,8 @@ function ResponsiveMenu() {
             </ButtonBase>
           </ButtonGroup>
         ) : (
-          <ButtonGroup>
-            <ButtonBase
+          <ButtonGroup variant='appbar'>
+            <ButtonBase variant='default' 
               id="basic-button"
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"
@@ -120,27 +120,29 @@ function ResponsiveMenu() {
         }}
         sx={{height:['100%']}}
       >
-        <Button sx={{ fontSize: [15, 12] }} href="/" onClick={handleClose}>
-          Home
-        </Button>
-        <Button sx={{ fontSize: [15, 12] }} href="/about" onClick={handleClose}>
-          About
-        </Button>
-        <Button sx={{ fontSize: [15, 12] }} href="/what-we-treat" onClick={handleClose}>
-          What We Treat
-        </Button>
-        <Button sx={{ fontSize: [15, 12] }} href="/our-team" onClick={handleClose}>
-          Our Team
-        </Button>
-        <Button sx={{ fontSize: [15, 12], textAlign:'center'}} href="/performancetraining" onClick={handleClose}>
-          Performance<br/>Training
-        </Button>
-        <Button sx={{ fontSize: [15, 12] }} href="/blog1" onClick={handleClose}>
-          Blog
-        </Button>
-        <Button sx={{ fontSize: [15, 12] }} href="/contact" onClick={handleClose}>
-          Contact Us
-        </Button>
+        <ButtonGroup sx={{flexDirection:'column', color:'green'}}>
+          <Button variant="greentext" href="/" onClick={handleClose}>
+            Home
+          </Button>
+          <ButtonBase  variant="greentext" href="/about" onClick={handleClose}>
+            About
+          </ButtonBase>
+          <ButtonBase  variant="greentext" sx={{ textAlign:'center'}}href="/what-we-treat" onClick={handleClose}>
+            What We Treat
+          </ButtonBase>
+          <ButtonBase  variant="greentext" href="/our-team" onClick={handleClose}>
+            Our Team
+          </ButtonBase>
+          <ButtonBase  variant="greentext" sx={{ textAlign:'center'}} href="/performancetraining" onClick={handleClose}>
+            Performance<br/>Training
+          </ButtonBase>
+          <ButtonBase variant="greentext"  href="/blog1" onClick={handleClose}>
+            Blog
+          </ButtonBase>
+          <ButtonBase variant="greentext"  href="/contact" onClick={handleClose}>
+            Contact Us
+          </ButtonBase>
+        </ButtonGroup>
       </Menu>
 
       {/* footer */}

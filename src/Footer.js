@@ -23,6 +23,7 @@ import {
   Button,
   ButtonBase,
 } from "@mui/material";
+import { green } from "@mui/material/node/colors";
 import Grid from "@mui/material/Grid2";
 
 export function Footer() {
@@ -52,37 +53,39 @@ export function Footer() {
       >
         <Grid size={{ xs: 2, sm: 2, md: 2 }}>
           <Container sx={{ color: "black" }}>
-            <b>CONTACT INFO</b>
-            <br/>
-            <br/>
-            <b>Address</b>
-            <address style={{ textDecoration: "none" }}>
-              <ButtonBase href='https://g.co/kgs/oaHpMAF'>
+            <Typography textAlign='left'><b>CONTACT INFO</b>
+              <br/>
+              <br/>
+              <b>Address</b> 
+              <address style={{ textDecoration: "none" }}>
+                <Button  textAlign='left' href='https://g.co/kgs/oaHpMAF'>
 
-                1897 Wantagh Ave<br/>
-                Wantagh, NY 11793<br/>
-              </ButtonBase>
-              <br/>
-              <br/>
-              <b>Phone: </b>{" "}
-              <Link
-                sx={{ color: "black", fontSize: 16, textDecoration: "none" }}
-                href="tel:+5164901480"
-              >
-                {" "}
-                (516) 490-1480
-              </Link>
-              <br/>
-              <b>Fax:</b>{" "}
-              <Link
-                sx={{ color: "black", fontSize: 16, textDecoration: "none" }}
-                href="tel:+5164904009"
-              >
-                {" "}
-                (516) 490-4009
-              </Link>
-              <br/>
-            </address>
+                  1897 Wantagh Ave<br/>
+                  Wantagh, NY 11793<br/>
+                </Button>
+                <br/>
+                <br/>
+                <b>Phone: </b>{" "}
+                <Link
+                  sx={{ color: "black", fontSize: 16, textDecoration: "none" }}
+                  href="tel:+5164901480"
+                >
+                  {" "}
+                  (516) 490-1480
+                </Link>
+                <br/>
+                <b>Fax:</b>{" "}
+                <Link
+                  sx={{ color: "black", fontSize: 16, textDecoration: "none" }}
+                  href="tel:+5164904009"
+                >
+                  {" "}
+                  (516) 490-4009
+                </Link>
+                <br/>
+              </address>
+            </Typography>
+            
           </Container>
         </Grid>
         <Grid size={{ xs: 2, sm: 2, md: 2 }}>
@@ -90,7 +93,7 @@ export function Footer() {
           <Container
             sx={{ color: "black", fontSize: 16, textDecoration: "none" }}
           >
-            <b>WORKING HOURS</b>
+            <Typography textAlign='left'><b>WORKING HOURS</b></Typography>
 
             <List sx={{ color: "black", fontSize: 16, textDecoration: "none"}}>
               <ListItem disablePadding>

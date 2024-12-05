@@ -23,7 +23,7 @@ import Debug from "./Debug.js";
 
 // ability to access mui components
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { green, deepPurple } from "@mui/material/node/colors";
+import { green, deepPurple} from "@mui/material/node/colors";
 
 //default css styling
 import { CssBaseline } from "@mui/material";
@@ -44,6 +44,12 @@ const theme = createTheme({
     },
     secondary: deepPurple,
   },
+  typography:{
+    color:'primary',
+    fontSize:19,
+    textAlign: "center",
+    p:2,
+  },
 
   // default properties of components
   components: {
@@ -56,6 +62,7 @@ const theme = createTheme({
           display: "flex", //creates flexbox to arrange content
           flexDirection: "row", //each new content is added in a row
           border: 1,
+          p:0,
         },
       },
     },
@@ -67,36 +74,107 @@ const theme = createTheme({
         },
       },
     },
-    MuiTypography: {
-      color: 'primary',
-      sx: {
-        fontSize: 20,
-        textAlign: "center",
-        p:1,
+    MuiButton:{
+      defaultProps:{
+        sx:{
+          color:'#000000',
+          textTransform: 'none',
+          transition: "background 0.3s, color 1s",
+        '&:hover': {
+          backgroundColor: green[800],
+          
+        },
         }
-    },
+      }
+  },
+
     MuiButtonBase: {
-      sx: {
-        fontSize: [10, 14],
-        textTransform: "capitalize",
-        color: 'primary',
-        p: 3,
-        display: "flex", //creates flexbox to arrange content
-        flexDirection: "column", //each new content is added in a row
-        justifyContent: "space-evenly", //content starts at the end of the line(right)
+      defaultProps:{
+        sx:{
+          p:'1rem',
+        }
       },
+      variants: [
+        {
+          props: { variant: 'default' },
+            style: {
+              fontSize: '0.9rem',
+              textTransform: "capitalize",
+              padding: '1rem',
+              display: "flex", //creates flexbox to arrange content
+              flexDirection: "column", //each new content is added in a row
+              justifyContent: "space-evenly", //content starts at the end of the line(right)
+              borderRadius:1,
+              color:'primary',
+
+              transition: "background 0.3s, color 1s",
+              '&:hover': {
+                backgroundColor: green[800],
+      
+              }
+      
+              
+          },
+        },
+        {
+          props: { variant: 'footer' },
+            style: {
+              textAlign:'left',
+              fontSize: '0.9rem',
+              textTransform: "capitalize",
+              padding: '1rem',
+              display: "flex", //creates flexbox to arrange content
+              flexDirection: "column", //each new content is added in a row
+              justifyContent: "space-evenly", //content starts at the end of the line(right)
+              borderRadius:1,
+
+              transition: "background 0.3s, color 1s",
+              '&:hover': {
+                backgroundColor: green[800],
+      
+              }
+      
+              
+          },
+        },
+        {
+          props: { variant: 'greentext' },
+          style: {
+            color:'green',
+            fontSize: '1.2rem',
+            textTransform: "capitalize",
+            padding: '1rem',
+            display: "flex", //creates flexbox to arrange content
+            flexDirection: "column", //each new content is added in a row
+            justifyContent: "space-evenly", //content starts at the end of the line(right)
+            borderRadius:1,
+
+            transition: "background 0.3s, color 1s",
+            '&:hover': {
+              backgroundColor: green[100],
+    
+            }
+    
+            
+        },
+        },
+      ],
     },
     MuiButtonGroup: {
-      defaultProps: {
-        color: "primary", //in appbar need to use a color from the pallete
-        sx: {
-          height: 100,
-          display: "flex", //creates flexbox to arrange content
-          flexDirection: "row", //each new content is added in a row
-          justifyContent: "flex-end", //content starts at the end of the line (right)
-          flexGrow: 1,
-        },
-      },
+     variants: [
+      {
+        props:{ variant:'appbar'},
+        style:{
+            color: "black", //in appbar need to use a color from the pallete
+            height: 100,
+            display: "flex", //creates flexbox to arrange content
+            flexDirection: "row", //each new content is added in a row
+            flexGrow:1,
+            justifyContent:"flex-end",
+          },
+        }
+
+     ],
     },
     MuiContainer: {
       sx: {
@@ -119,9 +197,14 @@ const theme = createTheme({
     MuiPaper: {
       align: "left",
       sx: {
-        fontSize: 20,
+        fontSize: '1rem',
+        p:1.5,
       },
     },
+    MuiGrid2:{
+      textAlign:'center',
+      p:1,
+    }
   },
 });
 
