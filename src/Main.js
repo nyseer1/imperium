@@ -49,7 +49,7 @@ function Main() {
           alignItems: "center", //centers items inside box horizontally (for when column)
         }}
       >
-        <Typography variant="h1"> 
+        <Typography color="primary"> 
           Welcome to
         </Typography>
         <Typography variant="h2">

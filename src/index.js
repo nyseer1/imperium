@@ -24,7 +24,10 @@ import Debug from "./Debug.js";
 // ability to access mui components
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { green, deepPurple } from "@mui/material/node/colors";
-import { AppBar, Button } from "@mui/material";
+
+//default css styling
+import { CssBaseline } from "@mui/material";
+
 // adds ability to link pages
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -34,8 +37,10 @@ import { HelmetProvider } from "react-helmet-async";
 // creates custom theme using mui
 const theme = createTheme({
   palette: {
+    // mode:'dark', 
+    // need to test dark mode
     primary: {
-      main:green[500]
+      main: green[500]
     },
     secondary: deepPurple,
   },
@@ -178,6 +183,7 @@ root.render(
   <React.StrictMode>
     <HelmetProvider>
       <ThemeProvider theme={theme}>
+        <CssBaseline/>
         <ResponsiveMenu />
         <RouterProvider router={router} />
         <Footer />
