@@ -74,7 +74,6 @@ function OurTeam() {
           <Typography
             variant="body1"
             gutterBottom
-            sx={{ font: [2], color: "#000000" }}
             sx={{ font: [2], color: "#4E5652" }}
           >
 <<<<<<< Updated upstream
