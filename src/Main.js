@@ -40,12 +40,12 @@ function Main() {
         <meta name="description" content="Professional Physical Therapy" />
         <meta name="keywords" content="ptp, pt, physical therapy, professional" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      </Helmet>     
+      </Helmet>
 
       {/* content */}
       <Grid2 size={6}>
         <Grid2 item>
-          <Typography color="primary" variant="subtitle1" textAlign='center'> 
+          <Typography color="primary" variant="subtitle1" textAlign='center'>
             Welcome to
           </Typography>
           <Typography variant="h6" textAlign='center'>
@@ -53,7 +53,7 @@ function Main() {
           </Typography>
         </Grid2>
       </Grid2>
-        
+
 
         <Grid2 container spacing={3} columns={{xs:2,sm:4,md:12}}>
           <Grid2 size={6}>
@@ -71,7 +71,7 @@ function Main() {
               treatment plans to reduce pain, restore mobility and range of motion
               and to optimize functional potential.
             </Paper>
-                
+
               <ButtonBase variant='greentext' href="/contact">
                 Contact Us
               </ButtonBase>
@@ -79,16 +79,16 @@ function Main() {
           </Grid2>
           <Grid2 size={6}>
             <Grid2 item sx={{display:'flex',flexDirection:'column', justifyItems:'center',}}>
-              <Typography color="primary" variant="subtitle1" textAlign='center'> 
-                Expert Physical Therapy 
+              <Typography color="primary" variant="subtitle1" textAlign='center'>
+                Expert Physical Therapy
               </Typography>
               <Typography variant="h6" textAlign='center'>
                 Giving You the Power to<br/>Improve Your Life<br/><br/>
               </Typography>
-                
+
               <Paper>
-                All of the specialized clinicians at Imperium Physical Therapy and Performance 
-                are dedicated to provide you with the highest quality of care. 
+                All of the specialized clinicians at Imperium Physical Therapy and Performance
+                are dedicated to provide you with the highest quality of care.
               </Paper>
               <ButtonBase variant='greentext' href="/our-team">
                 Learn More
@@ -103,7 +103,7 @@ function Main() {
                         src={"imperium_physical_therapy_services1.JPG"}/>
             </Grid2>
           </Grid2>
-          
+
           <Grid2 size={6}>
             <Grid2 item>
             <Paper sx={{p:2}}>
@@ -114,9 +114,9 @@ function Main() {
                 <br/>
                 -Accepts most Insurances
                 <br/>
-                -Appointment Available within 24 hours 
+                -Appointment Available within 24 hours
               </Typography>
-          
+
             </Paper>
 
             </Grid2>
@@ -125,8 +125,8 @@ function Main() {
 
         </Grid2>
 
-      
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+      <br/><br/><br/>
     </Box>
   );
 }
