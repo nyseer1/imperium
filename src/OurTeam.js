@@ -65,6 +65,7 @@ function OurTeam() {
     <Box>
       <Helmet>
         <title>Our Team | Imperium Physical Therapy and Performance</title>
+        <title>Meet Our Team | Imperium Physical Therapy and Performance</title>
         <meta name="description" content="Meet the professional physical therapists behind imperium physical therapy and performance. Our talented team and achieve your fitness goals. Join us today for a healthier you" />
         <meta name="keywords" content="ptp, pt, physical therapy, professional" />
       </Helmet>
@@ -94,7 +95,9 @@ function OurTeam() {
             variant="body1"
             gutterBottom
             sx={{ font: [2], color: "#000000" }}
+            sx={{ font: [2], color: "#4E5652" }}
           >
+<<<<<<< Updated upstream
             <Typography sx={{color:'#50ac54', fontSize:30, fontWeight:'bold', p:1}}>Dr. Frank Prochilo</Typography>
             <Typography sx={{color:'#000000', fontSize:20, fontWeight:'bold',p:1}}>PT, DPT, OCS - Owner of Imperium Physical Therapy</Typography>
 
@@ -131,6 +134,8 @@ function OurTeam() {
             bgcolor: "background.paper",
             width:['100%','100%',2000,],
             alignContent:'center',
+            width:['100%','100%',5000,],
+            alignContent:'center'
           }}
           columns={2}
           spacing={2}
@@ -161,7 +166,6 @@ function OurTeam() {
       <br />
       <br />
       <br />
-     
       <br />
       <br />
     </Box>
