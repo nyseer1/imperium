@@ -12,6 +12,7 @@ import Bloglist from "./Bloglist.js";
 import ResponsiveMenu from "./ResponsiveMenu.js";
 import Contact from "./Contact.js";
 
+
 //import blog pages to link to
 import Blog1 from "./Blog1-Low-back-pain-m.js";
 import Blog2 from "./Blog-BFR-for-ACLr.js";
@@ -33,11 +34,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 //for metadata on pages
 import { HelmetProvider } from "react-helmet-async";
+import WhatWeTreat from "./WhatWeTreat.js";
 
 // creates custom theme using mui
 const theme = createTheme({
   palette: {
-    // mode:'dark', 
+    // mode:'dark',
     // need to test dark mode
     primary: {
       main: green[500]
@@ -69,11 +71,14 @@ const theme = createTheme({
     MuiBottomNavigation: {
       defaultProps: {
         sx: {
+
           color: 'primary',
+
           height: 200,
         },
       },
     },
+
     MuiButton:{
       defaultProps:{
         sx:{
@@ -82,11 +87,12 @@ const theme = createTheme({
           transition: "background 0.3s, color 1s",
         '&:hover': {
           backgroundColor: green[800],
-          
+
         },
         }
       }
   },
+
 
     MuiButtonBase: {
       defaultProps:{
@@ -110,10 +116,10 @@ const theme = createTheme({
               transition: "background 0.3s, color 1s",
               '&:hover': {
                 backgroundColor: green[800],
-      
+
               }
-      
-              
+
+
           },
         },
         {
@@ -131,10 +137,10 @@ const theme = createTheme({
               transition: "background 0.3s, color 1s",
               '&:hover': {
                 backgroundColor: green[800],
-      
+
               }
-      
-              
+
+
           },
         },
         {
@@ -152,10 +158,10 @@ const theme = createTheme({
             transition: "background 0.3s, color 1s",
             '&:hover': {
               backgroundColor: green[100],
-    
+
             }
-    
-            
+
+
         },
         },
       ],
@@ -257,6 +263,10 @@ const router = createBrowserRouter([
     path: "/debug",
     element: <Debug />,
   },
+
+  {path:"/what-we-treat",
+    element: <WhatWeTreat/>,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -270,9 +280,9 @@ root.render(
         <Footer />
       </ThemeProvider>
     </HelmetProvider>
-    
 
-    
+
+
   </React.StrictMode>
 );
 
