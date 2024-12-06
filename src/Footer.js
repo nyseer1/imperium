@@ -33,16 +33,8 @@ export function Footer() {
     <Box>
       <Box sx={{color:"white", backgroundColor: "green", textAlign: "center", p:1,}}>
         Imperium
-        <BottomNavigation
-          showLabels
-     
-          onMouseOver={(event, newValue) => {
-            setValue(newValue);
-          }}
 
-        >
-        </BottomNavigation>
-      </Box> 
+      </Box>
       <Grid
         sx={{ p: 2, background: "#2BC942", flexGrow: 1 }}
         container
@@ -54,7 +46,7 @@ export function Footer() {
             <Typography textAlign='left'><b>CONTACT INFO</b>
               <br/>
               <br/>
-              <b>Address</b> 
+              <b>Address</b>
               <address style={{ textDecoration: "none" }}>
                 <Button  textAlign='left' href='https://g.co/kgs/oaHpMAF'>
 
@@ -83,7 +75,7 @@ export function Footer() {
                 <br/>
               </address>
             </Typography>
-            
+
           </Container>
         </Grid>
         <Grid size={{ xs: 2, sm: 2, md: 2 }}>
@@ -118,7 +110,6 @@ export function Footer() {
         © 2024 IMPERIUM PTP
         <BottomNavigation
           showLabels
-     
           onMouseOver={(event, newValue) => {
             setValue(newValue);
           }}
