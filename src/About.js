@@ -79,7 +79,7 @@ function About() {
           >
             We are a <b>physical therapy</b> practice that specializes in the diagnoses
             and rehabilitation of orthopedic related conditions, management of
-            <b>post operative cases</b> and overall optimization of functional ability
+            <b> post operative cases</b> and overall optimization of functional ability
             including <b>restoration</b> of mobility, range of motion and strength.
           </Typography>
           <Typography
@@ -133,16 +133,7 @@ function About() {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      
       <br />
       <br />
       <br />
