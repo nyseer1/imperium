@@ -36,7 +36,7 @@ function ResponsiveMenu() {
     // basic div tag that uses css
     <Box>
       {/* static means the appbar will hide itself when scrolling down */}
-      <AppBar position="static">
+      <AppBar position="sticky">
         {/* black box with the logo and it works as a button to goto the homepage */}
         <Box
           sx={{
@@ -44,9 +44,9 @@ function ResponsiveMenu() {
             color: "#ffffff",
             borderTopRightRadius: 8,
             borderBottomRightRadius: 8,
-            
+
             borderColor: "#000000",
-            
+
           }}
         >
           {/* logo image */}
@@ -57,7 +57,7 @@ function ResponsiveMenu() {
                     src={"imperium_logo.jpg"}
             />
           </ButtonBase>
-          
+
         </Box>
 
         {/*conditional rendering, if screen > md render , if <= md render this*/}
@@ -87,7 +87,7 @@ function ResponsiveMenu() {
           </ButtonGroup>
         ) : (
           <ButtonGroup variant='appbar'>
-            <ButtonBase variant='default' 
+            <ButtonBase variant='default'
               id="basic-button"
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"
@@ -99,10 +99,10 @@ function ResponsiveMenu() {
           </ButtonGroup>
         )}
 
-        {/* TODO: 
+        {/* TODO:
       outline contact button
       add links to rest of buttons
-      add more content below, maybe in page components  
+      add more content below, maybe in page components
       */}
       </AppBar>
 
