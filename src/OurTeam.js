@@ -44,7 +44,6 @@ function OurTeam() {
     // basic div tag that uses css
     <Box>
       <Helmet>
-        <title>Our Team | Imperium Physical Therapy and Performance</title>
         <title>Meet Our Team | Imperium Physical Therapy and Performance</title>
         <meta name="description" content="Meet the professional physical therapists behind imperium physical therapy and performance. Our talented team and achieve your fitness goals. Join us today for a healthier you" />
         <meta name="keywords" content="ptp, pt, physical therapy, professional" />
