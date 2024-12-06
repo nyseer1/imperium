@@ -1,40 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 import "@fontsource/roboto/300.css";
 import { Masonry } from "@mui/lab";
+import React from "react";
 //various components
 import {
-  Breadcrumbs,
-  Grid2,
-  Paper,
-  Toolbar,
-  Container,
-  Button,
-  Link,
-  Typography,
-  ButtonGroup,
   Box,
-  ListItem,
-  AppBar,
-  ImageListItemBar,
-  useMediaQuery,
-  ButtonBase,
-  BottomNavigation,
+  Paper,
   styled,
-  Divider,
+  Typography
 } from "@mui/material";
 
-import ImageList from "@mui/material/node/ImageList";
+
 import ImageListItem from "@mui/material/node/ImageListItem";
 
 //for menu button
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
 
 // to use themes
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { BorderColor } from "@mui/icons-material";
 
 //for metadata
 import { Helmet } from "react-helmet-async";
