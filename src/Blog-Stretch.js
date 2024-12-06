@@ -23,7 +23,7 @@ import { Helmet } from "react-helmet-async";
 
 function Blog3() {
 
-  
+
 
   return (
     // basic div tag that uses css
@@ -59,7 +59,7 @@ function Blog3() {
             </Typography>
            </Paper>
         <Typography sx={{ fontSize: 30, textAlign: "center", p:2 }}>
-          
+
         </Typography>
 
         {/* blog post image */}
@@ -102,15 +102,15 @@ function Blog3() {
         <br/>
         <Divider/>
         <br/>
-        
+
         <Paper sx={{p:2, fontSize:[10,15,25]}}>
             <Typography sx={{fontSize:[20,25,30]}}>Our Stretching Services: Tailored for You!</Typography>
             At Imperium Physical Therapy and Performance, we offer <b>professional, hands-on</b> stretching sessions designed to address your unique needs. Whether you're an athlete, recovering from an injury, or just want to maintain flexibility, we have a solution for you!
             <br/><br/>
             <b>Types of Stretching We Offer:</b>
             <br/><br/>
-            
-            
+
+
             <List container justifyContent="flex-start" sx={{listStyle: "decimal", pl: 4,    fontSize:[8,12,18]}}>
                 <ListItem sx={{ display: 'list-item', p:1}}>
                     <b>Assisted Stretching: </b>Our trained therapists will guide you through stretches, allowing for a deeper, more effective session that goes beyond what you can do on your own.
@@ -142,7 +142,7 @@ function Blog3() {
 
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>Faster recovery from workouts and injuries
-                
+
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>Improved athletic performance
                 </ListItem>
@@ -162,7 +162,7 @@ function Blog3() {
 
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>Seniors: Maintain mobility and prevent falls.
-                
+
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>Post-Surgery/Recovery Patients: Safely improve range of motion and accelerate recovery.
                 </ListItem>
@@ -186,15 +186,15 @@ function Blog3() {
 
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>🌐 Visit Us Online: <Button href="/">www.imperiumptp.com</Button>
-                
+
                 </ListItem>
             </Grid2>
         </Box>
 
       </Box>
 
-       
-       
+
+
        {/* blog links */}
        <Box sx={{        display: 'flex', //creates flexbox to arrange content
         flexDirection: 'column', //each new content is added in a row
@@ -211,21 +211,21 @@ function Blog3() {
                   src={post.img}/>
                   <Typography sx={{textAlign:'center', p:1,borderRadius:'2%'}}>{post.title}</Typography>
               </Button>
-              
+
             </div>
           ))}
             <Container><Divider orientation="horizontal" variant="middle" flexItem sx={{width: ['100%']}}/></Container>
-            
+
             <Button href="bloglist" sx={{display:'flex', flexDirection:'row',justifyContent:'center',fontSize:23}}><Typography sx={{fontsize:25, p:1}}>More Posts</Typography><ArrowForwardIosIcon/> </Button>
 
 
 
-            
+
         </Box>
       </Box>
       <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-      
+
     </Box>
   );
 }
