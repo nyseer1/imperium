@@ -58,7 +58,7 @@ function OurTeam() {
       title: "Pic 1",
     },
   ];
-  
+
 
   return (
     // basic div tag that uses css
@@ -71,7 +71,7 @@ function OurTeam() {
       <Box sx={{ width: "100%" }}>
         {" "}
         <Typography sx={{ textAlign:'center', p:1, fontSize: [30,50,80]}} variant="h1">
-          Our Team
+         Meet Our Team
         </Typography>
         <Box
         sx={{
@@ -96,16 +96,16 @@ function OurTeam() {
             sx={{ font: [2], color: "#000000" }}
           >
             <Typography sx={{color:'#50ac54', fontSize:30, fontWeight:'bold', p:1}}>Dr. Frank Prochilo</Typography>
-            <Typography sx={{color:'#000000', fontSize:20, fontWeight:'bold',p:1}}>PT, DPT, OCS Co-founder of Imperium Physical Therapy</Typography>
-            
+            <Typography sx={{color:'#000000', fontSize:20, fontWeight:'bold',p:1}}>PT, DPT, OCS - Owner of Imperium Physical Therapy</Typography>
+
             Dr. Frank Prochilo is the owner and physical therapist at Imperium Physical Therapy, a premier
             clinic specializing in orthopedics and sports rehabilitation. With a deep passion for helping
             patients optimize their physical performance and recover from injuries, Frank combines
             advanced clinical expertise with a personalized approach to care.
             <br/>
-            Frank holds a Doctorate in <b>Physical Therapy (DPT)</b> from SUNY Downstate Medical Center and
-            is board-certified in <b>Orthopedic Physical Therapy (OCS)</b> through the <b>American Board of Physical
-            Therapy Specialties (ABPTS)</b>. With years of experience working with athletes of all levels—from
+            Frank holds a Doctorate in Physical Therapy (DPT) from SUNY Downstate Medical Center and
+            is board-certified in <>Orthopedic Physical Therapy (OCS)</> through the <>American Board of Physical
+            Therapy Specialties (ABPTS)</>. With years of experience working with athletes of all levels—from
             weekend warriors to Division I competitors, Frank is dedicated to helping each patient achieve
             their individual goals, whether it&#39;s returning to sport, overcoming chronic pain, or improving
             overall function.
@@ -146,14 +146,14 @@ function OurTeam() {
                   width: "100%",
                   height:'100%',
                   borderRadius:2,
-                  
+
                 }}
               />
             </ImageListItem>
           ))}
         </Masonry>
       </Box>
-        
+
       </Box>
 
       {/* <TestScreenSmallOrLower /> */}
@@ -161,20 +161,7 @@ function OurTeam() {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+     
       <br />
       <br />
     </Box>
