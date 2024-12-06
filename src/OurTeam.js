@@ -75,7 +75,7 @@ function OurTeam() {
             gutterBottom
             sx={{ font: [2], color: "#4E5652" }}
           >
-<<<<<<< Updated upstream
+
             <Typography sx={{color:'#50ac54', fontSize:30, fontWeight:'bold', p:1}}>Dr. Frank Prochilo</Typography>
             <Typography sx={{color:'#000000', fontSize:20, fontWeight:'bold',p:1}}>PT, DPT, OCS - Owner of Imperium Physical Therapy</Typography>
 
