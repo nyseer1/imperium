@@ -111,8 +111,6 @@ function OurTeam() {
           sx={{
             p:3,
             bgcolor: "background.paper",
-            width:['100%','100%',2000,],
-            alignContent:'center',
             width:['100%','100%',5000,],
             alignContent:'center'
           }}
