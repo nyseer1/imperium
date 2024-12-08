@@ -52,10 +52,10 @@ function Main() {
         <Grid2 size={6}>
           <Grid2 item >
             <Paper sx={{bgcolor:green[500], p:3, borderRadius:3, boxShadow:8, border:1}}>
-              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'200',color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'200',fontSize:['0.8rem','1.5rem'], color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
                 Welcome to
               </Typography>
-              <Typography variant="h6" textAlign='center' sx={{fontSize:'2.5rem', fontWeight:300, letterSpacing: '2.2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:['1.5rem','2rem'], fontWeight:300, letterSpacing: '2.2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
                 Imperium Physical Therapy<br/>& Performance
               </Typography>
             </Paper>
@@ -70,7 +70,7 @@ function Main() {
               
 
               
-              <Typography variant="h6" textAlign='center' sx={{ fontSize:'2rem', letterSpacing: '1.85px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:['1.2rem','2rem'], letterSpacing: '1.85px', minHeight:['7rem','11rem'],alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
               <Alarm sx={{pr:1,fontSize:32}}/>See Us Without Prescription For 30 Days
               </Typography>
 
@@ -84,7 +84,7 @@ function Main() {
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
 
               
-              <Typography variant="h6" textAlign='center' sx={{ fontSize:'2rem', letterSpacing: '1.85px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif',}}>
+              <Typography variant="h6" textAlign='center' sx={{ fontSize:['1.2rem','2rem'], letterSpacing: '1.85px', minHeight:['7rem','11rem'],alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif',}}>
                 <MedicalInformationIcon sx={{pr:1,fontSize:32}}/>
                 Most Insurances Accepted
               </Typography>
@@ -96,7 +96,7 @@ function Main() {
         <Grid2 size={4}>
           <Grid2 item >
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0,textAlign:'center'}}>
-              <Typography variant="h6" sx={{ fontSize:'2rem', letterSpacing: '1.85px', minHeight:'11rem',alignContent:'center',textAlign:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="h6" sx={{ fontSize:['1.2rem','2rem'], letterSpacing: '1.85px', minHeight:['7rem','11rem'],alignContent:'center',textAlign:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
                 <EmojiPeopleIcon sx={{pr:1,fontSize:32}}/>
                 Individualized Physical Therapy
               </Typography>
@@ -110,14 +110,14 @@ function Main() {
       <Grid2 container spacing={3} columns={{xs:2,sm:4,md:12}}>
         <Grid2 size={6}>
           <Grid2 item>{/* image */}
-            <Box component="img" sx={{width: '21rem' , height: '20rem', borderRadius:'2%',border:1}}
+            <Box component="img" sx={{width: '21rem' , height: '20rem',maxWidth:'100%', borderRadius:'2%',border:1}}
                       alt={"Imperium_PTP_Building"}
                       src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}/>
           </Grid2>
         </Grid2>
         <Grid2 size={5}>
           <Grid2 item sx={{display:'flex',flexDirection:'column', justifyItems:'center'}}>
-            <Paper sx={{fontSize:'1.5rem',fontWeight:'900', p:3}}>
+            <Paper sx={{fontSize:['1rem','1.5rem'],fontWeight:'900', p:3}}>
               We are a team of licensed and experienced physical therapists
               dedicated to providing quality healthcare and individualized
               treatment plans to reduce pain, restore mobility and range of motion

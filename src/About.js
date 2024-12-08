@@ -58,7 +58,7 @@ function About() {
       </Helmet>
       <Box sx={{ width: "100%" }}>
         {" "}
-        <Typography variant="h1" sx={{ textAlign:'center', p:1, fontSize: [30,50,80]}} >
+        <Typography variant="h1" sx={{ textAlign:'center', p:1, fontSize:'5rem'}} >
           About Us
         </Typography>
         <Box
@@ -71,7 +71,7 @@ function About() {
           alignItems: "flex-start", //centers items inside box horizontally (for when column)
         }}
       >
-        <Paper sx={{fontSize: [25,20,15], p: 2,}}>
+        <Paper sx={{fontSize: '2rem', p: 2,}}>
           <Typography
             variant="body1"
             gutterBottom
@@ -86,7 +86,7 @@ function About() {
             variant="body1"
             gutterBottom
             sx={{ font: [2], color: "#000000" }}
-          >
+          > 
             Our mission is to improve the health and wellness of our clients by
             empowering them with the knowledge and skills to optimize their
             physical potential. Our vision is to develop championship athletes
