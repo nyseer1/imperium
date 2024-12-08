@@ -34,7 +34,7 @@ export function Footer() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box>
+    <Box sx={{fontSize:['1rem','1.5rem']}}>
       <Box sx={{color:"white", backgroundColor: "green", textAlign: "center", p:1.5}}>
         <ScrollToTopButton/>
       </Box>
@@ -90,19 +90,19 @@ export function Footer() {
 
             <List sx={{ color: "black",  textDecoration: "none"}}>
               <ListItem >
-                <b>Mon/Wed:</b><Typography sx={{paddingLeft:1, paddingTop:0.5, }}>8AM – 7PM</Typography>
+                <b>Mon/Wed:</b><Typography sx={{paddingLeft:1, paddingTop:0.5,fontSize:['1rem','1.5rem'] }}>8AM – 7PM</Typography>
               </ListItem>
               <ListItem >
-                <b>Tues/Thurs:</b><Typography sx={{paddingLeft:1, paddingTop:0.5}}>8AM– 3PM</Typography>
+                <b>Tues/Thurs:</b><Typography sx={{paddingLeft:1, paddingTop:0.5,fontSize:['1rem','1.5rem'] }}>8AM– 3PM</Typography>
               </ListItem>
               <ListItem >
-                <b>Fri:</b><Typography sx={{paddingLeft:1, paddingTop:0.5}}>8AM – 5PM</Typography>
+                <b>Fri:</b><Typography sx={{paddingLeft:1, paddingTop:0.5,fontSize:['1rem','1.5rem'] }}>8AM – 5PM</Typography>
               </ListItem>
               <ListItem >
-                <b>Sat:</b><Typography sx={{paddingLeft:1, paddingTop:0.5}}>8AM – 12PM</Typography>
+                <b>Sat:</b><Typography sx={{paddingLeft:1, paddingTop:0.5,fontSize:['1rem','1.5rem'] }}>8AM – 12PM</Typography>
               </ListItem>
               <ListItem >
-                <b>Sun:</b><Typography sx={{paddingLeft:1, paddingTop:0.5}}>CLOSED</Typography>
+                <b>Sun:</b><Typography sx={{paddingLeft:1, paddingTop:0.5,fontSize:['1rem','1.5rem'] }}>CLOSED</Typography>
               </ListItem>
             </List>
           </Container>

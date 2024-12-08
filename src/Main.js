@@ -52,10 +52,10 @@ function Main() {
         <Grid2 size={6}>
           <Grid2 item >
             <Paper sx={{bgcolor:green[500], p:3, borderRadius:3, boxShadow:8, border:1}}>
-              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'200',fontSize:['0.8rem','1.5rem'], color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'200',fontSize:['0.8rem','1.5rem'], color:'#fafafa',letterSpacing: '2px',fontWeight:'900',textShadow:'#171 2px 2px 2px',fontFamily:'Arial, sans-serif' }}>
                 Welcome to
               </Typography>
-              <Typography variant="h6" textAlign='center' sx={{fontSize:['1.5rem','2rem'], fontWeight:300, letterSpacing: '2.2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:['1.5rem','2rem'], fontWeight:300, letterSpacing: '1px',fontWeight:'900',textShadow:'#171 2px 2px 2px',fontFamily:'Arial, sans-serif' }}>
                 Imperium Physical Therapy<br/>& Performance
               </Typography>
             </Paper>
@@ -63,15 +63,15 @@ function Main() {
         </Grid2>
       </Grid2>
 
-      <Grid2 container spacing={3} sx={{pl:2,pr:2, justifyContent:'center'}} columns={{xs:2,sm:4,md:12}}>
+      <Grid2 container spacing={0.5} sx={{pl:2,pr:2, justifyContent:'center'}} columns={{xs:2,sm:4,md:12}}>
         <Grid2 size={4}>
           <Grid2 item >
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
               
 
               
-              <Typography variant="h6" textAlign='center' sx={{fontSize:['1.2rem','2rem'], letterSpacing: '1.85px', minHeight:['7rem','11rem'],alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
-              <Alarm sx={{pr:1,fontSize:32}}/>See Us Without Prescription For 30 Days
+              <Typography variant="h6" textAlign='center' sx={{fontSize:['1.2rem','1.7rem'], letterSpacing: '1.85px', minHeight:['7rem','11rem'],alignContent:'center',textShadow:'#686 1px 1px 2px', fontWeight:'900',fontFamily:'Arial, sans-serif'}}>
+              <Alarm sx={{pt:1,fontSize:33}}/>See Us Without Prescription For 30 Days
               </Typography>
 
 
@@ -84,8 +84,8 @@ function Main() {
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
 
               
-              <Typography variant="h6" textAlign='center' sx={{ fontSize:['1.2rem','2rem'], letterSpacing: '1.85px', minHeight:['7rem','11rem'],alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif',}}>
-                <MedicalInformationIcon sx={{pr:1,fontSize:32}}/>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:['1.2rem','1.7rem'], letterSpacing: '1.85px', minHeight:['7rem','11rem'],alignContent:'center',textShadow:'#686 1px 1px 2px', fontWeight:'900',fontFamily:'Arial, sans-serif'}}>
+                <MedicalInformationIcon sx={{pt:1,fontSize:33}}/>
                 Most Insurances Accepted
               </Typography>
 
@@ -96,8 +96,8 @@ function Main() {
         <Grid2 size={4}>
           <Grid2 item >
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0,textAlign:'center'}}>
-              <Typography variant="h6" sx={{ fontSize:['1.2rem','2rem'], letterSpacing: '1.85px', minHeight:['7rem','11rem'],alignContent:'center',textAlign:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
-                <EmojiPeopleIcon sx={{pr:1,fontSize:32}}/>
+              <Typography variant="h6" sx={{fontSize:['1.2rem','1.7rem'], letterSpacing: '1.85px', minHeight:['7rem','11rem'],alignContent:'center',textShadow:'#686 1px 1px 2px', fontWeight:'900',fontFamily:'Arial, sans-serif'}}>
+                <EmojiPeopleIcon sx={{pt:1,fontSize:33}}/>
                 Individualized Physical Therapy
               </Typography>
             </Paper>
