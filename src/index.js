@@ -1,30 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import reportWebVitals from "./reportWebVitals";
 import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 //imports pages so we can link to them
-import Main from "./Main";
 import About from "./About";
-import Error from "./Error";
-import OurTeam from "./OurTeam";
-import Footer from "./Footer";
 import Bloglist from "./Bloglist.js";
-import ResponsiveMenu from "./ResponsiveMenu.js";
 import Contact from "./Contact.js";
-
+import Error from "./Error";
+import Footer from "./Footer";
+import Main from "./Main";
+import OurTeam from "./OurTeam";
+import ResponsiveMenu from "./ResponsiveMenu.js";
 
 //import blog pages to link to
-import Blog1 from "./Blog1-Low-back-pain-m.js";
 import Blog2 from "./Blog-BFR-for-ACLr.js";
-import Blog3 from "./Blog-Stretch.js";
 import Blog4 from "./Blog-Rotator-Cuff.js";
+import Blog3 from "./Blog-Stretch.js";
+import Blog1 from "./Blog1-Low-back-pain-m.js";
 
 //debug page
 import Debug from "./Debug.js";
 
 // ability to access mui components
+import { deepPurple, green } from "@mui/material/node/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { green, deepPurple} from "@mui/material/node/colors";
 
 //default css styling
 import { CssBaseline } from "@mui/material";
@@ -42,17 +41,19 @@ const theme = createTheme({
     // mode:'dark',
     // need to test dark mode
     primary: {
-      main: green[500]
+      main: green[500],
     },
     secondary: deepPurple,
   },
-  typography:{
-    color:'primary',
-    fontSize:19,
+  typography: {
+    color: "primary",
+   fontSize: 20,
     textAlign: "center",
-    p:2,
-  },
+    p: 2,
 
+    fontFamily: "Impact, Roboto, Arial, sans-serif",
+  },
+  components: {},
   // default properties of components
   components: {
     // Name of the component ⚛️
@@ -64,123 +65,111 @@ const theme = createTheme({
           display: "flex", //creates flexbox to arrange content
           flexDirection: "row", //each new content is added in a row
           border: 1,
-          p:0,
+          p: 0,
         },
       },
     },
     MuiBottomNavigation: {
       defaultProps: {
         sx: {
-
-          color: 'primary',
-
+          color: "primary",
           height: 200,
         },
       },
     },
 
-    MuiButton:{
-      defaultProps:{
-        sx:{
-          color:'#000000',
-          textTransform: 'none',
+    MuiButton: {
+      defaultProps: {
+        sx: {
+          color: "#000000",
+          textTransform: "none",
           transition: "background 0.3s, color 1s",
-        '&:hover': {
-          backgroundColor: green[800],
-
+          "&:hover": {
+            backgroundColor: green[800],
+          },
         },
-        }
-      }
-  },
-
+      },
+    },
 
     MuiButtonBase: {
-      defaultProps:{
-        sx:{
-          p:'1rem',
-        }
+      defaultProps: {
+        sx: {
+          p: "1rem",
+        },
       },
       variants: [
         {
-          props: { variant: 'default' },
-            style: {
-              fontSize: '0.9rem',
-              textTransform: "capitalize",
-              padding: '1rem',
-              display: "flex", //creates flexbox to arrange content
-              flexDirection: "column", //each new content is added in a row
-              justifyContent: "space-evenly", //content starts at the end of the line(right)
-              borderRadius:1,
-              color:'primary',
-
-              transition: "background 0.3s, color 1s",
-              '&:hover': {
-                backgroundColor: green[800],
-
-              }
-
-
-          },
-        },
-        {
-          props: { variant: 'footer' },
-            style: {
-              textAlign:'left',
-              fontSize: '0.9rem',
-              textTransform: "capitalize",
-              padding: '1rem',
-              display: "flex", //creates flexbox to arrange content
-              flexDirection: "column", //each new content is added in a row
-              justifyContent: "space-evenly", //content starts at the end of the line(right)
-              borderRadius:1,
-
-              transition: "background 0.3s, color 1s",
-              '&:hover': {
-                backgroundColor: green[800],
-
-              }
-
-
-          },
-        },
-        {
-          props: { variant: 'greentext' },
+          props: { variant: "default" },
           style: {
-            color:'green',
-            fontSize: '1.2rem',
+            //     fontSize: '0.9rem',
             textTransform: "capitalize",
-            padding: '1rem',
+            padding: "1rem",
             display: "flex", //creates flexbox to arrange content
             flexDirection: "column", //each new content is added in a row
             justifyContent: "space-evenly", //content starts at the end of the line(right)
-            borderRadius:1,
+            borderRadius: 1,
+            color: "primary",
 
             transition: "background 0.3s, color 1s",
-            '&:hover': {
-              backgroundColor: green[100],
-
-            }
-
-
+            "&:hover": {
+              backgroundColor: green[800],
+            },
+          },
         },
+        {
+          props: { variant: "footer" },
+          style: {
+            textAlign: "left",
+            fontSize: "0.9rem",
+            textTransform: "capitalize",
+            padding: "1rem",
+            display: "flex", //creates flexbox to arrange content
+            flexDirection: "column", //each new content is added in a row
+            justifyContent: "space-evenly", //content starts at the end of the line(right)
+            borderRadius: 1,
+
+            transition: "background 0.3s, color 1s",
+            "&:hover": {
+              backgroundColor: green[800],
+            },
+          },
+        },
+        {
+          props: {
+            variant: "greentext",
+          },
+          style: {
+            color: "green",
+            fontSize: "1.2rem",
+            textTransform: "capitalize",
+            padding: "1rem",
+            display: "flex", //creates flexbox to arrange content
+            flexDirection: "column", //each new content is added in a row
+            justifyContent: "space-evenly", //content starts at the end of the line(right)
+            borderRadius: 1,
+
+            transition: "background 0.3s, color 1s",
+            "&:hover": {
+              backgroundColor: green[100],
+            },
+          },
         },
       ],
     },
     MuiButtonGroup: {
-     variants: [
-      {
-        props:{ variant:'appbar'},
-        style:{
+      variants: [
+        {
+          props: { variant: "appbar" },
+          style: {
             color: "black", //in appbar need to use a color from the pallete
             height: 100,
             display: "flex", //creates flexbox to arrange content
             flexDirection: "row", //each new content is added in a row
-            flexGrow:1,
-            justifyContent:"flex-end",
+            flexGrow: 1,
+            justifyContent: "flex-end",
           },
-        }
-
-     ],
+        },
+      ],
     },
     MuiContainer: {
       sx: {
@@ -203,14 +192,14 @@ const theme = createTheme({
     MuiPaper: {
       align: "left",
       sx: {
-        fontSize: '1rem',
-        p:1.5,
+        fontSize: "1rem",
+        p: 1.5,
       },
     },
-    MuiGrid2:{
-      textAlign:'center',
-      p:1,
-    }
+    MuiGrid2: {
+      textAlign: "center",
+      p: 1,
+    },
   },
 });
 
@@ -264,9 +253,10 @@ const router = createBrowserRouter([
     element: <Debug />,
   },
 
-  {path:"/what-we-treat",
-    element: <WhatWeTreat/>,
-  }
+  {
+    path: "/what-we-treat",
+    element: <WhatWeTreat />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -274,15 +264,12 @@ root.render(
   <React.StrictMode>
     <HelmetProvider>
       <ThemeProvider theme={theme}>
-        <CssBaseline/>
+        <CssBaseline />
         <ResponsiveMenu />
         <RouterProvider router={router} />
         <Footer />
       </ThemeProvider>
     </HelmetProvider>
-
-
-
   </React.StrictMode>
 );
 
