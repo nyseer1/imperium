@@ -51,7 +51,6 @@ const theme = createTheme({
     textAlign: "center",
     p: 2,
 
-    fontFamily: "Impact, Roboto, Arial, sans-serif",
   },
   components: {},
   // default properties of components

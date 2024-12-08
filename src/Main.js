@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 //various components
 import {
   Paper,
@@ -44,18 +45,55 @@ function Main() {
 
       {/* content */}
       
-      <Grid2 container sx={{p:4, justifyContent:'center'}}>
+      <Grid2 container sx={{pt:1, justifyContent:'center'}} columns={{xs:2,sm:4,md:12}}>
         <Grid2 size={6}>
           <Grid2 item >
-            <Paper sx={{bgcolor:green[500], p:3, borderRadius:3, boxShadow:10, border:1}}>
-              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:900,color:'#fafafa'}} style={{textShadow:'#000 1px 1px 1px'}}>
+            <Paper sx={{bgcolor:green[500], p:3, borderRadius:3, boxShadow:8, border:1}}>
+              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'200',color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
                 Welcome to
               </Typography>
-              <Typography variant="h6" textAlign='center' sx={{fontSize:'2.5rem', fontWeight:900 }}style={{textShadow:'#171 2px 2px 2px'}}>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:'2.5rem', fontWeight:300, letterSpacing: '2.2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
                 Imperium Physical Therapy<br/>& Performance
               </Typography>
             </Paper>
-            
+          </Grid2>
+        </Grid2>
+      </Grid2>
+
+      <Grid2 container spacing={3} sx={{pl:2,pr:2, justifyContent:'center'}} columns={{xs:2,sm:4,md:12}}>
+        <Grid2 size={4}>
+          <Grid2 item >
+            <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
+              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'1rem',color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              </Typography>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.8px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#888 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+                See Us Without Prescription For 30 Days
+              </Typography>
+            </Paper>
+          </Grid2>
+        </Grid2>
+
+        <Grid2 size={4}>
+          <Grid2 item >
+            <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
+              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'1rem',color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              </Typography>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.8px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#888 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+                Most Insurances Accepted
+              </Typography>
+            </Paper>
+          </Grid2>
+        </Grid2>
+
+        <Grid2 size={4}>
+          <Grid2 item >
+            <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
+              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'1rem',color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              </Typography>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.8px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#888 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+                Individualized Physical Therapy
+              </Typography>
+            </Paper>
           </Grid2>
         </Grid2>
         
@@ -65,99 +103,25 @@ function Main() {
       <Grid2 container spacing={3} columns={{xs:2,sm:4,md:12}}>
         <Grid2 size={6}>
           <Grid2 item>{/* image */}
-            <Box component="img" sx={{width: '20rem' , height: '20rem', borderRadius:'2%',border:1}}
+            <Box component="img" sx={{width: '21rem' , height: '20rem', borderRadius:'2%',border:1}}
                       alt={"Imperium_PTP_Building"}
                       src={"Imperium_Physical_Therapy_and_Performance_Building.jpg"}/>
           </Grid2>
         </Grid2>
-        <Grid2 size={6}>
+        <Grid2 size={5}>
           <Grid2 item sx={{display:'flex',flexDirection:'column', justifyItems:'center'}}>
-          <Paper>
-            We are a team of licensed and experienced physical therapists
-            dedicated to providing quality healthcare and individualized
-            treatment plans to reduce pain, restore mobility and range of motion
-            and to optimize functional potential.
-          </Paper>
+            <Paper sx={{fontSize:'1.5rem',fontWeight:'900', p:3}}>
+              We are a team of licensed and experienced physical therapists
+              dedicated to providing quality healthcare and individualized
+              treatment plans to reduce pain, restore mobility and range of motion
+              and to optimize functional potential.
+            </Paper>
 
               <ButtonBase variant='greentext' href="/contact">
                 Contact Us
               </ButtonBase>
-            </Grid2>
-          </Grid2>
-          <Grid2 size={6}>
-            <Grid2 item sx={{display:'flex',flexDirection:'column', justifyItems:'center',}}>
-              <Typography color="primary" variant="subtitle1" textAlign='center'>
-                Expert Physical Therapy
-              </Typography>
-              <Typography variant="h4" textAlign='center'>
-                Giving You the Power to Improve Your Life<br/><br/>
-              </Typography>
-
-            <Paper>
-              All of the specialized clinicians at Imperium Physical Therapy and Performance
-              are dedicated to provide you with the highest quality of care.
-            </Paper>
-            <ButtonBase variant='greentext' href="/our-team">
-              Learn More
-            </ButtonBase>
-
           </Grid2>
         </Grid2>
-        <Grid2 size={6}>
-          <Grid2 item>{/* image */}
-            <Box component="img" sx={{width: '20rem' , height: '30rem', borderRadius:'2%',border:1}}
-                      alt={"Physical Therapy Service"}
-                      src={"imperium_physical_therapy_services1.JPG"}/>
-          </Grid2>
-        </Grid2>
-
-          <Grid2 size={6}>
-            <Grid2 item>
-            <Paper >
-              <Typography >
-                <List
-                sx={{
-                  listStyleType: "disc",
-                  listStylePosition: "inside",
-                }}
-              >
-                <ListItem divider>
-                  <ListItemIcon>
-                    <ArrowForwardIosIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="See us without a prescription"
-                  />
-                </ListItem>
-                <ListItem divider>
-                  <ListItemIcon>
-                    <ArrowForwardIosIcon />
-                  </ListItemIcon>
-                  <ListItemText
-
-                    primary="Individualized Physical Therapy experience"
-                  />
-                </ListItem>
-
-                <ListItem >
-                  <ListItemIcon>
-                    <ArrowForwardIosIcon />
-                  </ListItemIcon>
-                  <ListItemText
-
-                    primary="Accepts most Insurances"
-                  />
-                </ListItem>
-
-              </List>
-              </Typography>
-
-          </Paper>
-
-          </Grid2>
-        </Grid2>
-
-
       </Grid2>
 
 

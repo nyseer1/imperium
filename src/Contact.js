@@ -35,7 +35,7 @@ function Contact(){
         <Typography sx={{fontSize:50, textAlign:'center'}}>Contact Us<br/>
           <Button href="tel:+5164901480" sx={{display:'flex', flexDirection:'row'}}><b>Phone</b> (516) 490-1480<UndoIcon/></Button>
           <Button href="tel:+5164904009" sx={{display:'flex', flexDirection:'row'}}><b>Fax</b> (516) 490-4009<UndoIcon/></Button>
-          <Typography sx={{fontSize:30, textAlign:'center'}}>Address</Typography>
+          <Typography sx={{fontSize:30, textAlign:'center'}}>Come Meet Us!</Typography>
           <Button href='https://g.co/kgs/oaHpMAF' sx={{display:'flex', flexDirection:'row'}}><b></b>1897 Wantagh Ave<br/>Wantagh, NY 11793<UndoIcon/></Button>
           <br/>
           <Button href="/" sx={{display:'flex', flexDirection:'row'}}>Back To Home<UndoIcon/></Button>
