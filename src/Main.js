@@ -11,7 +11,7 @@ import {
   ButtonBase,
   BottomNavigation,
   Divider,
-  Grid2,
+  Grid2, List, ListItem, ListItemIcon,ListItemText
 } from "@mui/material";
 
 import { green } from "@mui/material/node/colors";
@@ -79,19 +79,19 @@ function Main() {
             and to optimize functional potential.
           </Paper>
 
-            <ButtonBase variant='greentext' href="/contact">
-              Contact Us
-            </ButtonBase>
+              <ButtonBase variant='greentext' href="/contact">
+                Contact Us
+              </ButtonBase>
+            </Grid2>
           </Grid2>
-        </Grid2>
-        <Grid2 size={6}>
-          <Grid2 item sx={{display:'flex',flexDirection:'column', justifyItems:'center',}}>
-            <Typography color="primary" variant="subtitle1" textAlign='center'>
-              Expert Physical Therapy
-            </Typography>
-            <Typography variant="h6" textAlign='center'>
-              Giving You the Power to<br/>Improve Your Life<br/><br/>
-            </Typography>
+          <Grid2 size={6}>
+            <Grid2 item sx={{display:'flex',flexDirection:'column', justifyItems:'center',}}>
+              <Typography color="primary" variant="subtitle1" textAlign='center'>
+                Expert Physical Therapy
+              </Typography>
+              <Typography variant="h4" textAlign='center'>
+                Giving You the Power to Improve Your Life<br/><br/>
+              </Typography>
 
             <Paper>
               All of the specialized clinicians at Imperium Physical Therapy and Performance
@@ -111,18 +111,46 @@ function Main() {
           </Grid2>
         </Grid2>
 
-        <Grid2 size={6}>
-          <Grid2 item>
-          <Paper sx={{p:2}}>
-            <Typography sx={{fontSize:20,color:'#000000'}}>
-              -See us without a prescription
-              <br/>
-              -Individualized Physical Therapy experience
-              <br/>
-              -Accepts most Insurances
-              <br/>
-              -Appointment Available within 24 hours
-            </Typography>
+          <Grid2 size={6}>
+            <Grid2 item>
+            <Paper >
+              <Typography >
+                <List
+                sx={{
+                  listStyleType: "disc",
+                  listStylePosition: "inside",
+                }}
+              >
+                <ListItem divider>
+                  <ListItemIcon>
+                    <ArrowForwardIosIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="See us without a prescription"
+                  />
+                </ListItem>
+                <ListItem divider>
+                  <ListItemIcon>
+                    <ArrowForwardIosIcon />
+                  </ListItemIcon>
+                  <ListItemText
+
+                    primary="Individualized Physical Therapy experience"
+                  />
+                </ListItem>
+
+                <ListItem >
+                  <ListItemIcon>
+                    <ArrowForwardIosIcon />
+                  </ListItemIcon>
+                  <ListItemText
+
+                    primary="Accepts most Insurances"
+                  />
+                </ListItem>
+
+              </List>
+              </Typography>
 
           </Paper>
 
