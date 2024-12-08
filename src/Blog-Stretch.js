@@ -223,8 +223,6 @@ function Blog3() {
 
         </Box>
       </Box>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
 
     </Box>
   );

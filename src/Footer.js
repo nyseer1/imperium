@@ -26,14 +26,17 @@ import {
 import { green } from "@mui/material/node/colors";
 import Grid from "@mui/material/Grid2";
 
+//custom scroll to top button
+import ScrollToTopButton from "./ScrollButton";
+
+
 export function Footer() {
   const [value, setValue] = React.useState(0);
 
   return (
     <Box>
-      <Box sx={{color:"white", backgroundColor: "green", textAlign: "center", p:1,}}>
-        Imperium
-
+      <Box sx={{color:"white", backgroundColor: "green", textAlign: "center", p:1.5}}>
+        <ScrollToTopButton/>
       </Box>
       <Grid
         sx={{ p: 2, background: "#2BC942", flexGrow: 1 }}

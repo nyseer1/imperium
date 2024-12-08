@@ -183,10 +183,7 @@ function Blog4() {
 
             
         </Box>
-      </Box>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-      
+      </Box> 
     </Box>
   );
 }

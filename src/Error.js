@@ -21,7 +21,6 @@ function Error(){
   // basic div tag that uses css
   <Box>
 
-    {/* content */}
     <Box sx={{p:2,
           display: 'flex', //creates flexbox to arrange content
           flexDirection: ['column','column', 'row', 'row', 'row' ], //each new content is added in a row if screen > md, columb if <= md
@@ -34,12 +33,6 @@ function Error(){
         </Typography>
           
     </Box>
-    
-      
-    {/* test tertiary function, if small or lower, render this, else render this */}
-    {/* {isMatch ? <h1>true</h1> : <h1>false</h1>} */}
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
   </Box>
   );
 }

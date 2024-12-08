@@ -136,14 +136,6 @@ function OurTeam() {
       </Box>
 
       </Box>
-
-      {/* <TestScreenSmallOrLower /> */}
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </Box>
   );
 }

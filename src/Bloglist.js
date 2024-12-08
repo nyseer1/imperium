@@ -94,8 +94,6 @@ function Bloglist() {
 
             
         </Box> 
-      
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </Box>
   );
 }

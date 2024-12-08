@@ -52,7 +52,7 @@ function Main() {
               <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'200',color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
                 Welcome to
               </Typography>
-              <Typography variant="h6" textAlign='center' sx={{fontSize:'2.5rem', fontWeight:300, letterSpacing: '2.2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:'2.5rem', fontWeight:300, letterSpacing: '2.2px' }}style={{fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
                 Imperium Physical Therapy<br/>& Performance
               </Typography>
             </Paper>
@@ -66,7 +66,7 @@ function Main() {
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
               <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'1rem',color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
               </Typography>
-              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.8px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#888 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.8px', minHeight:'11rem',alignContent:'center'}}style={{fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
                 See Us Without Prescription For 30 Days
               </Typography>
             </Paper>
@@ -78,7 +78,7 @@ function Main() {
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
               <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'1rem',color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
               </Typography>
-              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.8px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#888 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.8px', minHeight:'11rem',alignContent:'center'}}style={{fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
                 Most Insurances Accepted
               </Typography>
             </Paper>
@@ -88,9 +88,9 @@ function Main() {
         <Grid2 size={4}>
           <Grid2 item >
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
-              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'1rem',color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="subtitle1" textAlign='center' sx={{fontWeight:'1rem',color:'#fafafa',letterSpacing: '2px' }}style={{textShadow:'#171 2px 2px 2px',fontFamily:'Roboto, Arial, sans-serif'}}>
               </Typography>
-              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.8px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#888 2px 2px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.8px', minHeight:'11rem',alignContent:'center'}}style={{fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
                 Individualized Physical Therapy
               </Typography>
             </Paper>
@@ -124,8 +124,6 @@ function Main() {
         </Grid2>
       </Grid2>
 
-
-      <br/><br/><br/>
     </Box>
   );
 }

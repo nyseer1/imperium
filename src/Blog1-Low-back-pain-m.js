@@ -297,15 +297,6 @@ function Blog1() {
           </Button>
         </Box>
       </Box>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </Box>
   );
 }
