@@ -12,17 +12,20 @@ import {
   ButtonBase,
   BottomNavigation,
   Divider,
-  Grid2, List, ListItem, ListItemIcon,ListItemText
+  Grid2, List, ListItem, ListItemIcon,ListItemText,Stack
 } from "@mui/material";
 
 import { green } from "@mui/material/node/colors";
 
-// for arrow icon
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+//icons
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
 // to use themes
 import { createTheme } from "@mui/material/styles";
 import { Helmet } from "react-helmet-async";
+import { Alarm } from "@mui/icons-material";
 
 {/* <Helmet>
         <title>Imperium Physical Therapy and Performance</title>
@@ -64,9 +67,14 @@ function Main() {
         <Grid2 size={4}>
           <Grid2 item >
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
-              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.85px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
-                See Us Without Prescription For 30 Days
+              
+
+              
+              <Typography variant="h6" textAlign='center' sx={{ fontSize:'2rem', letterSpacing: '1.85px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+              <Alarm sx={{pr:1,fontSize:32}}/>See Us Without Prescription For 30 Days
               </Typography>
+
+
             </Paper>
           </Grid2>
         </Grid2>
@@ -74,17 +82,22 @@ function Main() {
         <Grid2 size={4}>
           <Grid2 item >
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
-              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.85px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+
+              
+              <Typography variant="h6" textAlign='center' sx={{ fontSize:'2rem', letterSpacing: '1.85px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif',}}>
+                <MedicalInformationIcon sx={{pr:1,fontSize:32}}/>
                 Most Insurances Accepted
               </Typography>
+
             </Paper>
           </Grid2>
         </Grid2>
 
         <Grid2 size={4}>
           <Grid2 item >
-            <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0}}>
-              <Typography variant="h6" textAlign='center' sx={{fontSize:'2rem', letterSpacing: '1.85px', minHeight:'11rem',alignContent:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+            <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0,textAlign:'center'}}>
+              <Typography variant="h6" sx={{ fontSize:'2rem', letterSpacing: '1.85px', minHeight:'11rem',alignContent:'center',textAlign:'center'}}style={{textShadow:'#686 1px 1px 2px',fontFamily:'Impact, Roboto, Arial, sans-serif'}}>
+                <EmojiPeopleIcon sx={{pr:1,fontSize:32}}/>
                 Individualized Physical Therapy
               </Typography>
             </Paper>
