@@ -60,7 +60,7 @@ function About() {
         <Typography variant="h1" sx={{fontSize:['2rem','3.5rem'], textAlign:'center', p:1}} >
           About Us
         </Typography>
-        
+
         <Grid2 container sx={{pt:1, justifyContent:'center'}} columns={{xs:2,sm:4,md:12}}>
           <Grid2 size={6}>
             <Grid2 item >
@@ -80,9 +80,9 @@ function About() {
                       </Grid2>
                   </Grid2>
               </Paper>
-              
+
             </Grid2>
-            
+
           </Grid2>
           <Grid2 size={6}>
             <Grid2 item >
