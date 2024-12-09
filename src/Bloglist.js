@@ -1,13 +1,12 @@
 import React from "react";
 //various components
-import {Paper,Button,Typography,ButtonGroup,Box,AppBar,useMediaQuery,ButtonBase,BottomNavigation,Container,
+import {
+  Box,
+  Button, Typography
 } from "@mui/material";
 //for menu button
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
 
 //to use divider
-import Divider from '@mui/material/Divider';
 
 //metadata 
 import { Helmet } from "react-helmet-async";

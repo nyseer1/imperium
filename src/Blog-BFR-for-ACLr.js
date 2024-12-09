@@ -1,35 +1,28 @@
 import React from "react";
 //various components
 import {
-  Paper,
-  Button,
-  Typography,
-  ButtonGroup,
   Box,
-  AppBar,
-  useMediaQuery,
-  ButtonBase,
-  BottomNavigation,
-  Container,ListItem,Grid2,List,
+  Button,
+  Container,
+  Grid2, List,
+  ListItem,
+  Paper,
+  Typography
 } from "@mui/material";
 //for menu button
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
 
 // to use themes
-import { createTheme } from "@mui/material/styles";
 
 //to use divider
 import Divider from "@mui/material/Divider";
 
 //blog pages
-import Bloglist from "./Bloglist";
 
 // for arrow icon
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
-import { postData } from "./Bloglist";
 import { Helmet } from "react-helmet-async";
+import { postData } from "./Bloglist";
 
 function Blog2() {
   return (

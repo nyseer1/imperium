@@ -1,44 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 import "@fontsource/roboto/300.css";
-import { Masonry } from "@mui/lab";
+import React from "react";
 //various components
 import {
   Box,
-  Container,
-  Divider,
-  ListItemIcon,
-  Menu,
-  MenuItem,
-  ListItemButton,
-  Paper,
-  styled,
-  Typography,
   Grid2,
-  List,
   ListItem,
-  ListItemText,
-  ListSubheader,
+  Paper,
+  Typography
 } from "@mui/material";
 
 import { green } from "@mui/material/node/colors";
-import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
 
 // to use themes
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Helmet } from "react-helmet-async";
 
-import {
-  Css,
-  Html,
-  Javascript,
-  Php,
-  RadioOutlined,
-  CircleTwoToneIcon,
-  Radio,
-  RadioButtonUncheckedTwoTone,
-  ChevronRight,
-} from "@mui/icons-material";
 
 function WhatWeTreat() {
   return (

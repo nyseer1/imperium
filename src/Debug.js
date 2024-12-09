@@ -1,24 +1,17 @@
 import React from "react";
 //various components
 import {
-  Paper,
-  Button,
-  Typography,
-  ButtonGroup,
   Box,
-  AppBar,
-  useMediaQuery,
-  ButtonBase,
-  BottomNavigation,
+  Button,
   Divider,
+  Paper,
+  Typography
 } from "@mui/material";
 
 // for arrow icon
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // to use themes
-import { createTheme } from "@mui/material/styles";
-import { Circle } from "@mui/icons-material";
 
 function Debug() {
   return (

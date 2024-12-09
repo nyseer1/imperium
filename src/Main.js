@@ -2,30 +2,22 @@ import React from "react";
 import "./index.css";
 //various components
 import {
-  Paper,
-  Button,
-  Typography,
-  ButtonGroup,
   Box,
-  AppBar,
-  useMediaQuery,
   ButtonBase,
-  BottomNavigation,
-  Divider,
-  Grid2, List, ListItem, ListItemIcon,ListItemText,Stack
+  Grid2,
+  Paper,
+  Typography
 } from "@mui/material";
 
 import { green } from "@mui/material/node/colors";
 
 //icons
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
-import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
+import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
 
 // to use themes
-import { createTheme } from "@mui/material/styles";
-import { Helmet } from "react-helmet-async";
 import { Alarm } from "@mui/icons-material";
+import { Helmet } from "react-helmet-async";
 
 {/* <Helmet>
         <title>Imperium Physical Therapy and Performance</title>

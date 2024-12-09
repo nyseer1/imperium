@@ -1,21 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 //various components
-import { Breadcrumbs,Grid2, Paper, Toolbar, Container, Button, Link, Typography, ButtonGroup, Box, ListItem, AppBar, ImageListItemBar, useMediaQuery, ButtonBase, BottomNavigation } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 
-import ImageList from '@mui/material/node/ImageList';
-import ImageListItem from '@mui/material/node/ImageListItem';
 
 //for menu button
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import MenuIcon from '@mui/icons-material/Menu'; //for menu icon
 
 //to use divider slashbar
-import Divider from '@mui/material/Divider';
 
 // to use themes
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import UndoIcon from '@mui/icons-material/Undo';
 
 // meta tags

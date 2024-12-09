@@ -1,23 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 import "@fontsource/roboto/300.css";
 import { Masonry } from "@mui/lab";
+import React from "react";
 //various components
 import {
   Box,
+  Grid2,
   Paper,
   styled,
-  Typography,Grid2,
+  Typography,
 } from "@mui/material";
 
 
 //for menu button
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
 
 // to use themes
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Helmet } from "react-helmet-async";
 
 const Label = styled(Paper)(({ theme }) => ({

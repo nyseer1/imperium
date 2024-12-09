@@ -1,18 +1,15 @@
 import React from "react";
 //various components
 import {
-  Button,
-  Typography,
-  ButtonGroup,
-  Box,
   AppBar,
-  useMediaQuery,
+  Box,
   ButtonBase,
-  BottomNavigation,
+  ButtonGroup,
+  useMediaQuery
 } from "@mui/material";
 //for menu button
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
+import Menu from "@mui/material/Menu";
 
 // to use themes
 import { createTheme } from "@mui/material/styles";
