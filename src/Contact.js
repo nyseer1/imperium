@@ -18,11 +18,21 @@ import Divider from '@mui/material/Divider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import UndoIcon from '@mui/icons-material/Undo';
 
+// meta tags
+import { Helmet } from 'react-helmet-async';
+
 function Contact(){
 
   return (
   // basic div tag that uses css
   <Box>
+    <Helmet>
+      <title>Contact Us | Imperium Physical Therapy and Performance</title>
+      <meta name="description" content="Get Orthopedic physical therapy for sports injuries, and injuries
+       relating to muscles, bones, joints, ligaments, and tendons" />
+      <meta name="keywords" content="ptp, pt, physical therapy, Orthopedic physical therapy" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    </Helmet>
 
     {/* content */}
     <Box sx={{p:2,

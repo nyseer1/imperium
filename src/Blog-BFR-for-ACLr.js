@@ -38,15 +38,15 @@ function Blog2() {
       <Helmet>
         <title>
           Imperium PTP Blog | Blood Flow Restriction Training in Post-Operative
-          ACL Reconstruction Surgery
+          ACL Tear Reconstruction Surgery BFR
         </title>
         <meta
           name="description"
-          content="Accelerating Recovery: Blood Flow Restriction Training in Post-Operative ACL Reconstruction Surgery - A Physical Therapy Breakthrough"
+          content="Accelerating Recovery: Blood Flow Restriction Therapy in Post-Operative ACL Reconstruction Surgery - ACL Tear Treatment - A Physical Therapy Breakthrough"
         />
         <meta
           name="keywords"
-          content="ptp, pt, physical therapy, professional, ACL, reconstruction surgery, blood flow restriction training, post-op, misconceptions"
+          content="ptp, pt, physical therapy, professional, ACL, reconstruction surgery, Blood Flow Restriction therapy, post-op, misconceptions"
         />
         <meta
           name="viewport"

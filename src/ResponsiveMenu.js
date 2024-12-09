@@ -35,6 +35,7 @@ function ResponsiveMenu() {
   return (
     // basic div tag that uses css
     <Box>
+      
       {/* static means the appbar will hide itself when scrolling down */}
       <AppBar position="sticky">
         {/* black box with the logo and it works as a button to goto the homepage */}
@@ -118,12 +119,12 @@ function ResponsiveMenu() {
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
-        sx={{height:['100%'], width:100}}
+        sx={{height:['100%'], width:300}}
       >
-        <ButtonGroup sx={{flexDirection:'column', color:'green'}}>
-          <Button variant="greentext" href="/" onClick={handleClose}>
+        <ButtonGroup sx={{flexDirection:'column', color:'green',}}>
+          <ButtonBase variant="greentext" href="/" onClick={handleClose}>
             Home
-          </Button>
+          </ButtonBase>
           <ButtonBase  variant="greentext" href="/about" onClick={handleClose}>
             About
           </ButtonBase>

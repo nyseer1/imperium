@@ -49,12 +49,10 @@ function About() {
     // basic div tag that uses css
     <Box>
       <Helmet>
-        <title>Imperium Physical Therapy and Performance Team</title>
-        <meta name="description" content="Our Mission at Imperium physical therapy and performance is to improve the health and wellness of our clients by
-            empowering them with the knowledge and skills to optimize their
-            physical potential. Our vision is to develop championship athletes
-            and to revitalize active lifestyles. " />
-        <meta name="keywords" content="ptp, pt, physical therapy, professional" />
+        <title>About | Imperium Physical Therapy and Performance</title>
+        <meta name="description" content=" Our Mission is to diagnose and rehabilitate your injuries with orthopedic physical therapy<br/>
+              We treat injuries relating to muscles, bones, joints, ligaments, and tendons. " />
+        <meta name="keywords" content="ptp, physical therapy, Sports physical therapy, Orthopedic physical therapy" />
       </Helmet>
         {" "}
         <Typography variant="h1" sx={{fontSize:['2rem','3.5rem'], textAlign:'center', p:1}} >

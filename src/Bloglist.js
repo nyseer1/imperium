@@ -9,8 +9,10 @@ import MenuIcon from "@mui/icons-material/Menu"; //for menu icon
 //to use divider
 import Divider from '@mui/material/Divider';
 
-//blog pages
+//metadata 
+import { Helmet } from "react-helmet-async";
 
+//blog pages
 export const postData = [
   {
     img: "https://painhealth.csse.uwa.edu.au/wp-content/uploads/2016/04/painhealth-low-back-pain.jpg",
@@ -51,6 +53,14 @@ function Bloglist() {
   return (
     // basic div tag that uses css
     <Box>
+      <Helmet>
+        <title>Imperium PTP Blogs | Imperium Physical Therapy and Performance</title>
+        <meta name="description" content="Get educational information on Orthopedic physical therapy, sports physical therapy,
+        etc." />
+        <meta name="keywords" content="ptp, pt, blog, educational, physical therapy, Orthopedic physical therapy" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      </Helmet>
+
 
       {/* content */}
        <Box sx={{        display: 'flex', //creates flexbox to arrange content

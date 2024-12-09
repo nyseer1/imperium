@@ -40,9 +40,9 @@ function Main() {
     // basic div tag that uses css
     <Box>
       <Helmet>
-        <title>Imperium Physical Therapy and Performance</title>
+        <title>Home | Imperium Physical Therapy and Performance</title>
         <meta name="description" content="Professional Physical Therapy" />
-        <meta name="keywords" content="ptp, pt, physical therapy, professional" />
+        <meta name="keywords" content="ptp, pt, physical therapy, Orthopedic physical therapy" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
       </Helmet>
 
