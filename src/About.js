@@ -77,16 +77,16 @@ function About() {
             gutterBottom
             sx={{ font: [2], color: "#000000" }}
           >
-            We are a <>physical therapy</> practice that specializes in the diagnoses
+            We are a physical therapy practice that specializes in the diagnoses
             and rehabilitation of orthopedic related conditions, management of
-            <> post operative cases</> and overall optimization of functional ability
-            including <>restoration</> of mobility, range of motion and strength.
+             post operative cases and overall optimization of functional ability
+            including restoration of mobility, range of motion and strength.
           </Typography>
           <Typography
             variant="body1"
             gutterBottom
             sx={{ font: [2], color: "#000000" }}
-          > 
+          >
             Our mission is to improve the health and wellness of our clients by
             empowering them with the knowledge and skills to optimize their
             physical potential. Our vision is to develop championship athletes
