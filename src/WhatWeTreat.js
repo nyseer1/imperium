@@ -169,7 +169,7 @@ function WhatWeTreat() {
           <Grid2 item >
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0,minHeight:530,border:2,borderColor:green[500]}}>
 
-            <Typography sx={{fontSize:['1.5rem','2rem'], fontFamily:'Arial', fontWeight:'600'}}>Ankle/Foot</Typography>
+            <Typography sx={{fontSize:['1.5rem','2rem'], fontFamily:'Arial', fontWeight:'600'}}>Ankle/Foot:</Typography>
               <br/>
               <Grid2 container justifyContent="flex-start" sx={{paddingLeft:3, fontSize:['1rem','1.5rem']}}>
                 <ListItem sx={{ display: 'list-item', p:1}}>
@@ -199,7 +199,7 @@ function WhatWeTreat() {
           <Grid2 item >
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0,minHeight:530,border:2,borderColor:green[500]}}>
 
-            <Typography sx={{fontSize:['1.5rem','2rem'], fontFamily:'Arial', fontWeight:'600'}}>Spine</Typography>
+            <Typography sx={{fontSize:['1.5rem','2rem'], fontFamily:'Arial', fontWeight:'600'}}>Spine:</Typography>
               <br/>
               <Grid2 container justifyContent="flex-start" sx={{paddingLeft:3, fontSize:['1rem','1.5rem']}}>
                 <ListItem sx={{ display: 'list-item', p:1}}>
