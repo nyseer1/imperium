@@ -21,9 +21,9 @@ function WhatWeTreat() {
       <Helmet>
         <title>What We Treat | Imperium Physical Therapy and Performance</title>
         <meta name="description" content=" We treat over 30 different injures with orthopedic physical therapy. We Treat injuries relating to muscles, bones, joints, ligaments, and tendons. " />
-        <meta name="keywords" content="imperium ptp, physical therapy, 
+        <meta name="keywords" content="imperium ptp, physical therapy,
           Disc herniation,
-          Spinal stenosis, 
+          Spinal stenosis,
           ACDF,
           Hip replacement,
           Knee replacement,
@@ -43,14 +43,14 @@ function WhatWeTreat() {
           Doctor of physical therapy,
           Frozen shoulder,
           Plantar fasciitis,
-          Spinal Fusion treatment, 
-          injury treatment, 
-          Sports physical therapy, 
+          Spinal Fusion treatment,
+          injury treatment,
+          Sports physical therapy,
           Orthopedic physical therapy" />
       </Helmet>
               <Typography variant="h6" textAlign='center' sx={{fontSize:['1.8rem','2.3rem'],p:3, fontWeight:300, letterSpacing: '1px',fontWeight:'400',fontFamily:'Arial, sans-serif' }}>
                 What We Treat
-              </Typography> 
+              </Typography>
 
       <Grid2 container spacing={0.5} sx={{pl:2,pr:2, justifyContent:'center'}} columns={{xs:2,sm:4,md:12}}>
         <Grid2 size={5}>
@@ -64,7 +64,7 @@ function WhatWeTreat() {
                 Cervical radiculopathy
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>
-                ACDF
+                <abbr title="Anterior cervical discectomy and fusion" >ACDF</abbr>
                 </ListItem><ListItem sx={{ display: 'list-item', p:1}}>
                 Herniated Discs
                 </ListItem>
@@ -89,7 +89,7 @@ function WhatWeTreat() {
                   Shoulder replacement
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>
-                  Shoulder pain 
+                  Shoulder pain
                 </ListItem><ListItem sx={{ display: 'list-item', p:1}}>
                 Rotator cuff repair
                 </ListItem>
@@ -127,7 +127,7 @@ function WhatWeTreat() {
                 Labral tears
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>
-                FAI
+                <abbr title="Femoroacetabular impingement" >  FAI</abbr>
                 </ListItem>
               </Grid2>
 
@@ -146,7 +146,7 @@ function WhatWeTreat() {
                 Knee replacement
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>
-                ACL reconstruction
+                <abbr title="Anterior cruciate ligament">ACL</abbr> reconstruction
                 </ListItem><ListItem sx={{ display: 'list-item', p:1}}>
                 Arthritis
                 </ListItem>
@@ -154,7 +154,7 @@ function WhatWeTreat() {
                 Meniscus tear
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>
-                PFPS
+              <abbr title="Patellofemoral pain syndrome">PFPS</abbr>
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>
                 Tendonitis
@@ -173,7 +173,7 @@ function WhatWeTreat() {
               <br/>
               <Grid2 container justifyContent="flex-start" sx={{paddingLeft:3, fontSize:['1rem','1.5rem']}}>
                 <ListItem sx={{ display: 'list-item', p:1}}>
-                ORIF
+               <abbr title="Open reduction and internal fixation"> ORIF</abbr>
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>
                 Ligament sprains
@@ -194,7 +194,7 @@ function WhatWeTreat() {
             </Paper>
           </Grid2>
         </Grid2>
-        
+
         <Grid2 size={5}>
           <Grid2 item >
             <Paper sx={{ p:3, borderRadius:3, boxShadow:5, border:0,minHeight:530,border:2,borderColor:green[500]}}>
@@ -225,7 +225,7 @@ function WhatWeTreat() {
           </Grid2>
         </Grid2>
 
-        
+
       </Grid2>
 
 
