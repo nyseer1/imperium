@@ -118,7 +118,7 @@ function ResponsiveMenu() {
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
-        sx={{height:['100%']}}
+        sx={{height:['100%'], width:100}}
       >
         <ButtonGroup sx={{flexDirection:'column', color:'green'}}>
           <Button variant="greentext" href="/" onClick={handleClose}>
