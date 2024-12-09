@@ -7,7 +7,7 @@ import {
   Box,
   Paper,
   styled,
-  Typography
+  Typography,Grid2,
 } from "@mui/material";
 
 
@@ -56,9 +56,8 @@ function About() {
             and to revitalize active lifestyles. " />
         <meta name="keywords" content="ptp, pt, physical therapy, professional" />
       </Helmet>
-      <Box sx={{ width: "100%" }}>
         {" "}
-        <Typography variant="h1" sx={{ textAlign:'center', p:1, fontSize:'5rem'}} >
+        <Typography variant="h1" sx={{fontSize:['2rem','3.5rem'], textAlign:'center', p:1}} >
           About Us
         </Typography>
         <Box
@@ -77,10 +76,10 @@ function About() {
             gutterBottom
             sx={{ font: [2], color: "#000000" }}
           >
-            We are a physical therapy practice that specializes in the diagnoses
+            We are a <>physical therapy</> practice that specializes in the diagnoses
             and rehabilitation of orthopedic related conditions, management of
-             post operative cases and overall optimization of functional ability
-            including restoration of mobility, range of motion and strength.
+            <> post operative cases</> and overall optimization of functional ability
+            including <>restoration</> of mobility, range of motion and strength.
           </Typography>
           <Typography
             variant="body1"
@@ -112,19 +111,19 @@ function About() {
           {itemData.map((item, index) => (
             <Box key={index}>
 
-              <Box component="img" sx={{borderBottomLeftRadius: 4, borderBottomRightRadius: 4,
-                display: "block",borderColor: "green",
-                width:'100%', height:'100%', borderRadius:'2%'}}
-                alt={item.title}
-                src={`${item.img}?w=162&auto=format`}
-                loading="lazy"/>
-            </Box>
+                      <Box component="img" sx={{borderBottomLeftRadius: 4, borderBottomRightRadius: 4,
+                        display: "block",borderColor: "green",
+                        width:'100%', height:'100%', borderRadius:'2%'}}
+                        alt={item.title}
+                        src={`${item.img}?w=162&auto=format`}
+                        loading="lazy"/>
+                    </Box>
+                  ))}
+                </Masonry>
+              </Grid2>
+            </Grid2>
+        </Grid2>
 
-          ))}
-        </Masonry>
-      </Box>
-
-      </Box>
     </Box>
   );
 }

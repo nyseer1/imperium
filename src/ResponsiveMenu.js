@@ -144,18 +144,6 @@ function ResponsiveMenu() {
           </ButtonBase>
         </ButtonGroup>
       </Menu>
-
-      {/* footer */}
-      <BottomNavigation
-        sx={{
-          bgcolor: "#50ac54",
-          position: "static",
-          width: "100%",
-          bottom: "0%",
-          height: "1%",
-        }}
-      >
-      </BottomNavigation>
     </Box>
   );
 }
