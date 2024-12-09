@@ -7,7 +7,7 @@ import {
   Box,
   Paper,
   styled,
-  Typography
+  Typography,Grid2,
 } from "@mui/material";
 
 
@@ -56,75 +56,58 @@ function About() {
             and to revitalize active lifestyles. " />
         <meta name="keywords" content="ptp, pt, physical therapy, professional" />
       </Helmet>
-      <Box sx={{ width: "100%" }}>
         {" "}
-        <Typography variant="h1" sx={{ textAlign:'center', p:1, fontSize:'5rem'}} >
+        <Typography variant="h1" sx={{fontSize:['2rem','3.5rem'], textAlign:'center', p:1}} >
           About Us
         </Typography>
-        <Box
-        sx={{
-          p: 2,
-          display: "flex", //creates flexbox to arrange content
-          flexDirection: ["column", "column", "row", "row", "row"], //each new content is added in a row if screen > md, columb if <= md
-          justifyContent: "center", //content starts at the end of the line (right)
-          flexGrow: 1, //stretch size of elements to fill unused space on line
-          alignItems: "flex-start", //centers items inside box horizontally (for when column)
-        }}
-      >
-        <Paper sx={{fontSize: '2rem', p: 2,}}>
-          <Typography
-            variant="body1"
-            gutterBottom
-            sx={{ font: [2], color: "#000000" }}
-          >
-            We are a <>physical therapy</> practice that specializes in the diagnoses
-            and rehabilitation of orthopedic related conditions, management of
-            <> post operative cases</> and overall optimization of functional ability
-            including <>restoration</> of mobility, range of motion and strength.
-          </Typography>
-          <Typography
-            variant="body1"
-            gutterBottom
-            sx={{ font: [2], color: "#000000" }}
-          > 
-            Our mission is to improve the health and wellness of our clients by
-            empowering them with the knowledge and skills to optimize their
-            physical potential. Our vision is to develop championship athletes
-            and to revitalize active lifestyles.
-          </Typography>
-          <p></p>
-        </Paper>
+        
+        <Grid2 container sx={{pt:1, justifyContent:'center'}} columns={{xs:2,sm:4,md:12}}>
+          <Grid2 size={6}>
+            <Grid2 item >
+              <Paper sx={{fontSize:['1rem','1.5rem'], p: 2,}}>
+              <Typography variant="h1" sx={{fontSize:['1.5rem','2rem'], textAlign:'center', p:1, fontFamily:'Arial'}} >
+                Mission:
+              </Typography>
+              Our Mission is to diagnose and rehabilitate your injuries with orthopedic physical therapy<br/>
+              We treat injuries relating to muscles, bones, joints, ligaments, and tendons<br/>
+                  <Typography sx={{fontSize:['1.5rem','2rem'], fontFamily:'Arial'}}>We specialize in:</Typography>
+                  <Grid2 container justifyContent="flex-start" sx={{paddingLeft:3, fontSize:['1rem','1.5rem']}}>
+                      <Grid2 item sx={{ display: 'list-item', p:1, textAlign:'left'}}>Diagnosis and rehabilitation of orthopedic related conditions such as sports related injuries
+                      </Grid2>
+                      <Grid2 item sx={{ display: 'list-item', p:1,textAlign:'left'}}>Rehabilitation after surgery
+                      </Grid2>
+                      <Grid2 item sx={{ display: 'list-item', p:1,textAlign:'left'}}>Optimizing functional ability including range of motion strength and mobility
+                      </Grid2>
+                  </Grid2>
+              </Paper>
+              
+            </Grid2>
+            
+          </Grid2>
+          <Grid2 size={6}>
+            <Grid2 item >
+                <Masonry
+                  justifyContent="center"
+                  sx={{
+                  bgcolor: "background.paper",m: 1,border: 5,
+                  borderColor: "green",borderRadius: "6px",width:['100%','100%']}}
+                  columns={2} spacing={2}>
+                  {itemData.map((item, index) => (
+                    <Box key={index}>
 
-        <Masonry
-          justifyContent="center"
-          sx={{
-            bgcolor: "background.paper",
-            m: 1,
-            border: 5,
-            borderColor: "green",
-            borderRadius: "6px",
-            width:['100%','100%',2000,]
-          }}
-          columns={2}
-          spacing={2}
-        >
+                      <Box component="img" sx={{borderBottomLeftRadius: 4, borderBottomRightRadius: 4,
+                        display: "block",borderColor: "green",
+                        width:'100%', height:'100%', borderRadius:'2%'}}
+                        alt={item.title}
+                        src={`${item.img}?w=162&auto=format`}
+                        loading="lazy"/>
+                    </Box>
+                  ))}
+                </Masonry>
+              </Grid2>
+            </Grid2>
+        </Grid2>
 
-          {itemData.map((item, index) => (
-            <Box key={index}>
-
-              <Box component="img" sx={{borderBottomLeftRadius: 4, borderBottomRightRadius: 4,
-                display: "block",borderColor: "green",
-                width:'100%', height:'100%', borderRadius:'2%'}}
-                alt={item.title}
-                src={`${item.img}?w=162&auto=format`}
-                loading="lazy"/>
-            </Box>
-
-          ))}
-        </Masonry>
-      </Box>
-
-      </Box>
     </Box>
   );
 }
