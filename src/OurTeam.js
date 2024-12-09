@@ -4,9 +4,10 @@ import React from "react";
 //various components
 import {
   Box,
+  Grid2,
   Paper,
   styled,
-  Typography
+  Typography,ListItem,List,
 } from "@mui/material";
 
 
@@ -18,6 +19,7 @@ import ImageListItem from "@mui/material/node/ImageListItem";
 
 //for metadata
 import { Helmet } from "react-helmet-async";
+import { Grade } from "@mui/icons-material";
 
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",
@@ -48,11 +50,25 @@ function OurTeam() {
         <meta name="description" content="Meet the professional physical therapists behind imperium physical therapy and performance. Our talented team and achieve your fitness goals. Join us today for a healthier you" />
         <meta name="keywords" content="ptp, pt, physical therapy, professional" />
       </Helmet>
+
+      <Typography variant="h6" textAlign='center' sx={{fontSize:['1.8rem','2.3rem'],p:3, fontWeight:300, letterSpacing: '1px',fontWeight:'400',fontFamily:'Arial, sans-serif' }}>
+                Meet Our Team
+              </Typography> 
+
+      <Grid2 container spacing={0.5} sx={{pl:2,pr:2, justifyContent:'center'}} columns={{xs:2,sm:4,md:12}}>
+
+
+
+
+      </Grid2>
+
+
+
+
+
       <Box sx={{ width: "100%" }}>
         {" "}
-        <Typography sx={{ textAlign:'center', p:1, fontSize: [30,50,80]}} variant="h1">
-         Meet Our Team
-        </Typography>
+        
         <Box
         sx={{
           p: 2,

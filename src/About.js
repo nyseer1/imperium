@@ -55,9 +55,9 @@ function About() {
         <meta name="keywords" content="ptp, physical therapy, Sports physical therapy, Orthopedic physical therapy" />
       </Helmet>
         {" "}
-        <Typography variant="h1" sx={{fontSize:['2rem','3.5rem'], textAlign:'center', p:1}} >
-          About Us
-        </Typography>
+        <Typography variant="h6" textAlign='center' sx={{fontSize:['1.8rem','2.3rem'],p:3, fontWeight:300, letterSpacing: '1px',fontWeight:'400',fontFamily:'Arial, sans-serif' }}>
+                About Us
+              </Typography> 
 
         <Grid2 container sx={{pt:1, justifyContent:'center'}} columns={{xs:2,sm:4,md:12}}>
           <Grid2 size={6}>
