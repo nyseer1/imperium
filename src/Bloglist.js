@@ -25,14 +25,8 @@ export const postData = [
   {
     img: "ACL_INJURY.jpg",
     alt: "BFR_for_ACLr",
-    title: "Blood Flow Restriction Training in Post-Operative ACL Reconstruction Surgery",
+    title: "BFR Training in Post-Op ACL Reconstruction Surgery",
     href: "blog2",
-  },
-  {
-    img: "Stretching_service_example1.JPG",
-    alt: "Stretching_Services",
-    title: "Stretching services",
-    href: "blog3",
   },
   {
     img: "Stretching_service_example1.JPG",
@@ -40,12 +34,12 @@ export const postData = [
     title: "Understanding the Crucial Role of the Rotator Cuff",
     href: "blog4",
   },
-  {
-    img: "Stretching_service_example1.JPG",
-    alt: "injury_prevention_strategies",
-    title: "Role of the ACL in Knee Stability and Cutting-Edge Injury Prevention Strategies",
-    href: "blog5",
-  },
+  // {
+  //   img: "Stretching_service_example1.JPG",
+  //   alt: "injury_prevention_strategies",
+  //   title: "ACL in Knee Stability & Cutting-Edge Injury Prevention Strats",
+  //   href: "blog5",
+  // },
 ];
 
 function Bloglist() {

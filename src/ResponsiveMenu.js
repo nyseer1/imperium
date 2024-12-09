@@ -68,7 +68,7 @@ function ResponsiveMenu() {
             <ButtonBase variant='default' href="/about">About</ButtonBase>
             <ButtonBase variant='default' href="/what-we-treat">What We Treat</ButtonBase>
             <ButtonBase variant='default' href="/our-team">Our Team</ButtonBase>
-            <ButtonBase variant='default' href="/performance-training">Performance Training</ButtonBase>
+            <ButtonBase variant='default' href="/stretching-services">Stretching Services</ButtonBase>
             <ButtonBase variant='default' href='/blog1'>Blog</ButtonBase>
             <ButtonBase variant='default' href='/contact'>
               <Box
@@ -134,8 +134,8 @@ function ResponsiveMenu() {
           <ButtonBase  variant="greentext" href="/our-team" onClick={handleClose}>
             Our Team
           </ButtonBase>
-          <ButtonBase  variant="greentext" sx={{ textAlign:'center'}} href="/performancetraining" onClick={handleClose}>
-            Performance<br/>Training
+          <ButtonBase  variant="greentext" sx={{ textAlign:'center'}} href="/stretching-services" onClick={handleClose}>
+            Stretching<br/>Services
           </ButtonBase>
           <ButtonBase variant="greentext"  href="/blog1" onClick={handleClose}>
             Blog

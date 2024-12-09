@@ -15,7 +15,7 @@ import ResponsiveMenu from "./ResponsiveMenu.js";
 //import blog pages to link to
 import Blog2 from "./Blog-BFR-for-ACLr.js";
 import Blog4 from "./Blog-Rotator-Cuff.js";
-import Blog3 from "./Blog-Stretch.js";
+import BlogStretch from "./Blog-Stretch.js";
 import Blog1 from "./Blog1-Low-back-pain-m.js";
 
 //debug page
@@ -238,8 +238,8 @@ const router = createBrowserRouter([
     element: <Blog2 />,
   },
   {
-    path: "/blog3",
-    element: <Blog3 />,
+    path: "/stretching-services",
+    element: <BlogStretch />,
   },
   {
     path: "/blog4",
