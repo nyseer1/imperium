@@ -74,14 +74,14 @@ function Bloglist() {
           alignItems: "center", //centers items inside box horizontally (for when column)
         }}
       >
-        <Box sx={{width:900}}>
+        <Box sx={{width:'100%'}}>
         {postData.map((post, index) => (
             <div key={index}>
               <Button  sx={{display:'flex', flexDirection:['column','column','row']}} href={post.href}>
                 <Box component="img" sx={{ width: ['20%', '20%', '10%'], height: ['20%', '20%', '10%'],borderRadius:'2%'}}
                   alt={post.alt}
                   src={post.img}/>
-                  <Typography sx={{textAlign:'center', p:1,}}>{post.title}</Typography>
+                  <Typography sx={{textAlign:'center', p:1,fontSize:['1rem','1.5rem']}}>{post.title}</Typography>
               </Button>
               
             </div>
