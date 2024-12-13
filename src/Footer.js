@@ -58,7 +58,7 @@ export function Footer() {
                 <br />
                 <b>Phone: </b>{" "}
                 <Link
-                  sx={{ color: "black", textDecoration: "none" }}
+                  sx={{ color: "black",underline:"hover" }}
                   href="tel:+5164901480"
                 >
                   {" "}
@@ -67,7 +67,7 @@ export function Footer() {
                 <br />
                 <b>Fax:</b>{" "}
                 <Link
-                  sx={{ color: "black", textDecoration: "none" }}
+                  sx={{ color: "black", underline:"hover" }}
                   href="tel:+5164904009"
                 >
                   {" "}
