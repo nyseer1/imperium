@@ -64,8 +64,8 @@ function Blog1() {
               <Box
                 component="img"
                 sx={{ width: "100%", height: "100%", p: 2, borderRadius: "2%" }}
-                alt={"ACL_Anatomy"}
-                src={"ACL_UPCLOSE.jpg"}
+                alt={"Low_Back_Pain"}
+                src={"Sciatica.jpg.webp"}
               />
 
 

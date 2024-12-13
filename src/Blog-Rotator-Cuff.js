@@ -34,7 +34,8 @@ function Blog4() {
     <Box>
       <Helmet>
         <title>Imperium PTP Blog | Understanding the Crucial Role of the Rotator Cuff</title>
-        <meta name="description" content="Understanding the Crucial Role of the Rotator Cuff function, the anatomy, function, and importance of the rotator cuff to unravel the mystery behind this critical component of our musculoskeletal system."/>
+        <meta name="description" content="Understanding the Crucial Role of the Rotator Cuff 
+          function, the anatomy, function, and importance of the rotator cuff to unravel the mystery behind this critical component of our musculoskeletal system."/>
         <meta name="keywords" content="ptp, pt, physical therapy, professional, rotatator cuff, anatomy, function,educational" />
       </Helmet>
 

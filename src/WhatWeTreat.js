@@ -97,7 +97,7 @@ function WhatWeTreat() {
                 Frozen shoulder
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>
-                Frozen shoulder
+                Instability
                 </ListItem>
                 <ListItem sx={{ display: 'list-item', p:1}}>
                 Labral tear
